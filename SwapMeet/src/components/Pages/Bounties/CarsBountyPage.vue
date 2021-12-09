@@ -86,6 +86,7 @@ import carCatalog from "../../../assets/CarCatalog";
 import { findByYear, findByMake } from "../../../assets/CarCatalogQuery";
 import BountyButton from "../../UI/BountyButton.vue"
 import CarSelectCluster from "../../UI/CarSelectCluster"
+import APIPostingHelper from "../../../APIHelpers/APIPostingHelper"
 
 @Component({
   name: "CarsBountyPage",
@@ -165,24 +166,14 @@ export default class CarsBountyPage extends Vue {
     return validform;
   }
 
-  submitPacket() {
+  async submitPacket() {
     if (!this.validateForm()) {
       return;
     }
     console.log(this.packet)
     this.packet.bounty = parseInt(this.packet.bounty);
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Allow-Methods': 'POST'
-      },
-      cache: "default",
-      body: JSON.stringify(this.packet)
-    };
-    fetch("/api/carbounty", options).then((response) => {
+
+    await APIPostingHelper.makeCarBounty(this.packet).then((response) => {
     }).then(() => { this.$router.push("/listing/success")});
   }
 }

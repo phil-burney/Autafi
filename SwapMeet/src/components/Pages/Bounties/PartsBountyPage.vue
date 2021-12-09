@@ -94,6 +94,7 @@ import { findByYear, findByMake } from "../../../assets/CarCatalogQuery";
 import BountyButton from "../../UI/BountyButton.vue";
 import PartsSelectCluster from "../../UI/PartsSelectCluster.vue";
 import axios from "axios";
+import APIPostingHelper from "../../../APIHelpers/APIPostingHelper"
 
 @Component({
   name: "PartsPage",
@@ -124,7 +125,7 @@ export default class PartsPage extends Vue {
         photos: [],
         description: undefined,
         bounty: undefined,
-
+        email: this.$store.state.user.email
       },
     };
   }
@@ -184,19 +185,9 @@ export default class PartsPage extends Vue {
     }
     this.packet.bounty = parseInt(this.packet.bounty);
     console.log(this.packet)
-    this.packet.email = this.$store.state.user.email
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Headers": "Content-Type",
-        "Access-Control-Allow-Methods": "POST",
-      },
-      cache: "default",
-      body: JSON.stringify(this.packet),
-    };
-    fetch("/api/partbounty", options).then((response) => {
+    
+
+    APIPostingHelper.makePartBounty().then((response) => {
     }).then(() => { this.$router.push("/listing/success")});
   }
 }

@@ -7,7 +7,7 @@ const port = 3030;
 const bodyParser = require('body-parser')
 const multer = require('multer')
 const cookieParser = require('cookie-parser');
-const sessions = require('express-session');
+const session = require('express-session');
 const cors = require('cors');
 const upload = multer({ dest: 'uploads/' })
 const mongoose = require('mongoose')
@@ -18,21 +18,24 @@ const CarSale = require('./models/carsales')
 const PartSale = require('./models/partsales');
 const { createSuper } = require('typescript');
 
+app.use(bodyParser.json({ limit: '50mb', extended: true }))
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json())
+
 //connect to mongo db
 const dbURI = 'mongodb+srv://admin:1234@cluster.n0ev0.mongodb.net/swapmeet?retryWrites=true&w=majority'
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedtopology: true })
     .then((result) => console.log('connected to db'))
     .catch((err) => console.log(err));
 
-app.use(bodyParser.json({ limit: '50mb', extended: true }))
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json())
-router.use('/api', function(req, res, next) {
+
+router.use('/api', function (req, res, next) {
     // ... maybe some additional /bar logging ...
     next();
 });
 app.use(cors({
-    origin: '*'
+    origin: true,
+    credentials: true
 }));
 // Serve static html/js/css content publically
 
@@ -40,18 +43,12 @@ app.use(cors({
 app.use(cookieParser());
 
 //session middleware
-app.use(sessions({
+app.use(session({
     secret: "secretsessionkey",
     saveUninitialized: true,
-    cookie: {},
+    cookie: { maxAge: 1000 * 60 * 60 * 24 },
     resave: false
 }));
-
-const parts = [];
-const cars = [];
-const users = [];
-let newCar = {};
-let newPart = {};
 
 let numUsers = 0;
 let carBounties = 0;
@@ -189,18 +186,25 @@ app.put('/api/user/validatetoken', (req, res) => {
 })
 
 app.post('/api/login', (req, res) => {
-    console.log("login");
+    
     if (User.validLogin(req.body.username, req.body.password)) {
         User.findByCredentials(req.body.username, req.body.password)
             .then((user) => {
                 if (user != null) {
                     let newToken = user.generateAuthToken()
                     user.token = newToken;
+                    console.log(user.username + " has logged in.");
                     user.save().then(() => {
-                        res.json({
-                            user: user,
-                            token: newToken
-                        })
+                        res.cookie("token", newToken, {
+                            sameSite: 'strict',
+                            httpOnly: true
+                        }).cookie("name", user.username, {
+                            sameSite: 'strict',
+                            httpOnly: true
+                        }).cookie("email", user.email, {
+                            sameSite: 'strict',
+                            httpOnly: true
+                        }).send({ message: "Login Successful!  Here's a cookie." })
                     });
                 } else {
                     res.status(403).send({ message: "Wrong login information" });
@@ -217,10 +221,7 @@ app.post('/api/login', (req, res) => {
 
 app.put('/api/logout', (req, res) => {
     console.log('logout')
-    User.findByName(req.body.username).then((user) => {
-        user.token = null;
-        user.save().then(() => res.json({ message: "User logged out" }))
-    })
+    req.session.destroy();
 
 });
 
@@ -299,38 +300,38 @@ app.get('/api/carsale', (req, res) => {
 
 app.get('/api/appstatus', (req, res) => {
     var today = new Date();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    var dateTime = date+' '+time;   
+    var dateTime = date + ' ' + time;
     console.log("GET /appstatus")
     User.find()
         .then((result) => {
             numUsers = result.length;
-        CarBounty.find()
-            .then((response) => {
-                carBounties = response.length;
-            })
-        CarSale.find()
-            .then((response) => {
-                carSales = response.length;
-            })
-        PartSale.find()
-            .then((response) => {
-                partSales = response.length;
-            })
-        PartBounty.find()
-            .then((response) =>  {
-                partBounties = result.length;
-                res.status(200).send({
-                    users: numUsers,
-                    carBounties: carBounties,
-                    partBounties: response.length,
-                    carSales: carSales,
-                    partSales: partSales,
-                    updated: dateTime
+            CarBounty.find()
+                .then((response) => {
+                    carBounties = response.length;
                 })
-            })
-    })            
+            CarSale.find()
+                .then((response) => {
+                    carSales = response.length;
+                })
+            PartSale.find()
+                .then((response) => {
+                    partSales = response.length;
+                })
+            PartBounty.find()
+                .then((response) => {
+                    partBounties = result.length;
+                    res.status(200).send({
+                        users: numUsers,
+                        carBounties: carBounties,
+                        partBounties: response.length,
+                        carSales: carSales,
+                        partSales: partSales,
+                        updated: dateTime
+                    })
+                })
+        })
 })
 
 app.listen(port, () => {

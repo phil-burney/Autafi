@@ -25,7 +25,7 @@
               <bounty-button label="View Listings" />
             </router-link>
           </div>
-          <div v-if="!$store.getters.isLoggedIn" class="d-flex flex-row p-2">
+          <div v-if="true" class="d-flex flex-row p-2">
             <router-link to="/login">
               <bounty-button label="Login" />
             </router-link>
@@ -39,7 +39,7 @@
             v-else
             class="p-2 col d-flex flex-row align-items-end justify-content-end"
           >
-            <div class="p-2">Welcome, {{ $store.state.user.username }}</div>
+            <div class="p-2">Welcome, {{  }}</div>
             <bounty-button
               class="ps-2"
               label="Logout"
@@ -96,19 +96,7 @@ export default class App extends Vue {
         }
         return response.json();
       })
-      .then((data) => {
-
-        this.$store.commit("setUser", data);
-        this.$store.commit("setToken", localStorage.getItem(config.TOKEN));
-        console.log(this.$store.state);
-      }).catch((error) => {
-        console.log("error")
-        this.$store.commit("setUser", null);
-        this.$store.commit("setToken", null);
-        localStorage.removeItem(config.TOKEN);
-        localStorage.removeItem(config.NAME);
-        console.log(localStorage);
-      })
+      
 
 
   }
@@ -126,7 +114,7 @@ export default class App extends Vue {
       }),
     };
 
-    fetch("/api/logout", options)
+    fetch("http://localhost:3030/api/logout", options)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);

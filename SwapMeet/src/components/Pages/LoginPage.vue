@@ -77,10 +77,10 @@ export default class LoginPage extends Vue {
     if (this.validateForm() == false) {
       return;
     }
-    console.log("register account");
     const options = {
       method: "POST",
       mode: "cors",
+      credentials: 'include',
       headers: { "Content-Type": "application/json" },
       //cache:"default",
       body: JSON.stringify({
@@ -89,34 +89,10 @@ export default class LoginPage extends Vue {
       }),
     };
 
-    fetch("/api/login", options)
-      .then((response) => {
-        if (response.ok) {
-          response.json().then((data) =>{
-          // Update user and token
-          this.$store.commit("setUser", data.user);
-          this.$store.commit("setToken", data.token);
-          localStorage.setItem(config.TOKEN, data.token);
-          localStorage.setItem(config.NAME, data.user);
-
-          axios.defaults.headers.common["Authorization"] = data.token;
-          this.$router.push("/");
-          })
-        } else {
-          return response.json();
-        }
-      }).then((data) => {
-        if(data.message != undefined){
-          this.error.login = data.message;
-        }
-      })
-      .catch((err) => {
-        this.$store.commit("setUser", null);
-        this.$store.commit("setToken", null);
-        localStorage.removeItem(config.TOKEN);
-        localStorage.removeItem(config.NAME);
-        this.error.login = err.message;
-        delete axios.defaults.headers.common["Authorization"];
+    fetch("http://localhost:3030/api/login", options)
+      .then((response) => response.json())
+      .then((data) => {
+        this.$router.push("/");
       });
   }
 

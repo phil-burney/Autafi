@@ -12,7 +12,7 @@ export default class APIListingHelper {
             cache: "default",
         };
 
-        let data =  await fetch("/api/partbounty", options);
+        let data = await fetch("http://localhost:3030/api/partbounty", options);
         let returnData = await data.json();
         return returnData;
 
@@ -30,7 +30,7 @@ export default class APIListingHelper {
             },
             cache: "default",
         };
-        let data =  await fetch("/api/carbounty", options);
+        let data = await fetch("http://localhost:3030/api/carbounty", options);
         let returnData = await data.json();
         return returnData;
 
@@ -47,7 +47,7 @@ export default class APIListingHelper {
             },
             cache: "default",
         };
-        let data =  await fetch("/api/partsale", options);
+        let data = await fetch("http://localhost:3030/api/partsale", options);
         let returnData = await data.json();
         return returnData;
 
@@ -66,7 +66,7 @@ export default class APIListingHelper {
             },
             cache: "default",
         };
-        let data =  await fetch("/api/carsale", options);
+        let data = await fetch("http://localhost:3030/api/carsale", options);
         console.log(data)
         let returnData = await data.json();
 

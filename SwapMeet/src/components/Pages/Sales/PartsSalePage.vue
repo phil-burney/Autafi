@@ -79,6 +79,7 @@ import carCatalog from "../../../assets/CarCatalog";
 import { findByYear, findByMake } from "../../../assets/CarCatalogQuery";
 import BountyButton from "../../UI/BountyButton.vue"
 import PartSelectCluster from "../../UI/PartsSelectCluster.vue"
+import APIPostingHelper from "../../../APIHelpers/APIPostingHelper"
 
 @Component({
   name: "CarsSalePage",
@@ -159,7 +160,7 @@ export default class CarsSalePage extends Vue {
 
     return validform;
   }
-  submitPacket() {
+  async submitPacket() {
     if(!this.validateForm()) {
       return;
     }
@@ -168,19 +169,9 @@ export default class CarsSalePage extends Vue {
     // Set packet sale price to a number
     this.packet.salePrice = parseInt(this.packet.salePrice)
     console.log(this.packet);
+    this.packet.email = this.$store.state.user.email
 
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Headers': 'Content-Type',
-        'Access-Control-Allow-Methods': 'POST'
-      },
-      cache: "default",
-      body: JSON.stringify(this.packet)
-    };
-    fetch("/api/partsale", options).then((response) => {
+    await APIPostingHelper.makePartSale().then((response) => {
     }).then(() => { this.$router.push("/listing/success")});
   }
 }

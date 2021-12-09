@@ -107,7 +107,7 @@ export default class SignUpPage extends Vue {
         password: this.sentPassword,
       }),
     };
-    const response = fetch("/api/user/signup", options)
+    const response = fetch("http://localhost:3030/api/user/signup", options)
       .catch((err) => {
         this.error.signup = err.message;
       })
