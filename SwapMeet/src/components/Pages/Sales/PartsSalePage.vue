@@ -110,7 +110,7 @@ export default class CarsSalePage extends Vue {
         photos: [],
         description: undefined,
         salePrice: undefined,
-        email: this.$store.state.user.email
+        email: this.$cookie.get("email")
       },
     };
   }
@@ -169,9 +169,9 @@ export default class CarsSalePage extends Vue {
     // Set packet sale price to a number
     this.packet.salePrice = parseInt(this.packet.salePrice)
     console.log(this.packet);
-    this.packet.email = this.$store.state.user.email
+    this.packet.email = this.$cookie.get('email')
 
-    await APIPostingHelper.makePartSale().then((response) => {
+    await APIPostingHelper.makePartSale(this.packet).then((response) => {
     }).then(() => { this.$router.push("/listing/success")});
   }
 }

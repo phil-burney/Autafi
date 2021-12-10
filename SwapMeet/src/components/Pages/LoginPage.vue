@@ -80,7 +80,7 @@ export default class LoginPage extends Vue {
     const options = {
       method: "POST",
       mode: "cors",
-      credentials: 'include',
+      credentials: "include",
       headers: { "Content-Type": "application/json" },
       //cache:"default",
       body: JSON.stringify({
@@ -92,6 +92,7 @@ export default class LoginPage extends Vue {
     fetch("http://localhost:3030/api/login", options)
       .then((response) => response.json())
       .then((data) => {
+        this.$store.commit("setUser", this.$cookie.get("name"));
         this.$router.push("/");
       });
   }

@@ -2,17 +2,15 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router';
 import routes from './routes/routes'
-import axios from 'axios'
-import * as config from "./config.json";
-import VueCookies from 'vue-cookie'
+const VueCookie = require('vue-cookie');
 
 const router = new VueRouter({ routes });
 Vue.use(VueRouter);
-Vue.use(VueCookies);
+Vue.use(VueCookie);
 
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
-    if (localStorage.getItem(config.TOKEN) == null) {
+    if (!document.cookie.split('; ').find(row => row.startsWith('name'))) {
       next({
         path: "/"
       });

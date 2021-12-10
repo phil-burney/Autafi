@@ -107,7 +107,7 @@ export default class CarsSalePage extends Vue {
         photos: [],
         description: undefined,
         salePrice: undefined,
-        email: this.$store.state.user.email
+        email: this.$cookie.get("email")
       },
     };
   }
@@ -159,7 +159,7 @@ export default class CarsSalePage extends Vue {
     }
     this.packet.salePrice = parseInt(this.packet.salePrice);
 
-    APIPostingHelper.makeCarSale().then((response) => {
+    APIPostingHelper.makeCarSale(this.packet).then((response) => {
     }).then(() => { this.$router.push("/listing/success")});
   }
 }

@@ -125,7 +125,7 @@ export default class PartsPage extends Vue {
         photos: [],
         description: undefined,
         bounty: undefined,
-        email: this.$store.state.user.email
+        email: this.$cookie.get("email")
       },
     };
   }
@@ -187,7 +187,7 @@ export default class PartsPage extends Vue {
     console.log(this.packet)
     
 
-    APIPostingHelper.makePartBounty().then((response) => {
+    APIPostingHelper.makePartBounty(this.packet).then((response) => {
     }).then(() => { this.$router.push("/listing/success")});
   }
 }

@@ -21,6 +21,30 @@ const { createSuper } = require('typescript');
 app.use(bodyParser.json({ limit: '50mb', extended: true }))
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
+//session cookie
+app.use(cookieParser());
+
+
+app.use(function (req, res, next) {
+    res.setHeader('mode', 'cors');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080');
+    res.setHeader('Access-Control-Allow-Credentials', 'true');
+    res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT,DELETE");
+    res.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers,Access-Control-Allow-Origin,Access-Control-Allow-Credentials,Access-Control-Allow-Methods,Content-Type");
+
+    next();
+});
+// Serve static html/js/css content publically
+
+
+
+//session middleware
+app.use(session({
+    secret: "secretsessionkey",
+    saveUninitialized: true,
+    cookie: { maxAge: 1000 * 60 * 60 * 24 },
+    resave: false
+}));
 
 //connect to mongo db
 const dbURI = 'mongodb+srv://admin:1234@cluster.n0ev0.mongodb.net/swapmeet?retryWrites=true&w=majority'
@@ -33,22 +57,7 @@ router.use('/api', function (req, res, next) {
     // ... maybe some additional /bar logging ...
     next();
 });
-app.use(cors({
-    origin: true,
-    credentials: true
-}));
-// Serve static html/js/css content publically
 
-//session cookie
-app.use(cookieParser());
-
-//session middleware
-app.use(session({
-    secret: "secretsessionkey",
-    saveUninitialized: true,
-    cookie: { maxAge: 1000 * 60 * 60 * 24 },
-    resave: false
-}));
 
 let numUsers = 0;
 let carBounties = 0;
@@ -60,7 +69,7 @@ let partSales = 0;
 
 app.post("/api/partbounty", upload.single('partImage'), function (req, res) {
     console.log("POST /partbounty");
-
+    console.log(req.body);
     const newpart = new PartBounty({
         title: req.body.title,
         year: req.body.year,
@@ -73,7 +82,6 @@ app.post("/api/partbounty", upload.single('partImage'), function (req, res) {
         email: req.body.email,
     });
 
-    console.log(req.body)
     newpart.save()
         .then(() => {
             // send back response
@@ -172,12 +180,10 @@ app.post('/api/user/signup', (req, res) => {
 })
 
 app.put('/api/user/validatetoken', (req, res) => {
-    User.findByToken(req.body.token).then((data) => {
-        console.log(data.username + " pinged the server")
+    User.findByToken(req.cookies['token']).then((data) => {
         if (data != null) {
-            let packet = { username: data.username, email: data.email }
-            console.log(packet)
-            res.status(200).send(packet);
+            console.log(data.username + " pinged the server")
+            res.status(200).send({ message: "User found!" });
         }
         else {
             res.status(404).send({ message: "User not found!" });
@@ -186,7 +192,7 @@ app.put('/api/user/validatetoken', (req, res) => {
 })
 
 app.post('/api/login', (req, res) => {
-    
+
     if (User.validLogin(req.body.username, req.body.password)) {
         User.findByCredentials(req.body.username, req.body.password)
             .then((user) => {
@@ -200,11 +206,11 @@ app.post('/api/login', (req, res) => {
                             httpOnly: true
                         }).cookie("name", user.username, {
                             sameSite: 'strict',
-                            httpOnly: true
+                            httpOnly: false
                         }).cookie("email", user.email, {
                             sameSite: 'strict',
-                            httpOnly: true
-                        }).send({ message: "Login Successful!  Here's a cookie." })
+                            httpOnly: false
+                        }).send({ message: "Login Successful!  Here's a cookie.", username: user.username })
                     });
                 } else {
                     res.status(403).send({ message: "Wrong login information" });
@@ -221,7 +227,18 @@ app.post('/api/login', (req, res) => {
 
 app.put('/api/logout', (req, res) => {
     console.log('logout')
-    req.session.destroy();
+    User.findByName(req.cookies['name']).then(user => {
+        user.token = null;
+        console.log(req.cookies['name'] + " has logged out.");
+        user.save().then(() => {
+            res.clearCookie("token")
+                .clearCookie("name")
+                .clearCookie("email")
+                .send({ message: "Logout Successful!" })
+        });
+    })
+
+
 
 });
 

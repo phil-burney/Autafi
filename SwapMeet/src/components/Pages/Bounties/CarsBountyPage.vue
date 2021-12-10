@@ -116,7 +116,7 @@ export default class CarsBountyPage extends Vue {
         photos: [],
         description: undefined,
         bounty: undefined,
-        email: this.$store.state.user.email
+        email: this.$cookie.get("email")
       },
     };
   }
@@ -170,7 +170,6 @@ export default class CarsBountyPage extends Vue {
     if (!this.validateForm()) {
       return;
     }
-    console.log(this.packet)
     this.packet.bounty = parseInt(this.packet.bounty);
 
     await APIPostingHelper.makeCarBounty(this.packet).then((response) => {
