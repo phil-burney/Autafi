@@ -180,15 +180,17 @@ app.post('/api/user/signup', (req, res) => {
 })
 
 app.put('/api/user/validatetoken', (req, res) => {
-    User.findByToken(req.cookies['token']).then((data) => {
-        if (data != null) {
+    console.log(req.cookies)
+    let token = req.cookies['token']
+    if (token) {
+        User.findByToken(token).then((data) => {
             console.log(data.username + " pinged the server")
             res.status(200).send({ message: "User found!" });
-        }
-        else {
-            res.status(404).send({ message: "User not found!" });
-        }
-    })
+        })
+    } else {
+        res.status(404).send({ message: "User not found!" });
+    }
+
 })
 
 app.post('/api/login', (req, res) => {
@@ -227,16 +229,23 @@ app.post('/api/login', (req, res) => {
 
 app.put('/api/logout', (req, res) => {
     console.log('logout')
-    User.findByName(req.cookies['name']).then(user => {
-        user.token = null;
-        console.log(req.cookies['name'] + " has logged out.");
-        user.save().then(() => {
-            res.clearCookie("token")
-                .clearCookie("name")
-                .clearCookie("email")
-                .send({ message: "Logout Successful!" })
-        });
-    })
+    if (req.cookies['name']) {
+        User.findByName(req.cookies['name']).then(user => {
+            user.token = null;
+            console.log(req.cookies['name'] + " has logged out.");
+            user.save().then(() => {
+                res.clearCookie("token")
+                    .clearCookie("name")
+                    .clearCookie("email")
+                    .send({ message: "Logout Successful!" })
+            });
+        })
+    } else {
+        res.clearCookie("token")
+            .clearCookie("name")
+            .clearCookie("email")
+            .send({ message: "Logout Successful!" })
+    }
 
 
 
