@@ -25,9 +25,9 @@
             v-if="this.$store.state.user == null"
             class="d-flex flex-row p-2"
           >
-          <div class="p-1">
+          <div class="">
             <router-link to="/listingSelect">
-              <bounty-button label="View Listings" />
+              <bounty-button class= "mx-1" label="View Listings" />
             </router-link>
           </div>
             <router-link to="/login">
@@ -95,7 +95,7 @@ export default class App extends Vue {
       headers: { "Content-Type": "application/json" },
     };
 
-    fetch("http://localhost:3030/api/user/validatetoken", options).then(
+    fetch("api/user/validatetoken", options).then(
       (response) => {
         if (!response.ok) {
           this.logout()
