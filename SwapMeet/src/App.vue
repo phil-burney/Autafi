@@ -76,6 +76,8 @@ import { Component, Vue } from "vue-property-decorator";
 import BountyButton from "./components/UI/BountyButton.vue";
 import Dropdown from "./components/UI/Dropdown.vue";
 import store from "./Store";
+import APIUserHelper from "./APIHelpers/APIUserHelper"
+import config from "./config"
 
 @Component({
   name: "CarsSalePage",
@@ -88,40 +90,26 @@ import store from "./Store";
 export default class App extends Vue {
   beforeMount() {
     this.$store.commit("setUser", this.$cookie.get("name"));
-    const options = {
-      method: "PUT",
-      mode: "cors",
-      credentials: "include",
-      headers: { "Content-Type": "application/json" },
-    };
 
-    fetch("api/user/validatetoken", options).then(
+    APIUserHelper.fetchTokenConf().then(
       (response) => {
         if (!response.ok) {
           this.logout()
-          throw Error(response.statusText);
         }
-        return response.json();
       }
     );
   }
   logout() {
-    const options = {
-      method: "PUT",
-      mode: "cors",
-      credentials: "include",
-      headers: { "Content-Type": "application/json" },
-    };
-
-    fetch("http://localhost:3030/api/logout", options)
-      .then((response) => response.json())
-      .then((data) => {
+    
+      APIUserHelper.fetchUserLogout()
+      .then(() => {
         this.$store.commit("setUser", this.$cookie.get("name"));
       });
     if (this.$router.currentRoute.path != "/") {
       this.$router.push("/");
     }
   }
+
 }
 </script>
 

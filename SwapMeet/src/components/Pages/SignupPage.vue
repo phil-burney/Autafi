@@ -1,7 +1,7 @@
 <template>
   <div id="bg">
     <div class="p-5 d-flex justify-content-center">
-      <div id="signupbox" class="p-5">
+      <div id="signupbox" class="p-5 d-flex flex-column justify-content-center">
         <h1>Sign Up</h1>
 
         <div>
@@ -11,15 +11,13 @@
             v-model="sentEmail"
             type="text"
             placeholder="Email"
-            style="margin-top: 42px"
           />
-          <br />
+    
           <div class="errormsg">
             {{ error.email }}
           </div>
         </div>
 
-        <br />
 
         <div>
           <input
@@ -28,15 +26,14 @@
             v-model="sentUsername"
             type="text"
             placeholder="Username"
-            style="margin-top: 42px"
           />
-          <br />
+      
           <div class="errormsg">
             {{ error.username }}
           </div>
         </div>
 
-        <br />
+    
 
         <div>
           <input
@@ -45,22 +42,21 @@
             v-model="sentPassword"
             type="password"
             placeholder="Password"
-            style="margin-top: 42px"
           />
-          <br />
+         
           <div class="errormsg">
             {{ error.password }}
           </div>
         </div>
 
-        <br />
+      
         <bounty-button
           label="Sign Up!"
-          class="align-self-end mt-5 p-2"
+          class="align-self-center p-2"
           v-on:buttonClick="submitForm"
         >
         </bounty-button>
-        <div class="errormsg">
+        <div class="errormsg text-wrap">
           {{ error.signup }}
         </div>
       </div>
@@ -71,6 +67,7 @@
 //import authHeader from './authHeader';
 import { Component, Prop, Vue } from "vue-property-decorator";
 import BountyButton from "../UI/BountyButton.vue";
+import APIUserHelper from "../../APIHelpers/APIUserHelper";
 @Component({
   name: "SignupPage",
   components: {
@@ -96,18 +93,12 @@ export default class SignUpPage extends Vue {
       return;
     }
     console.log("register account");
-    const options = {
-      method: "POST",
-      mode: "cors",
-      headers: { "Content-Type": "application/json" },
-      //cache:"default",
-      body: JSON.stringify({
-        email: this.sentEmail,
-        username: this.sentUsername,
-        password: this.sentPassword,
-      }),
-    };
-    const response = fetch("http://localhost:3030/api/user/signup", options)
+
+    APIUserHelper.fetchUserSignup(
+      this.sentEmail,
+      this.sentUsername,
+      this.sentPassword
+    )
       .catch((err) => {
         this.error.signup = err.message;
       })
@@ -115,14 +106,10 @@ export default class SignUpPage extends Vue {
         if (response.ok) {
           this.$router.push("signup/success");
         } else {
-          return response.json();
+          return response.json()
         }
-      })
-      .then((data) => {
-        if(data.message != undefined){
-          this.error.signup = data.message;
-        }
-      });
+      }).then(data => this.error.signup = data.message)
+     
   }
   validateForm() {
     let validform = true;
@@ -151,19 +138,14 @@ export default class SignUpPage extends Vue {
 <style scoped>
 .box {
   text-align: center;
-  display: block;
+  
   padding: 10px;
 }
 
-.pop-out-enter-active,
-.pop-out-leave-active {
-  transition: all 0.5s;
+input {
+  width: 200px
 }
-.pop-out-enter,
-.pop-out-leave-active {
-  opacity: 0;
-  transform: translateY(24px);
-}
+
 #signupbox {
   background-color: rgba(109, 109, 109, 0.9);
 }
@@ -184,5 +166,7 @@ export default class SignUpPage extends Vue {
 }
 .errormsg {
   color: red;
+  width:200px;
+  height: 60px;
 }
 </style>

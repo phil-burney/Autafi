@@ -1,4 +1,6 @@
 {
+    "ENV":"development",
     "TOKEN":"token",
-    "NAME":"username"
+    "NAME":"username",
+    "BASE_URL":"http://localhost:3030"
 }

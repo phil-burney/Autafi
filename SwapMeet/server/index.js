@@ -27,6 +27,7 @@ app.use(cookieParser());
 
 app.use(function (req, res, next) {
     res.setHeader('mode', 'cors');
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:8080')
     res.setHeader('Access-Control-Allow-Credentials', 'true');
     res.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT,DELETE");
     res.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers,Access-Control-Allow-Origin,Access-Control-Allow-Credentials,Access-Control-Allow-Methods,Content-Type");

@@ -1,7 +1,7 @@
 <template>
   <div id="bg">
     <div class="p-5 d-flex justify-content-center">
-      <div id="signupbox" class="p-5">
+      <div id="signupbox" class="p-5 d-flex flex-column justify-content-center">
         <h1>Login</h1>
 
         <div>
@@ -11,7 +11,6 @@
             v-model="sentUsername"
             type="text"
             placeholder="Username"
-            style="margin-top: 42px"
           />
           <br />
           <div class="errormsg">
@@ -28,7 +27,6 @@
             v-model="sentPassword"
             type="password"
             placeholder="Password"
-            style="margin-top: 42px"
           />
           <br />
           <div class="errormsg">
@@ -38,7 +36,7 @@
         <br />
         <bounty-button
           label="Log In!"
-          class="align-self-end mt-5 p-2"
+          class="align-self-center  p-2"
           v-on:buttonClick="submitForm"
         >
         </bounty-button>
@@ -53,8 +51,7 @@
 //import authHeader from './authHeader';
 import { Component, Prop, Vue } from "vue-property-decorator";
 import BountyButton from "../UI/BountyButton.vue";
-import config from "../../config";
-import axios from "axios";
+import APIUserHelper from "../../APIHelpers/APIUserHelper"
 @Component({
   name: "SignupPage",
   components: {
@@ -77,24 +74,18 @@ export default class LoginPage extends Vue {
     if (this.validateForm() == false) {
       return;
     }
-    const options = {
-      method: "POST",
-      mode: "cors",
-      credentials: "include",
-      headers: { "Content-Type": "application/json" },
-      //cache:"default",
-      body: JSON.stringify({
-        username: this.sentUsername,
-        password: this.sentPassword,
-      }),
-    };
-
-    fetch("http://localhost:3030/api/login", options)
-      .then((response) => response.json())
-      .then((data) => {
+    
+      APIUserHelper.fetchUserLogin(this.sentUsername, this.sentPassword)
+      .then((response) => {
+        if(response.ok){
         this.$store.commit("setUser", this.$cookie.get("name"));
         this.$router.push("/");
-      });
+        } else {
+          return response.json()
+        }
+      }).then((data) => {
+        this.error.login = data.message
+      })
   }
 
   validateForm() {
@@ -151,5 +142,6 @@ export default class LoginPage extends Vue {
 }
 .errormsg {
   color: red;
+  height: 20px
 }
 </style>
