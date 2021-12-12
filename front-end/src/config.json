@@ -1,0 +1,6 @@
+{
+    "ENV":"$ENV",
+    "TOKEN":"token",
+    "NAME":"username",
+    "BASE_URL":"$BASE_URL"
+}
