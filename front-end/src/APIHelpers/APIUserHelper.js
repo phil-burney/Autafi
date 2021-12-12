@@ -1,4 +1,4 @@
-import config from "../config.json"
+
 
 export default class APIUserHelper {
   static async fetchTokenConf() {
@@ -8,8 +8,8 @@ export default class APIUserHelper {
       credentials: "include",
       headers: { "Content-Type": "application/json" },
     };
-    console.log(config.BASE_URL)
-    let data = await fetch(config.BASE_URL + "/api/user/validatetoken", options)
+    console.log(process.env)
+    let data = await fetch(process.env.VUE_APP_SERVER_URL + "/api/user/validatetoken", options)
     let returnData = await data.json();
     return returnData;
 
@@ -23,7 +23,7 @@ export default class APIUserHelper {
       headers: { "Content-Type": "application/json" },
     };
 
-    let data = await fetch(config.BASE_URL +"/api/logout", options)
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/logout", options)
     let returnData = await data.json();
     return returnData;
   }
@@ -41,7 +41,7 @@ export default class APIUserHelper {
       }),
     };
 
-    let data = await fetch(config.BASE_URL +"/api/login", options)
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/login", options)
     return data;
   }
 
@@ -57,7 +57,7 @@ export default class APIUserHelper {
         password: password,
       }),
     };
-    let data = await fetch(config.BASE_URL +"/api/user/signup", options)
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/user/signup", options)
     return data;
 
   }

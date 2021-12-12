@@ -1,4 +1,4 @@
-import config from "../config.json"
+
 export default class APIListingHelper {
 
     static async fetchPartBounties() {
@@ -13,7 +13,7 @@ export default class APIListingHelper {
             cache: "default",
         };
 
-        let data = await fetch(config.BASE_URL +"/api/partbounty", options);
+        let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/partbounty", options);
         let returnData = await data.json();
         return returnData;
 
@@ -31,7 +31,7 @@ export default class APIListingHelper {
             },
             cache: "default",
         };
-        let data = await fetch(config.BASE_URL +"/api/carbounty", options);
+        let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/carbounty", options);
         let returnData = await data.json();
         return returnData;
 
@@ -48,7 +48,7 @@ export default class APIListingHelper {
             },
             cache: "default",
         };
-        let data = await fetch(config.BASE_URL +"/api/partsale", options);
+        let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/partsale", options);
         let returnData = await data.json();
         return returnData;
 
@@ -67,7 +67,7 @@ export default class APIListingHelper {
             },
             cache: "default",
         };
-        let data = await fetch(config.BASE_URL +"/api/carsale", options);
+        let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/carsale", options);
         console.log(data)
         let returnData = await data.json();
 

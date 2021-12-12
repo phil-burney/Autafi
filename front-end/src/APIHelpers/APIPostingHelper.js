@@ -1,4 +1,4 @@
-import config from "../config.json"
+
 
 export default class APIPostingHelper {
   static async makeCarSale(content) {
@@ -12,7 +12,7 @@ export default class APIPostingHelper {
     },
       body: JSON.stringify(content)
     }
-    let data = await fetch(config.BASE_URL +"/api/carsale", options);
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/carsale", options);
     console.log(data)
     let returnData = await data.json();
 
@@ -30,7 +30,7 @@ export default class APIPostingHelper {
     },
       body: JSON.stringify(content)
     }
-    let data = await fetch(config.BASE_URL +"/api/carbounty", options);
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/carbounty", options);
 
     let returnData = await data.json();
     console.log(returnData)
@@ -48,7 +48,7 @@ export default class APIPostingHelper {
     },
       body: JSON.stringify(content)
     }
-    let data = await fetch(config.BASE_URL +"/api/partsale", options);
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/partsale", options);
     console.log(data)
     let returnData = await data.json();
 
@@ -66,7 +66,7 @@ export default class APIPostingHelper {
     },
       body: JSON.stringify(content)
     }
-    let data = await fetch(config.BASE_URL +"/api/partbounty", options);
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/partbounty", options);
     console.log(data)
     let returnData = await data.json();
 

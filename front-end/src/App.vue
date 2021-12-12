@@ -77,7 +77,6 @@ import BountyButton from "./components/UI/BountyButton.vue";
 import Dropdown from "./components/UI/Dropdown.vue";
 import store from "./Store";
 import APIUserHelper from "./APIHelpers/APIUserHelper"
-import config from "./config"
 
 @Component({
   name: "CarsSalePage",
