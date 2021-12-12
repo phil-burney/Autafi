@@ -16,7 +16,7 @@ FROM nginx:1.17
 
 # VueJS
 ENV JSFOLDER=/usr/share/nginx/html/js/*.js
-COPY app/start-nginx.sh /usr/bin/start-nginx.sh
+COPY ./start-nginx.sh /usr/bin/start-nginx.sh
 RUN chmod +x /usr/bin/start-nginx.sh
 
 WORKDIR /usr/share/nginx/html
