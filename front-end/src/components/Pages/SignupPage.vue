@@ -38,7 +38,7 @@
         <div>
           <input
             class="p-2"
-            id="n-password2"
+            id="n-password"
             v-model="sentPassword"
             type="password"
             placeholder="Password"
@@ -46,6 +46,20 @@
          
           <div class="errormsg">
             {{ error.password }}
+          </div>
+        </div>
+
+        <div>
+          <input
+            class="p-2"
+            id="n-password2"
+            v-model="sentPassword2"
+            type="password"
+            placeholder="Retype Password"
+          />
+         
+          <div class="errormsg">
+            {{ error.password2 }}
           </div>
         </div>
 
@@ -80,10 +94,12 @@ export default class SignUpPage extends Vue {
       sentEmail: "",
       sentUsername: "",
       sentPassword: "",
+      sentPassword2: "",
       error: {
         email: "",
         username: "",
         password: "",
+        password2: "",
         signup: "",
       },
     };
@@ -126,9 +142,21 @@ export default class SignUpPage extends Vue {
       validform = false;
     }
     if (this.sentPassword == "") {
-      let z = document.getElementById("n-password2");
+      let z = document.getElementById("n-password");
       z.classList.add("error");
       this.error.password = "Password required!";
+      validform = false;
+    }
+    if (this.sentPassword2 == "") {
+      let z = document.getElementById("n-password2");
+      z.classList.add("error");
+      this.error.password2 = "Retype password!";
+      validform = false;
+    }
+    if (this.sentPassword2 != this.sentPassword) {
+      let z = document.getElementById("n-password2");
+      z.classList.add("error");
+      this.error.password2 = "Passwords must be the same!";
       validform = false;
     }
     return validform;

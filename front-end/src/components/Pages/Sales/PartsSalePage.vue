@@ -75,8 +75,6 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 import Dropdown from "../../UI/Dropdown.vue";
 import ImageSelection from "../../UI/ImageSelection.vue";
-import carCatalog from "../../../assets/CarCatalog";
-import { findByYear, findByMake } from "../../../assets/CarCatalogQuery";
 import BountyButton from "../../UI/BountyButton.vue"
 import PartSelectCluster from "../../UI/PartsSelectCluster.vue"
 import APIPostingHelper from "../../../APIHelpers/APIPostingHelper"

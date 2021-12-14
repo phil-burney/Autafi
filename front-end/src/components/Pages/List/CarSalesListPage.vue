@@ -23,7 +23,6 @@
 <script>
 import { Component, Prop, Vue } from "vue-property-decorator";
 import Dropdown from "../../UI/Dropdown.vue";
-import carCatalog from "../../../assets/CarCatalog";
 import BountyButton from "../../UI/BountyButton.vue";
 import ListingPage from "./ListingPageHeader.vue";
 import APIListingHelper from "../../../APIHelpers/APIListingHelper";

@@ -1,5 +1,5 @@
 
-import CarCatalog from "./CarCatalog"
+import CarCatalog from "./CarCatalog.js"
 
 export {findByYear, findByMake}
 

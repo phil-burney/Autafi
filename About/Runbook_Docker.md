@@ -5,6 +5,7 @@
     * That the user has created an SSH key somewhere on their computer, and that the SSH key is NOT BEING PUSHED TO THE REMOTE REPOSITORY.
     * Secure copy (scp) is installed on the user's computer.
     * A MongoDB has already been set up
+    * User has Docker installed locally
 ## Task 1: Link the SSH key to the server.
 1. From the Digital Ocean web application, select the Droplet that has been created for the Swapmeet web applcation.
 2.  Select "Access" from the menu on the left side of the page.
@@ -30,8 +31,7 @@
 9. Type the command ```sudo n stable```
 10. Type the command ```PATH = "$PATH"```
 11. Type the command ```npm install mongoose```
-12. Type the command ```npm install typescript```
-13. All applicable packages are now installed.
+12. All applicable packages are now installed.
 
 ## Task #4: Configure nginx
 1. To configure nginx, type the command ```nano /etc/nginx/sites-available/default```.  A text editor pops up in the shell
@@ -87,11 +87,12 @@ location /api {
 ## Task #5: Upload the web application front end to the server
 1. Navigate to /SwapMeet folder in the local Github repository mentioned in the prerequisites via a command shell.
 2. Go to the Partsaphi folder
-3. Run the following command: ```docker build -t frontend front-end.```.  This builds the Docker image, with a name of frontend.
-4. Now save the Docker image.  To do this, type the command ``` 
+3. Run the following command: ```docker build -t frontend front-end.```.  This builds the Docker image, with a name of "frontend".
+4. Now save the Docker image.  To do this, type the command ```docker save -o frontend.zip frontend```.   
 
-4. Type in the following command: ```scp -i [key_file_path] -r [swapmeet_file_path]\SwapMeet\dist root@[droplet_ip_address]:/srv```
-5. The packaged web application is now in the folder /srv/dist
+4. Type in the following command: ```scp -i [key_file_path] [repo_file_path]/frontend.zip root@[droplet_ip_address]:/srv```
+5. The packaged web application is now on the server.
+6. After the package is on the server, run the following command: ```docker load -i frontend.zip```.  The front end is now ready to run.  
 
 ## Task #6: Upload the web application back end to the server
 1. Navigate to /SwapMeet folder in the local Github repository mentioned in the prerequisites via a command shell.
@@ -106,5 +107,11 @@ Prerequisite: Task 2 has been completed and the user is still logged into the se
 ## Task #8: Start the application
 Prerequisite: Task 2 has been completed and the user is still logged into the server
 1. Navigate to /srv/server
-2. Type the command ```pm2 start index.js```
-3. The application should now be running.
+2. Type the command ```pm2 start index.js```.  This starts the server.
+3. Type the command ```docker run -d -p 8080:80 --rm --name front frontend```.  This starts the front end
+4. The application should now be running.
+## Task #9: End the application
+1. Navigate to /srv/server
+2. Type the command ```pm2 stop index.js```.  This stops the server.
+3. Type the command ```docker stop front```.  This stops the front end
+4. The application should now be running.

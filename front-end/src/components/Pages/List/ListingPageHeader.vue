@@ -48,7 +48,7 @@
 <script>
 import { Component, Prop, Vue } from "vue-property-decorator";
 import Dropdown from "../../UI/Dropdown.vue";
-import carCatalog from "../../../assets/CarCatalog";
+import carCatalog from "../../../assets/CarCatalog.js";
 import BountyButton from "../../UI/BountyButton.vue";
 import CarSelectCluster from "../../UI/CarSelectCluster.vue";
 import PartsSelectCluster from "../../UI/PartsSelectCluster.vue";

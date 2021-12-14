@@ -1,0 +1,437 @@
+{
+        Year: 1970,
+        Make: {
+            Chevrolet: {
+                Models: []
+            },
+            Ford: {
+                Models: []
+            },
+            Oldsmobile: {
+                Models: []
+            },
+            Buick: {
+                Models: []
+            },
+            Pontiac: {
+                Models: []
+            },
+            Mercury: {
+                Models: []
+            },
+            Dodge: {
+                Models: []
+            },
+            Plymouth: {
+                Models: []
+            },
+            Cadillac: {
+                Models: []
+            },
+            AMC: {
+                Models: []
+            },
+            Chrysler: {
+                Models: []
+            },
+            Lincoln: {
+                Models: []
+            },
+            "Avanti II": {
+                Models: []
+            },
+            Excalibur: {
+                Models: []
+            }
+        }
+    },
+    {
+        Year: 1971,
+        Make: {
+            Chevrolet: {
+                Models: []
+            },
+            Ford: {
+                Models: []
+            },
+            Oldsmobile: {
+                Models: []
+            },
+            Buick: {
+                Models: []
+            },
+            Pontiac: {
+                Models: []
+            },
+            Plymouth: {
+                Models: []
+            },
+            Mercury: {
+                Models: []
+            },
+            Dodge: {
+                Models: []
+            },
+            Cadillac: {
+                Models: []
+            },
+            AMC: {
+                Models: []
+            },
+            Lincoln: {
+                Models: []
+            },
+            Chrysler: {
+                Models: []
+            },
+            Excalibur: {
+                Models: []
+            },
+            "Avanti II": {
+                Models: []
+            }
+        }
+    },
+    {
+        Year: 1972,
+        Make: {
+            Chevrolet: {
+                Models: []
+            },
+            Ford: {
+                Models: []
+            },
+            Buick: {
+                Models: []
+            },
+            Oldsmobile: {
+                Models: []
+            },
+            Pontiac: {
+                Models: []
+            },
+            Mercury: {
+                Models: []
+            },
+            Plymouth: {
+                Models: []
+            },
+            Dodge: {
+                Models: []
+            },
+            Cadillac: {
+                Models: []
+            },
+            Chrysler: {
+                Models: []
+            },
+            Lincoln: {
+                Models: []
+            },
+            AMC: {
+                Models: []
+            },
+            Excalibur: {
+                Models: []
+            },
+            Avanti: {
+                Models: []
+            }
+        }
+    },
+    {
+        Year: 1973,
+        Make: {
+            Chevrolet: {
+                Models: []
+            },
+            Oldsmobile: {
+                Models: []
+            },
+            Buick: {
+                Models: []
+            },
+            Ford: {
+                Models: []
+            },
+            Mercury: {
+                Models: []
+            },
+            Pontiac: {
+                Models: []
+            },
+            Dodge: {
+                Models: []
+            },
+            Cadillac: {
+                Models: []
+            },
+            Plymouth: {
+                Models: []
+            },
+            AMC: {
+                Models: []
+            },
+            Chrysler: {
+                Models: []
+            },
+            Lincoln: {
+                Models: []
+            },
+            Avanti: {
+                Models: []
+            }
+        }
+    },
+    {
+        Year: 1974,
+        Make: {
+            Chevrolet: {
+                Models: []
+            },
+            Ford: {
+                Models: []
+            },
+            Oldsmobile: {
+                Models: []
+            },
+            Buick: {
+                Models: []
+            },
+            Pontiac: {
+                Models: []
+            },
+            Mercury: {
+                Models: []
+            },
+            Dodge: {
+                Models: []
+            },
+            Chrysler: {
+                Models: []
+            },
+            Plymouth: {
+                Models: []
+            },
+            Cadillac: {
+                Models: []
+            },
+            AMC: {
+                Models: []
+            },
+            Lincoln: {
+                Models: []
+            },
+            Avanti: {
+                Models: []
+            }
+        }
+    },
+    {
+        Year: 1975,
+        Make: {
+            Chevrolet: {
+                Models: []
+            },
+            Oldsmobile: {
+                Models: []
+            },
+            Ford: {
+                Models: []
+            },
+            Buick: {
+                Models: []
+            },
+            Pontiac: {
+                Models: []
+            },
+            Dodge: {
+                Models: []
+            },
+            Chrysler: {
+                Models: []
+            },
+            Mercury: {
+                Models: []
+            },
+            Plymouth: {
+                Models: []
+            },
+            Cadillac: {
+                Models: []
+            },
+            Lincoln: {
+                Models: []
+            },
+            AMC: {
+                Models: []
+            }
+        }
+    },
+    {
+        Year: 1976,
+        Make: {
+            Chevrolet: {
+                Models: []
+            },
+            Ford: {
+                Models: []
+            },
+            Oldsmobile: {
+                Models: []
+            },
+            Buick: {
+                Models: []
+            },
+            Pontiac: {
+                Models: []
+            },
+            Dodge: {
+                Models: []
+            },
+            Mercury: {
+                Models: []
+            },
+            Chrysler: {
+                Models: []
+            },
+            Plymouth: {
+                Models: []
+            },
+            Cadillac: {
+                Models: []
+            },
+            Lincoln: {
+                Models: []
+            },
+            AMC: {
+                Models: []
+            }
+        }
+    },
+    {
+        Year: 1977,
+        Make: {
+            Chevrolet: {
+                Models: []
+            },
+            Ford: {
+                Models: []
+            },
+            Pontiac: {
+                Models: []
+            },
+            Oldsmobile: {
+                Models: []
+            },
+            Buick: {
+                Models: []
+            },
+            Dodge: {
+                Models: []
+            },
+            Plymouth: {
+                Models: []
+            },
+            Chrysler: {
+                Models: []
+            },
+            Mercury: {
+                Models: []
+            },
+            Cadillac: {
+                Models: []
+            },
+            Lincoln: {
+                Models: []
+            },
+            AMC: {
+                Models: []
+            },
+            Avanti: {
+                Models: []
+            }
+        }
+    },
+    {
+        Year: 1978,
+        Make: {
+            Ford: {
+                Models: []
+            },
+            Chevrolet: {
+                Models: []
+            },
+            Pontiac: {
+                Models: []
+            },
+            Oldsmobile: {
+                Models: []
+            },
+            Dodge: {
+                Models: []
+            },
+            Buick: {
+                Models: []
+            },
+            Plymouth: {
+                Models: []
+            },
+            Mercury: {
+                Models: []
+            },
+            Lincoln: {
+                Models: []
+            },
+            Chrysler: {
+                Models: []
+            },
+            Cadillac: {
+                Models: []
+            },
+            Avanti: {
+                Models: []
+            }
+        }
+    },
+    {
+        Year: 1979,
+        Make: {
+            Ford: {
+                Models: []
+            },
+            Chevrolet/Geo: {
+                Models: []
+            },
+            Pontiac: {
+                Models: []
+            },
+            Oldsmobile: {
+                Models: []
+            },
+            Buick: {
+                Models: []
+            },
+            Mercury: {
+                Models: []
+            },
+            Dodge: {
+                Models: []
+            },
+            Plymouth: {
+                Models: []
+            },
+            Cadillac: {
+                Models: []
+            },
+            Lincoln: {
+                Models: []
+            },
+            Chrysler: {
+                Models: []
+            },
+            Eagle: {
+                Models: []
+            }
+        }
+    }

@@ -89,11 +89,10 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 import Dropdown from "../../UI/Dropdown.vue";
 import ImageSelection from "../../UI/ImageSelection.vue";
-import carCatalog from "../../../assets/CarCatalog";
-import { findByYear, findByMake } from "../../../assets/CarCatalogQuery";
+
 import BountyButton from "../../UI/BountyButton.vue";
 import PartsSelectCluster from "../../UI/PartsSelectCluster.vue";
-import axios from "axios";
+
 import APIPostingHelper from "../../../APIHelpers/APIPostingHelper"
 
 @Component({

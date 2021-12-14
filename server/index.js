@@ -16,7 +16,6 @@ const CarBounty = require('./models/carbounty')
 const PartBounty = require('./models/partbounty')
 const CarSale = require('./models/carsales')
 const PartSale = require('./models/partsales');
-const { createSuper } = require('typescript');
 
 app.use(bodyParser.json({ limit: '50mb', extended: true }))
 app.use(express.urlencoded({ extended: true }));
