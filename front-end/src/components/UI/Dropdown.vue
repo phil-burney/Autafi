@@ -3,7 +3,7 @@
     <div >
       <select class="dropdown p-2" id="select" v-model="selectionData" @change="changeHandler">
         <option class="option" disabled value="">{{this.label}}</option>
-        <option class="option" :key="item"  v-for="item in contents" >{{ item }}</option>
+        <option class="option" :key="item"  v-for="item in content" >{{ item }}</option>
       </select>
     </div>
   </div>

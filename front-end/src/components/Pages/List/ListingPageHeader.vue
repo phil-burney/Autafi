@@ -48,7 +48,6 @@
 <script>
 import { Component, Prop, Vue } from "vue-property-decorator";
 import Dropdown from "../../UI/Dropdown.vue";
-import carCatalog from "../../../assets/CarCatalog/CarCatalog.js";
 import BountyButton from "../../UI/BountyButton.vue";
 import CarSelectCluster from "../../UI/CarSelectCluster.vue";
 import PartsSelectCluster from "../../UI/PartsSelectCluster.vue";
@@ -74,11 +73,8 @@ export default class PartsSaleListPage extends Vue {
 
   data() {
     return {
-      carCatalogAsset: carCatalog.carCatalog,
-      yearOptions: carCatalog.Years,
       makeOptions: [],
       modelOptions: [],
-      parts: carCatalog.Parts,
       packet: {
         year: undefined,
         make: undefined,

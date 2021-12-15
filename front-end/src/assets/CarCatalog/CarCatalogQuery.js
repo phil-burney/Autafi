@@ -1,19 +1,37 @@
 
-import CarCatalog from "./CarCatalog.js"
+import CarCatalog from "./CarCatalog.json"
 
-export { findByYear, findByMake }
+export { findByYear, findByMake, getYears, getParts }
 
 
 function findByYear(year) {
-    let index = year - CarCatalog.Years[0]
-    console.log(index)
-    if (index < 0 || index > CarCatalog.carCatalog.length) {
-        return null;
-    }
-    return (CarCatalog.carCatalog[index])
+    return (Object.keys(CarCatalog[year].Makes))
 }
 
 function findByMake(year, make) {
-    let obj = findByYear(year);
-    return obj.Make[make].Models
+    return CarCatalog[year].Makes[make]
+}
+
+function getYears() {
+    return Object.keys(CarCatalog)
+}
+function getParts() {
+    return [
+        "Engine",
+        "Transmission",
+        "Passenger Side Door",
+        "Driver's Side Door",
+        "Carbeurator",
+        "Intake Manifold",
+        "Hood",
+        "Trunk",
+        "Front Bumper",
+        "Rear Bumper",
+        "Door Handle",
+        "Front Seats",
+        "Rear Seats",
+        "Interior Door Panel",
+        "Dashboard",
+        "Instrument Cluster"
+    ]
 }

@@ -39,8 +39,7 @@
 import { Component, Prop, Vue } from "vue-property-decorator";
 import Dropdown from "../UI/Dropdown.vue";
 import ImageSelection from "../UI/ImageSelection.vue";
-import carCatalog from "../../assets/CarCatalog/CarCatalog.js";
-import { findByYear, findByMake } from "../../assets/CarCatalog/CarCatalogQuery";
+import { findByYear, findByMake, getYears, getParts } from "../../assets/CarCatalog/CarCatalogQuery";
 import BountyButton from "../UI/BountyButton.vue";
 
 @Component({
@@ -58,11 +57,10 @@ export default class CarSelectCluster extends Vue {
 
   data() {
     return {
-      carCatalogAsset: carCatalog.carCatalog,
-      yearOptions: carCatalog.Years,
+      yearOptions: getYears(),
       makeOptions: [],
       modelOptions: [],
-      parts: carCatalog.Parts,
+      parts: getParts(),
       packet: {
         year: undefined,
         make: undefined,
@@ -100,18 +98,11 @@ export default class CarSelectCluster extends Vue {
     this.setModel(model);
   }
   setMakeOptions(year) {
-    let makes = findByYear(year);
-    this.makeOptions.length = 0;
-    for (const [key] of Object.entries(makes.Make)) {
-      this.makeOptions.push(key);
-    }
+    this.makeOptions = findByYear(year);
   }
   setModelOptions(year, make) {
-    let models = findByMake(year, make);
-    this.modelOptions.length = 0;
-    for (let model of models) {
-      this.modelOptions.push(model);
-    }
+    this.modelOptions = findByMake(year, make);
+    
   }
   submitPacket() {
     console.log(this.packet);
