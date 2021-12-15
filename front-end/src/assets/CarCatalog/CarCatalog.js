@@ -4,7 +4,9 @@ export default {
             Year: 1950,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Deluxe",
+                        "Custom Deluxe",
+                        "Fairlane"]
                 },
                 Lincoln: {
                     Models: []
@@ -63,7 +65,10 @@ export default {
             Year: 1951,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Deluxe",
+                        "Custom Deluxe",
+                        "Fairlane 500",
+                        "Country Squire"]
                 },
                 Lincoln: {
                     Models: []
@@ -125,7 +130,12 @@ export default {
             Year: 1952,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Mainline",
+                        "Customline",
+                        "Fairlane 500",
+                        "Ranch Wagon",
+                        "Country Sedan",
+                        "Country Squire"]
                 },
                 Lincoln: {
                     Models: []
@@ -187,7 +197,12 @@ export default {
             Year: 1953,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Mainline",
+                        "Customline",
+                        "Fairlane 500",
+                        "Ranch Wagon",
+                        "Country Sedan",
+                        "Country Squire"]
                 },
                 Lincoln: {
                     Models: []
@@ -249,7 +264,12 @@ export default {
             Year: 1954,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Mainline",
+                        "Customline",
+                        "Galaxie",
+                        "Ranch Wagon",
+                        "Country Sedan",
+                        "Country Squire"]
                 },
                 Lincoln: {
                     Models: []
@@ -311,7 +331,13 @@ export default {
             Year: 1955,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Mainline",
+                        "Customline",
+                        "Galaxie",
+                        "Ranch Wagon",
+                        "Country Sedan",
+                        "Country Squire",
+                        "Thunderbird"]
                 },
                 Lincoln: {
                     Models: []
@@ -373,7 +399,14 @@ export default {
             Year: 1956,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Mainline",
+                        "Customline",
+                        "Galaxie 500",
+                        "Parklane",
+                        "Ranch Wagon",
+                        "Country Sedan",
+                        "Country Squire",
+                        "Thunderbird"]
                 },
                 Lincoln: {
                     Models: []
@@ -412,9 +445,6 @@ export default {
                     Models: []
                 },
                 Nash: {
-                    Models: []
-                },
-                Continental: {
                     Models: []
                 },
                 DeSoto: {
@@ -429,7 +459,14 @@ export default {
             Year: 1957,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Custom",
+                        "Fairlane",
+                        "Galaxie 500",
+                        "Del Rio",
+                        "Ranch Wagon",
+                        "Country Sedan",
+                        "Country Squire",
+                        "Thunderbird"]
                 },
                 Lincoln: {
                     Models: []
@@ -468,9 +505,6 @@ export default {
                     Models: []
                 },
                 Nash: {
-                    Models: []
-                },
-                Continental: {
                     Models: []
                 },
                 DeSoto: {
@@ -488,7 +522,14 @@ export default {
             Year: 1958,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Custom",
+                        "Fairlane",
+                        "Galaxie 500",
+                        "Del Rio",
+                        "Ranch Wagon",
+                        "Country Sedan",
+                        "Country Squire",
+                        "Thunderbird"]
                 },
                 Lincoln: {
                     Models: []
@@ -524,9 +565,6 @@ export default {
                     Models: []
                 },
                 Cadillac: {
-                    Models: []
-                },
-                Continental: {
                     Models: []
                 },
                 DeSoto: {
@@ -545,12 +583,14 @@ export default {
             Make: {
                 Ford: {
                     Models: [
-                        "Falcon",
+                        "Custom 300",
                         "Fairlane",
-                        "Fairlane 500",
+                        "Galaxie 500",
                         "Galaxie",
                         "Ranch Wagon",
-                        "Country Sedan, Country Squire, Thunderbird"
+                        "Country Sedan",
+                        "Country Squire",
+                        "Thunderbird"
                     ]
                 },
                 Lincoln: {
@@ -609,7 +649,14 @@ export default {
                 Chevrolet: {
                     Models: ["Corvair", "Biscayne", "Bel Air", "Impala", "Corvette"]
                 }, Ford: {
-                    Models: ["Falcon", "Fairlane", "Fairlane 500", "Galaxie", "Ranch Wagon", "Country Sedan, Country Squire, Thunderbird"]
+                    Models: ["Falcon",
+                    "Fairlane",
+                    "Fairlane 500",
+                    "Galaxie 500",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird"]
                 }, Plymouth: {
                     Models: []
                 }, Rambler: {
@@ -632,9 +679,6 @@ export default {
                     Models: []
                 }, DeSoto: {
                     Models: []
-                },
-                "Lincoln/ Continental": {
-                    Models: []
                 }, Imperial: {
                     Models: []
                 }, Metropolitan: {
@@ -649,7 +693,14 @@ export default {
         {
             Year: 1961, Make: {
                 Ford: {
-                    Models: ["Falcon", "Fairlane", "Fairlane 500", "Galaxie", "Ranch Wagon", "Country Sedan, Country Squire, Thunderbird"]
+                    Models: ["Falcon",
+                    "Fairlane",
+                    "Fairlane 500",
+                    "Galaxie 500",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird"]
                 }, Chevrolet: {
                     Models: ["Corvair", "Biscayne", "Bel Air", "Impala", "Corvette"]
                 }, Rambler: {
@@ -690,7 +741,16 @@ export default {
                 Chevrolet: {
                     Models: ["Corvair", "Nova", "Biscayne", "Bel Air", "Impala", "Corvette"]
                 }, Ford: {
-                    Models: ["Falcon", "Fairlane", "Galaxie Mainliner", "Galaxie", "Galaxie 500", "Galaxie 500 XL", "Ranch Wagon", "Country Sedan", "Country Squire", "Thunderbird"]
+                    Models: [ "Falcon",
+                    "Fairlane",
+                    "Galaxie Mainliner",
+                    "Galaxie",
+                    "Galaxie 500",
+                    "Galaxie 500 XL",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird"]
                 }, Pontiac: {
                     Models: []
                 }, Rambler: {
@@ -727,7 +787,16 @@ export default {
                 Chevrolet: {
                     Models: ["Corvair", "Nova", "Biscayne", "Bel Air", "Impala", "Corvette"]
                 }, Ford: {
-                    Models: ["Falcon", "Fairlane", "300", "Galaxie", "Galaxie 500", "Galaxie 500 XL", "Ranch Wagon", "Country Sedan", "Country Squire", "Thunderbird"]
+                    Models: ["Falcon",
+                    "Fairlane",
+                    "300",
+                    "Galaxie",
+                    "Galaxie 500",
+                    "Galaxie 500 XL",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird"]
                 }, Pontiac: {
                     Models: []
                 }, Plymouth: {
@@ -762,7 +831,17 @@ export default {
                 Chevrolet: {
                     Models: ["Corvair", "Nova", "Biscayne", "Bel Air", "Impala", "Caprice", "Corvette", "Chevelle"]
                 }, Ford: {
-                    Models: ["Falcon", "Fairlane", "Custom", "Custom 500", "Galaxie 500", "Galaxie 500 XL", "Ranch Wagon", "Country Sedan", "Country Squire", "Thunderbird"]
+                    Models: ["Falcon",
+                    "Fairlane",
+                    "Custom",
+                    "Custom 500",
+                    "Galaxie 500",
+                    "Galaxie 500 XL",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
                 }, Pontiac: {
                     Models: []
                 }, Plymouth: {
@@ -797,7 +876,18 @@ export default {
                 Chevrolet: {
                     Models: ["Corvair", "Nova", "Biscayne", "Bel Air", "Impala", "Caprice", "Corvette", "Chevelle"]
                 }, Ford: {
-                    Models: ["Falcon", "Fairlane", "Custom", "Custom 500", "Galaxie 500", "Galaxie 500 XL", "Galaxie 500 LTD", "Ranch Wagon", "Country Sedan", "Country Squire", "Thunderbird", "Mustang"]
+                    Models: ["Falcon",
+                    "Fairlane",
+                    "Custom",
+                    "Custom 500",
+                    "Galaxie 500",
+                    "Galaxie 500 XL",
+                    "Galaxie 500 LTD",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
                 }, Pontiac: {
                     Models: []
                 }, Plymouth: {
@@ -835,7 +925,18 @@ export default {
         {
             Year: 1966, Make: {
                 Ford: {
-                    Models: ["Falcon", "Fairlane", "Custom", "Custom 500", "Galaxie 500", "Galaxie 500 XL", "LTD", "Ranch Wagon", "Country Sedan", "Country Squire", "Thunderbird", "Mustang"]
+                    Models: ["Falcon",
+                    "Fairlane",
+                    "Custom",
+                    "Custom 500",
+                    "Galaxie 500",
+                    "Galaxie 500 XL",
+                    "LTD",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
                 }, Chevrolet: {
                     Models: ["Corvair", "Nova", "Biscayne", "Bel Air", "Impala", "Caprice", "Corvette", "Chevelle"]
                 }, Pontiac: {
@@ -851,9 +952,12 @@ export default {
                 }, Mercury: {
                     Models: []
                 },
-                "Rambler/AMC": {
+                AMC: {
                     Models: []
-                }, Chrysler: {
+                }, 
+                Rambler: {
+                    Models: []
+                },Chrysler: {
                     Models: []
                 }, Cadillac: {
                     Models: []
@@ -880,7 +984,18 @@ export default {
                 Chevrolet: {
                     Models: ["Corvair", "Nova", "Biscayne", "Bel Air", "Impala", "Caprice", "Corvette", "Chevelle", "Camaro"]
                 }, Ford: {
-                    Models: ["Falcon", "Fairlane", "Custom", "Custom 500", "Galaxie 500", "XL", "LTD", "Ranch Wagon", "Country Sedan", "Country Squire", "Thunderbird", "Mustang"]
+                    Models: ["Falcon",
+                    "Fairlane",
+                    "Custom",
+                    "Custom 500",
+                    "Galaxie 500",
+                    "XL",
+                    "LTD",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
                 }, Pontiac: {
                     Models: []
                 }, Plymouth: {
@@ -921,7 +1036,19 @@ export default {
                 Chevrolet: {
                     Models: ["Corvair", "Nova", "Biscayne", "Bel Air", "Impala", "Caprice", "Corvette", "Chevelle", "Camaro"]
                 }, Ford: {
-                    Models: ["Falcon", "Fairlane", "Torino", "Custom", "Custom 500", "Galaxie 500", "XL", "LTD", "Ranch Wagon", "Country Sedan", "Country Squire", "Thunderbird", "Mustang"]
+                    Models: ["Falcon",
+                    "Fairlane",
+                    "Torino",
+                    "Custom",
+                    "Custom 500",
+                    "Galaxie 500",
+                    "XL",
+                    "LTD",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
                 }, Pontiac: {
                     Models: []
                 }, Plymouth: {
@@ -962,7 +1089,18 @@ export default {
                 Chevrolet: {
                     Models: ["Corvair", "Nova", "Biscayne", "Bel Air", "Impala", "Caprice", "Corvette", "Chevelle", "Camaro"]
                 }, Ford: {
-                    Models: ["Falcon", "Fairlane", "Torino", "Custom", "Custom 500", "Galaxie 500", "XL", "LTD", "Ranch Wagon", "Country Sedan", "Country Squire", "Thunderbird", "Mustang"]
+                    Models: ["Falcon",
+                    "Fairlane",
+                    "Torino",
+                    "Custom",
+                    "Custom 500",
+                    "XL",
+                    "LTD",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
                 }, Pontiac: {
                     Models: []
                 }, Plymouth: {
@@ -998,1000 +1136,1188 @@ export default {
                 }
             }
         },
-            {
-                Year: 1970,
-                Make: {
-                    Ford: {
-                        Models: []
-                    },
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Imperial: {
-                        Models: []
-                    },
-                    Checker: {
-                        Models: []
-                    },
-                    "Avanti II": {
-                        Models: []
-                    },
-                    Excalibur: {
-                        Models: []
-                    }
+        {
+            Year: 1970,
+            Make: {
+                Ford: {
+                    Models: ["Falcon",
+                    "Maverick",
+                    "Falcon 70½",
+                    "Fairlane",
+                    "Torino",
+                    "Custom",
+                    "Custom 500",
+                    "XL",
+                    "LTD",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Imperial: {
+                    Models: []
+                },
+                Checker: {
+                    Models: []
+                },
+                "Avanti II": {
+                    Models: []
+                },
+                Excalibur: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1971,
-                Make: {
-                    Ford: {
-                        Models: []
-                    },
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Imperial: {
-                        Models: []
-                    },
-                    Checker: {
-                        Models: []
-                    },
-                    "Avanti II": {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1971,
+            Make: {
+                Ford: {
+                    Models: ["Pinto",
+                    "Maverick",
+                    "Torino",
+                    "Custom",
+                    "Custom 500",
+                    "LTD",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Imperial: {
+                    Models: []
+                },
+                Checker: {
+                    Models: []
+                },
+                "Avanti II": {
+                    Models: []
                 }
-            },
-            {
-                Year: 1972,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Imperial: {
-                        Models: []
-                    },
-                    Checker: {
-                        Models: []
-                    },
-                    "Avanti II": {
-                        Models: []
-                    },
-                    Excalibur: {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1972,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Pinto",
+                    "Maverick",
+                    "Torino",
+                    "Custom",
+                    "Custom 500",
+                    "LTD",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Imperial: {
+                    Models: []
+                },
+                Checker: {
+                    Models: []
+                },
+                "Avanti II": {
+                    Models: []
+                },
+                Excalibur: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1973,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Imperial: {
-                        Models: []
-                    },
-                    Checker: {
-                        Models: []
-                    },
-                    Excalibur: {
-                        Models: []
-                    },
-                    "Avanti II": {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1973,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Pinto",
+                    "Maverick",
+                    "Torino",
+                    "Custom (cdn)",
+                    "Custom 500",
+                    "LTD",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Imperial: {
+                    Models: []
+                },
+                Checker: {
+                    Models: []
+                },
+                Excalibur: {
+                    Models: []
+                },
+                "Avanti II": {
+                    Models: []
                 }
-            },
-            {
-                Year: 1974,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Imperial: {
-                        Models: []
-                    },
-                    Checker: {
-                        Models: []
-                    },
-                    "Avanti II": {
-                        Models: []
-                    },
-                    Excalibur: {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1974,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Pinto",
+                    "Maverick",
+                    "Torino",
+                    "Custom (cdn)",
+                    "Custom 500",
+                    "LTD",
+                    "Ranch Wagon",
+                    "Country Sedan",
+                    "Country Squire",
+                    "Elite",
+                    "Thunderbird",
+                    "Mustang"]
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Imperial: {
+                    Models: []
+                },
+                Checker: {
+                    Models: []
+                },
+                "Avanti II": {
+                    Models: []
+                },
+                Excalibur: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1975,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Imperial: {
-                        Models: []
-                    },
-                    Checker: {
-                        Models: []
-                    },
-                    "Avanti II": {
-                        Models: []
-                    },
-                    Excalibur: {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1975,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Pinto",
+                    "Maverick",
+                    "Granada",
+                    "Torino",
+                    "Custom 500",
+                    "LTD",
+                    "Ranch Wagon",
+                    "Country Squire",
+                    "Elite",
+                    "Thunderbird",
+                    "Mustang"]
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Imperial: {
+                    Models: []
+                },
+                Checker: {
+                    Models: []
+                },
+                "Avanti II": {
+                    Models: []
+                },
+                Excalibur: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1976,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Excalibur: {
-                        Models: []
-                    },
-                    "Avanti II": {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1976,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Pinto",
+                    "Maverick",
+                    "Granada",
+                    "Torino",
+                    "Custom 500",
+                    "LTD",
+                    "Ranch Wagon",
+                    "Country Squire",
+                    "Elite",
+                    "Thunderbird",
+                    "Mustang"]
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Excalibur: {
+                    Models: []
+                },
+                "Avanti II": {
+                    Models: []
                 }
-            },
-            {
-                Year: 1977,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Excalibur: {
-                        Models: []
-                    },
-                    "Avanti II": {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1977,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Pinto",
+                    "Maverick",
+                    "Granada",
+                    "LTD II",
+                    "Custom 500",
+                    "LTD",
+                    "Ranch Wagon",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Excalibur: {
+                    Models: []
+                },
+                "Avanti II": {
+                    Models: []
                 }
-            },
-            {
-                Year: 1978,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Excalibur: {
-                        Models: []
-                    },
-                    "Avanti II": {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1978,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Fiesta",
+                    "Pinto",
+                    "Fairmont",
+                    "Granada",
+                    "LTD II",
+                    "Custom 500",
+                    "LTD",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Excalibur: {
+                    Models: []
+                },
+                "Avanti II": {
+                    Models: []
                 }
-            },
-            {
-                Year: 1979,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Excalibur: {
-                        Models: []
-                    },
-                    "Avanti II": {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1979,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Fiesta",
+                    "Pinto",
+                    "Fairmont",
+                    "Granada",
+                    "LTD II",
+                    "LTD",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Excalibur: {
+                    Models: []
+                },
+                "Avanti II": {
+                    Models: []
                 }
-            },
-         
-            {
-                Year: 1980,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    "Avanti II": {
-                        Models: []
-                    },
-                    Excalibur: {
-                        Models: []
-                    }
+            }
+        },
+
+        {
+            Year: 1980,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Fiesta",
+                    "Pinto",
+                    "Fairmont",
+                    "Granada",
+                    "LTD",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Sport compact",
+                    "Mustang"]
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                "Avanti II": {
+                    Models: []
+                },
+                Excalibur: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1981,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Excalibur: {
-                        Models: []
-                    },
-                    "Avanti II": {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1981,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Escort",
+                    "Fairmont",
+                    "Granada",
+                    "LTD",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Excalibur: {
+                    Models: []
+                },
+                "Avanti II": {
+                    Models: []
                 }
-            },
-            {
-                Year: 1982,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Excalibur: {
-                        Models: []
-                    },
-                    Avanti: {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1982,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Escort",
+                    "Fairmont",
+                    "Granada",
+                    "LTD",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Mustang"]
+                },
+                Buick: {
+                    Models: []
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Excalibur: {
+                    Models: []
+                },
+                Avanti: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1983,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Avanti: {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1983,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Escort",
+                    "Fairmont",
+                    "LTD",
+                    "LTD Crown Victoria",
+                    "Country Squire",
+                    "Thunderbird",
+                    "EXP",
+                    "Mustang"]
+                },
+                Mercury: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Avanti: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1984,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Avanti: {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1984,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Escort",
+                    "Tempo",
+                    "LTD",
+                    "LTD Crown Victoria",
+                    "Country Squire",
+                    "Thunderbird",
+                    "EXP",
+                    "Mustang"]
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Avanti: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1985,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1985,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Escort",
+                    "Tempo",
+                    "LTD",
+                    "LTD Crown Victoria",
+                    "Country Squire",
+                    "Thunderbird",
+                    "EXP",
+                    "Mustang"]
+                },
+                Buick: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1986,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1986,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Escort",
+                    "Tempo",
+                    "LTD",
+                    "Taurus",
+                    "LTD Crown Victoria",
+                    "Country Squire",
+                    "Thunderbird",
+                    "EXP",
+                    "Mustang"]
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1987,
-                Make: {
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Ford: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    AMC: {
-                        Models: []
-                    },
-                    Avanti: {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1987,
+            Make: {
+                Chevrolet: {
+                    Models: []
+                },
+                Ford: {
+                    Models: ["Escort",
+                    "Tempo",
+                    "Taurus",
+                    "LTD Crown Victoria",
+                    "Country Squire",
+                    "Thunderbird",
+                    "EXP",
+                    "Mustang"]
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                AMC: {
+                    Models: []
+                },
+                Avanti: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1988,
-                Make: {
-                    Ford: {
-                        Models: []
-                    },
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Avanti: {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1988,
+            Make: {
+                Ford: {
+                    Models: ["Festiva",
+                    "Escort",
+                    "Tempo",
+                    "Taurus",
+                    "LTD Crown Victoria",
+                    "Country Squire",
+                    "Thunderbird",
+                    "EXP",
+                    "Mustang"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Avanti: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1989,
-                Make: {
-                    Ford: {
-                        Models: []
-                    },
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Geo: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Eagle: {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1989,
+            Make: {
+                Ford: {
+                    Models: ["Festiva",
+                    "Escort",
+                    "Tempo",
+                    "Taurus",
+                    "LTD Crown Victoria",
+                    "Country Squire",
+                    "Thunderbird",
+                    "EXP",
+                    "Mustang"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Geo: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Eagle: {
+                    Models: []
                 }
-            },
-            {
-                Year: 1990,
-                Make: {
-                    Ford: {
-                        Models: []
-                    },
-                    Chevrolet: {
-                        Models: []
-                    },
-                    Geo: {
-                        Models: []
-                    },
-                    Pontiac: {
-                        Models: []
-                    },
-                    Oldsmobile: {
-                        Models: []
-                    },
-                    Buick: {
-                        Models: []
-                    },
-                    Mercury: {
-                        Models: []
-                    },
-                    Dodge: {
-                        Models: []
-                    },
-                    Plymouth: {
-                        Models: []
-                    },
-                    Cadillac: {
-                        Models: []
-                    },
-                    Lincoln: {
-                        Models: []
-                    },
-                    Chrysler: {
-                        Models: []
-                    },
-                    Eagle: {
-                        Models: []
-                    }
+            }
+        },
+        {
+            Year: 1990,
+            Make: {
+                Ford: {
+                    Models: ["Festiva",
+                    "Escort",
+                    "Tempo",
+                    "Taurus",
+                    "LTD Crown Victoria",
+                    "Country Squire",
+                    "Thunderbird",
+                    "Probe",
+                    "Mustang"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Geo: {
+                    Models: []
+                },
+                Pontiac: {
+                    Models: []
+                },
+                Oldsmobile: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Mercury: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Plymouth: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
+                    Models: []
+                },
+                Eagle: {
+                    Models: []
                 }
-            },
+            }
+        },
         {
             Year: 1991,
             Make: {
                 Make: {
                     Ford: {
-                        Models: []
+                        Models: ["Festiva",
+                        "Escort",
+                        "Tempo",
+                        "Taurus",
+                        "LTD Crown Victoria",
+                        "Country Squire",
+                        "Thunderbird",
+                        "Probe",
+                        "Mustang"]
                     },
                     Chevrolet: {
                         Models: []
@@ -2036,7 +2362,14 @@ export default {
             Year: 1992,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Festiva",
+                    "Escort",
+                    "Tempo",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Thunderbird",
+                    "Probe",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2080,7 +2413,14 @@ export default {
             Year: 1993,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Festiva",
+                    "Escort",
+                    "Tempo",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Thunderbird",
+                    "Probe",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2124,7 +2464,14 @@ export default {
             Year: 1994,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Aspire",
+                    "Escort",
+                    "Tempo",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Thunderbird",
+                    "Probe",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2168,7 +2515,14 @@ export default {
             Year: 1995,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Aspire",
+                    "Escort",
+                    "Contour",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Thunderbird",
+                    "Probe",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2212,7 +2566,14 @@ export default {
             Year: 1996,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Aspire",
+                    "Escort",
+                    "Contour",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Thunderbird",
+                    "Probe",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2256,7 +2617,14 @@ export default {
             Year: 1997,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Aspire",
+                    "Escort",
+                    "Contour",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Thunderbird",
+                    "Probe",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2300,7 +2668,12 @@ export default {
             Year: 1998,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Escort",
+                    "Contour",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Probe",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2341,7 +2714,12 @@ export default {
             Year: 1999,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Escort",
+                    "Contour",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Escort ZX2",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2373,14 +2751,20 @@ export default {
                 Chrysler: {
                     Models: []
                 },
-                
+
             }
         },
         {
             Year: 2000,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Escort",
+                    "Focus",
+                    "Contour",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Escort ZX2",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2418,7 +2802,12 @@ export default {
             Year: 2001,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Escort",
+                    "Focus",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Escort ZX2",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2456,7 +2845,13 @@ export default {
             Year: 2002,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Escort",
+                    "Focus",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Thunderbird",
+                    "ZX2",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2476,7 +2871,7 @@ export default {
                 Dodge: {
                     Models: []
                 },
-                
+
                 Cadillac: {
                     Models: []
                 },
@@ -2492,7 +2887,12 @@ export default {
             Year: 2003,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Focus",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Thunderbird",
+                    "ZX2",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2512,7 +2912,7 @@ export default {
                 Dodge: {
                     Models: []
                 },
-                
+
                 Cadillac: {
                     Models: []
                 },
@@ -2528,7 +2928,12 @@ export default {
             Year: 2004,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Focus",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Thunderbird",
+                    "ZX2",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2548,7 +2953,7 @@ export default {
                 Dodge: {
                     Models: []
                 },
-                
+
                 Cadillac: {
                     Models: []
                 },
@@ -2564,7 +2969,13 @@ export default {
             Year: 2005,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Focus",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Five Hundred",
+                    "Thunderbird",
+                    "Mustang",
+                    "GT"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2581,7 +2992,7 @@ export default {
                 Dodge: {
                     Models: []
                 },
-                
+
                 Cadillac: {
                     Models: []
                 },
@@ -2597,7 +3008,13 @@ export default {
             Year: 2006,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Focus",
+                    "Fusion",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Five Hundred",
+                    "Mustang",
+                    "GT"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2614,7 +3031,7 @@ export default {
                 Dodge: {
                     Models: []
                 },
-                
+
                 Cadillac: {
                     Models: []
                 },
@@ -2630,7 +3047,12 @@ export default {
             Year: 2007,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Focus",
+                    "Fusion",
+                    "Taurus",
+                    "Crown Victoria",
+                    "Five Hundred",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2647,7 +3069,7 @@ export default {
                 Dodge: {
                     Models: []
                 },
-                
+
                 Cadillac: {
                     Models: []
                 },
@@ -2663,7 +3085,11 @@ export default {
             Year: 2008,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Focus",
+                    "Fusion",
+                    "Crown Victoria",
+                    "Five Hundred",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2680,7 +3106,7 @@ export default {
                 Dodge: {
                     Models: []
                 },
-                
+
                 Cadillac: {
                     Models: []
                 },
@@ -2696,7 +3122,11 @@ export default {
             Year: 2009,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Focus",
+                    "Fusion",
+                    "Crown Victoria",
+                    "Five Hundred",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2713,7 +3143,7 @@ export default {
                 Dodge: {
                     Models: []
                 },
-                
+
                 Cadillac: {
                     Models: []
                 },
@@ -2729,7 +3159,11 @@ export default {
             Year: 2010,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Focus",
+                    "Fusion",
+                    "Crown Victoria",
+                    "Taurus",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2746,7 +3180,7 @@ export default {
                 Dodge: {
                     Models: []
                 },
-                
+
                 Cadillac: {
                     Models: []
                 },
@@ -2762,7 +3196,12 @@ export default {
             Year: 2011,
             Make: {
                 Ford: {
-                    Models: []
+                    Models: ["Fiesta",
+                    "Focus",
+                    "Fusion",
+                    "Crown Victoria",
+                    "Taurus",
+                    "Mustang"]
                 },
                 Chevrolet: {
                     Models: []
@@ -2772,7 +3211,7 @@ export default {
                 },
                 Dodge: {
                     Models: []
-                },    
+                },
                 Cadillac: {
                     Models: []
                 },
@@ -2788,6 +3227,28 @@ export default {
             Year: 2012,
             Make: {
                 Ford: {
+                    Models: ["Fiesta",
+                    "Focus",
+                    "Fusion",
+                    "Taurus",
+                    "Mustang"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
                     Models: []
                 },
             }
@@ -2796,6 +3257,29 @@ export default {
             Year: 2013,
             Make: {
                 Ford: {
+                    Models: ["Fiesta",
+                    "Focus",
+                    "Fusion",
+                    "Taurus",
+                    "Focus ST",
+                    "Mustang"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
                     Models: []
                 },
             }
@@ -2804,6 +3288,29 @@ export default {
             Year: 2014,
             Make: {
                 Ford: {
+                    Models: ["Fiesta",
+                    "Focus",
+                    "Fusion",
+                    "Taurus",
+                    "Focus ST",
+                    "Mustang"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
                     Models: []
                 },
             }
@@ -2812,6 +3319,30 @@ export default {
             Year: 2015,
             Make: {
                 Ford: {
+                    Models: ["Fiesta",
+                    "Focus",
+                    "Fusion",
+                    "Taurus",
+                    "Fiesta ST",
+                    "Focus ST",
+                    "Mustang"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
                     Models: []
                 },
             }
@@ -2820,6 +3351,31 @@ export default {
             Year: 2016,
             Make: {
                 Ford: {
+                    Models: ["Fiesta",
+                    "Focus",
+                    "Fusion",
+                    "Taurus",
+                    "Fiesta ST",
+                    "Focus ST",
+                    "Focus RS",
+                    "Mustang"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
                     Models: []
                 },
             }
@@ -2828,6 +3384,32 @@ export default {
             Year: 2017,
             Make: {
                 Ford: {
+                    Models: ["Fiesta",
+                    "Focus",
+                    "Fusion",
+                    "Taurus",
+                    "Fiesta ST",
+                    "Focus ST",
+                    "Focus RS",
+                    "Mustang",
+                    "GT"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
                     Models: []
                 },
             }
@@ -2836,6 +3418,32 @@ export default {
             Year: 2018,
             Make: {
                 Ford: {
+                    Models: ["Fiesta",
+                    "Focus",
+                    "Fusion",
+                    "Taurus",
+                    "Fiesta ST",
+                    "Focus ST",
+                    "Focus RS",
+                    "Mustang",
+                    "GT"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
                     Models: []
                 },
             }
@@ -2844,6 +3452,29 @@ export default {
             Year: 2019,
             Make: {
                 Ford: {
+                    Models: ["Fiesta",
+                    "Fusion",
+                    "Taurus",
+                    "Fiesta ST",
+                    "Mustang",
+                    "GT"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
                     Models: []
                 },
             }
@@ -2852,6 +3483,27 @@ export default {
             Year: 2020,
             Make: {
                 Ford: {
+                    Models: ["Fusion",
+                    "Fiesta ST",
+                    "Mustang",
+                    "GT"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
                     Models: []
                 },
             }
@@ -2860,6 +3512,25 @@ export default {
             Year: 2021,
             Make: {
                 Ford: {
+                    Models: ["Mustang",
+                    "GT"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
                     Models: []
                 },
             }
@@ -2868,6 +3539,25 @@ export default {
             Year: 2022,
             Make: {
                 Ford: {
+                    Models: ["Mustang",
+                    "GT"]
+                },
+                Chevrolet: {
+                    Models: []
+                },
+                Buick: {
+                    Models: []
+                },
+                Dodge: {
+                    Models: []
+                },
+                Cadillac: {
+                    Models: []
+                },
+                Lincoln: {
+                    Models: []
+                },
+                Chrysler: {
                     Models: []
                 },
             }

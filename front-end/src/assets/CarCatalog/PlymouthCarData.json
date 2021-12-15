@@ -1,0 +1,423 @@
+{
+  "1946": [
+      "Deluxe",
+      "Cambridge",
+      "Special Deluxe"
+  ],
+  "1947": [
+      "Deluxe",
+      "Cambridge",
+      "Special Deluxe"
+  ],
+  "1948": [
+      "Deluxe",
+      "Cambridge",
+      "Special Deluxe"
+  ],
+  "1949": [
+      "Deluxe",
+      "Savoy",
+      "Special Deluxe"
+  ],
+  "1950": [
+      "Deluxe",
+      "Savoy",
+      "Special Deluxe"
+  ],
+  "1951": [
+      "Concord",
+      "Savoy",
+      "Cranbrook"
+  ],
+  "1952": [
+      "Concord",
+      "Savoy",
+      "Cranbrook"
+  ],
+  "1953": [
+      "Savoy",
+      "Cranbrook"
+  ],
+  "1954": [
+      "Plaza",
+      "Savoy",
+      "Belvedere"
+  ],
+  "1955": [
+      "Plaza",
+      "Savoy",
+      "Belvedere"
+  ],
+  "1956": [
+      "Plaza",
+      "Savoy",
+      "Belvedere"
+  ],
+  "1957": [
+      "Plaza",
+      "Savoy",
+      "Belvedere"
+  ],
+  "1958": [
+      "Plaza",
+      "Savoy",
+      "Belvedere"
+  ],
+  "1959": [
+      "Savoy",
+      "Belvedere",
+      "Fury"
+  ],
+  "1960": [
+      "Valiant",
+      "Belvedere",
+      "Fury"
+  ],
+  "1961": [
+      "Valiant",
+      "Belvedere",
+      "Fury"
+  ],
+  "1962": [
+      "Valiant",
+      "Belvedere",
+      "Fury"
+  ],
+  "1963": [
+      "Valiant",
+      "Belvedere",
+      "Fury"
+  ],
+  "1964": [
+      "Valiant",
+      "Belvedere",
+      "Fury",
+      "Barracuda"
+  ],
+  "1965": [
+      "Valiant",
+      "Belvedere",
+      "Satellite",
+      "Fury",
+      "Barracuda"
+  ],
+  "1966": [
+      "Valiant",
+      "Belvedere",
+      "Satellite",
+      "Fury",
+      "Barracuda"
+  ],
+  "1967": [
+      "Valiant",
+      "Belvedere",
+      "Satellite",
+      "Fury",
+      "Barracuda",
+      "GTX"
+  ],
+  "1968": [
+      "Valiant",
+      "Belvedere",
+      "Satellite",
+      "Fury",
+      "Barracuda",
+      "Road Runner",
+      "GTX"
+  ],
+  "1969": [
+      "Valiant",
+      "Belvedere",
+      "Satellite",
+      "Fury",
+      "Barracuda",
+      "Road Runner",
+      "GTX"
+  ],
+  "1970": [
+    "Valiant",
+    "Satellite",
+    "Fury",
+    "Duster",
+    "Road Runner",
+    "Barracuda",
+    "GTX"
+],
+"1971": [
+    "Cricket",
+    "Valiant",
+    "Satellite",
+    "Fury",
+    "Duster",
+    "Road Runner",
+    "Barracuda",
+    "GTX"
+],
+"1972": [
+    "Cricket",
+    "Valiant",
+    "Satellite",
+    "Fury",
+    "Duster",
+    "Road Runner",
+    "Barracuda"
+],
+"1973": [
+    "Cricket",
+    "Valiant",
+    "Satellite",
+    "Fury",
+    "Duster",
+    "Road Runner",
+    "Barracuda"
+],
+"1974": [
+    "Cricket/Colt",
+    "Valiant",
+    "Satellite",
+    "Fury",
+    "Duster",
+    "Road Runner",
+    "Barracuda",
+    "Voyager"
+],
+"1975": [
+    "Cricket/Colt",
+    "Valiant",
+    "Fury",
+    "Gran Fury",
+    "Duster",
+    "Road Runner",
+    "Trail Duster",
+    "Voyager"
+],
+"1976": [
+    "Arrow",
+    "Cricket/Colt",
+    "Volaré",
+    "Fury",
+    "Gran Fury",
+    "Duster",
+    "Volaré Road Runner",
+    "Trail Duster",
+    "Voyager"
+],
+"1977": [
+    "Arrow",
+    "Colt",
+    "Volaré",
+    "Fury",
+    "Gran Fury",
+    "Volaré Road Runner",
+    "Trail Duster",
+    "Voyager"
+],
+"1978": [
+    "Horizon",
+    "Arrow",
+    "Colt",
+    "Volaré",
+    "Fury",
+    "Sapporo",
+    "Volaré Road Runner",
+    "Trail Duster",
+    "Voyager"
+],
+"1979": [
+    "Horizon",
+    "TC3",
+    "Champ/Colt",
+    "Arrow",
+    "Colt",
+    "Volaré",
+    "Sapporo",
+    "Volaré Road Runner",
+    "Trail Duster",
+    "Arrow Truck",
+    "Voyager"
+],
+"1980": [
+    "Horizon",
+    "TC3",
+    "Champ/Colt",
+    "Arrow",
+    "Volaré",
+    "Gran Fury",
+    "Sapporo",
+    "Volaré Road Runner",
+    "Trail Duster",
+    "Arrow Truck",
+    "Voyager"
+],
+"1981": [
+    "Horizon",
+    "TC3",
+    "Champ/Colt",
+    "Reliant",
+    "Gran Fury",
+    "Sapporo",
+    "Trail Duster",
+    "Arrow Truck",
+    "Voyager"
+],
+"1982": [
+    "Horizon",
+    "TC3",
+    "Champ/Colt",
+    "Reliant",
+    "Gran Fury",
+    "Sapporo",
+    "Arrow Truck",
+    "Voyager"
+],
+"1983": [
+    "Horizon",
+    "Turismo",
+    "Champ/Colt",
+    "Reliant",
+    "Caravelle",
+    "Gran Fury",
+    "Sapporo",
+    "Scamp",
+    "Voyager"
+],
+"1984": [
+    "Horizon",
+    "Turismo",
+    "Colt",
+    "Reliant",
+    "Caravelle",
+    "Gran Fury",
+    "Conquest",
+    "Colt Vista",
+    "Voyager/Grand Voyager"
+],
+"1985": [
+    "Horizon",
+    "Turismo",
+    "Colt",
+    "Reliant",
+    "Caravelle",
+    "Gran Fury",
+    "Conquest",
+    "Colt Vista",
+    "Voyager/Grand Voyager"
+],
+"1986": [
+    "Horizon",
+    "Turismo",
+    "Colt",
+    "Reliant",
+    "Caravelle",
+    "Gran Fury",
+    "Conquest",
+    "Colt Vista",
+    "Voyager/Grand Voyager"
+],
+"1987": [
+    "Horizon",
+    "Turismo",
+    "Colt",
+    "Sundance",
+    "Reliant",
+    "Caravelle",
+    "Gran Fury",
+    "Colt Vista",
+    "Voyager/Grand Voyager"
+],
+"1988": [
+    "Horizon",
+    "Colt",
+    "Sundance",
+    "Reliant",
+    "Caravelle",
+    "Gran Fury",
+    "Colt Vista",
+    "Voyager/Grand Voyager"
+],
+"1989": [
+    "Horizon",
+    "Colt",
+    "Sundance",
+    "Reliant",
+    "Acclaim",
+    "Gran Fury",
+    "Colt Vista",
+    "Voyager/Grand Voyager"
+],
+"1990": [
+    "Horizon",
+    "Colt",
+    "Sundance",
+    "Acclaim",
+    "Laser",
+    "Colt Vista",
+    "Voyager/Grand Voyager"
+],
+"1991": [
+    "Colt",
+    "Sundance",
+    "Acclaim",
+    "Laser",
+    "Colt Vista",
+    "Voyager/Grand Voyager"
+],
+"1992": [
+    "Colt",
+    "Sundance",
+    "Acclaim",
+    "Laser",
+    "Voyager/Grand Voyager"
+],
+"1993": [
+    "Colt",
+    "Sundance",
+    "Acclaim",
+    "Laser",
+    "Voyager/Grand Voyager"
+],
+"1994": [
+    "Colt",
+    "Sundance",
+    "Acclaim",
+    "Laser",
+    "Voyager/Grand Voyager"
+],
+"1995": [
+    "Neon",
+    "Acclaim",
+    "Voyager/Grand Voyager"
+],
+"1996": [
+    "Neon",
+    "Breeze",
+    "Voyager/Grand Voyager"
+],
+"1997": [
+    "Neon",
+    "Breeze",
+    "Prowler",
+    "Voyager/Grand Voyager"
+],
+"1998": [
+    "Neon",
+    "Breeze",
+    "Voyager/Grand Voyager"
+],
+"1999": [
+    "Neon",
+    "Breeze",
+    "Prowler",
+    "Voyager/Grand Voyager"
+],
+"2000": [
+    "Neon",
+    "Breeze",
+    "Prowler",
+    "Voyager/Grand Voyager"
+],
+"2001": [
+    "Neon",
+    "Prowler"
+]
+}

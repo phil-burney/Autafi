@@ -1,0 +1,606 @@
+{
+  "1945": [
+      "CJ-2A"
+  ],
+  "1946": [
+      "CJ-2A",
+      "Willys Jeep Station Wagon"
+  ],
+  "1947": [
+      "CJ-2A",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck"
+  ],
+  "1948": [
+      "CJ-2A",
+      "Jeepster (VJ)",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck"
+  ],
+  "1949": [
+      "CJ-3A",
+      "Jeepster (VJ)",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck"
+  ],
+  "1950": [
+      "CJ-3A",
+      "Jeepster (VJ)",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck"
+  ],
+  "1951": [
+      "CJ-3A",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck"
+  ],
+  "1952": [
+      "CJ-3A",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck"
+  ],
+  "1953": [
+      "CJ-3A",
+      "CJ-3B",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck"
+  ],
+  "1954": [
+      "CJ-5",
+      "CJ-3B",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck"
+  ],
+  "1955": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-3A",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck"
+  ],
+  "1956": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-3A",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck",
+      "Forward Control"
+  ],
+  "1957": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-3A",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck",
+      "Forward Control"
+  ],
+  "1958": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-3A",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck",
+      "Forward Control"
+  ],
+  "1959": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-3A",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck",
+      "Forward Control"
+  ],
+  "1960": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-3A",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck",
+      "Forward Control"
+  ],
+  "1961": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-3A",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck",
+      "Forward Control",
+      "FJ-3/3A"
+  ],
+  "1962": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-3A",
+      "Willys Jeep Station Wagon",
+      "Willys Jeep Truck",
+      "Forward Control",
+      "FJ-3/3A"
+  ],
+  "1963": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-3A",
+      "Willys Jeep Station Wagon",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "Willys Jeep Truck",
+      "Gladiator (SJ)",
+      "Forward Control",
+      "FJ-3/3A"
+  ],
+  "1964": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-3A",
+      "Willys Jeep Station Wagon",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "Willys Jeep Truck",
+      "Gladiator (SJ)",
+      "Forward Control",
+      "FJ-3/3A"
+  ],
+  "1965": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-5/6",
+      "Willys Jeep Station Wagon",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "Willys Jeep Truck",
+      "Gladiator (SJ)",
+      "Forward Control",
+      "FJ-3/3A"
+  ],
+  "1966": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-5/6",
+      "Jeepster Commando",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "Gladiator (SJ)",
+      "FJ-6/6A"
+  ],
+  "1967": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-5/6",
+      "Jeepster Commando",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "Jeepster Commando",
+      "Gladiator (SJ)",
+      "FJ-6/6A"
+  ],
+  "1968": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-5/6",
+      "Jeepster Commando",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "Jeepster Commando",
+      "Gladiator (SJ)",
+      "FJ-6/6A"
+  ],
+  "1969": [
+      "CJ-5",
+      "CJ-3B",
+      "CJ-6",
+      "DJ-5/6",
+      "Jeepster Commando",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "Jeepster Commando",
+      "Gladiator (SJ)",
+      "FJ-6/6A"
+  ],
+  "1970": [
+      "CJ-5",
+      "CJ-6",
+      "DJ-5/6",
+      "Jeepster Commando",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "Jeepster Commando",
+      "Gladiator (SJ)",
+      "FJ-6/6A"
+  ],
+  "1971": [
+      "CJ-5",
+      "CJ-6",
+      "Jeepster Commando",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "Jeepster Commando",
+      "J-Series",
+      "FJ-6/6A"
+  ],
+  "1972": [
+      "CJ-5",
+      "CJ-6",
+      "Commando",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "Commando",
+      "J-Series",
+      "FJ-6/6A"
+  ],
+  "1973": [
+      "CJ-5",
+      "CJ-6",
+      "Commando",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "Commando",
+      "J-Series",
+      "FJ-6/6A"
+  ],
+  "1974": [
+      "CJ-5",
+      "CJ-6",
+      "Commando",
+      "Cherokee (SJ)",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "Commando",
+      "J-Series",
+      "FJ-6/6A"
+  ],
+  "1975": [
+      "CJ-5",
+      "CJ-6",
+      "Cherokee (SJ)",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "J-Series",
+      "FJ-6/6A"
+  ],
+  "1976": [
+      "CJ-5",
+      "CJ-7",
+      "Cherokee (SJ)",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "J-Series"
+  ],
+  "1977": [
+      "CJ-5",
+      "CJ-7",
+      "Cherokee (SJ)",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "J-Series"
+  ],
+  "1978": [
+      "CJ-5",
+      "CJ-7",
+      "Cherokee (SJ)",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "J-Series"
+  ],
+  "1979": [
+      "CJ-5",
+      "CJ-7",
+      "Cherokee (SJ)",
+      "Super Wagoneer/Wagoneer (SJ)",
+      "J-Series"
+  ],
+  "1980": [
+    "CJ-5",
+    "CJ-7",
+    "Cherokee (SJ)",
+    "Wagoneer (SJ)",
+    "J-Series",
+    "Legend"
+],
+"1981": [
+    "CJ-5",
+    "CJ-7",
+    "Cherokee (SJ)",
+    "Wagoneer (SJ)",
+    "CJ-8 (Scrambler)",
+    "CJ-10",
+    "J-Series"
+],
+"1982": [
+    "CJ-5",
+    "CJ-7",
+    "Cherokee (SJ)",
+    "Wagoneer (SJ)",
+    "CJ-8 (Scrambler)",
+    "CJ-10",
+    "J-Series"
+],
+"1983": [
+    "CJ-5",
+    "CJ-7",
+    "Cherokee (SJ)",
+    "Wagoneer (SJ)",
+    "CJ-8 (Scrambler)",
+    "CJ-10",
+    "J-Series"
+],
+"1984": [
+    "CJ-7",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Wagoneer (SJ)",
+    "CJ-8 (Scrambler)",
+    "CJ-10",
+    "J-Series"
+],
+"1985": [
+    "CJ-7",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Wagoneer (SJ)",
+    "CJ-8 (Scrambler)",
+    "CJ-10",
+    "J-Series"
+],
+"1986": [
+    "CJ-7",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Wagoneer (SJ)",
+    "CJ-8 (Scrambler)",
+    "Comanche (MJ)",
+    "J-Series"
+],
+"1987": [
+    "Wrangler (YJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Wagoneer (SJ)",
+    "Comanche (MJ)",
+    "J-Series"
+],
+"1988": [
+    "Wrangler (YJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Wagoneer (SJ)",
+    "Comanche (MJ)",
+    "J-Series"
+],
+"1989": [
+    "Wrangler (YJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Wagoneer (SJ)",
+    "Comanche (MJ)"
+],
+"1990": [
+    "Wrangler (YJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Wagoneer (SJ)",
+    "Comanche (MJ)"
+],
+"1991": [
+    "Wrangler (YJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Wagoneer (SJ)",
+    "Comanche (MJ)"
+],
+"1992": [
+    "Wrangler (YJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Comanche (MJ)"
+],
+"1993": [
+    "Wrangler (YJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Cherokee/Grand Wagoneer (ZJ)"
+],
+"1994": [
+    "Wrangler (YJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Cherokee/Grand Wagoneer (ZJ)"
+],
+"1995": [
+    "Wrangler (YJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Cherokee/Grand Wagoneer (ZJ)"
+],
+"1996": [
+    "Wrangler (TJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Cherokee/Grand Wagoneer (ZJ)"
+],
+"1997": [
+    "Wrangler (TJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Cherokee/Grand Wagoneer (ZJ)"
+],
+"1998": [
+    "Wrangler (TJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Cherokee/Grand Wagoneer (ZJ)"
+],
+"1999": [
+    "Wrangler (TJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Cherokee (WJ)"
+],
+"2000": [
+    "Wrangler (TJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Cherokee (WJ)"
+],
+"2001": [
+    "Wrangler (TJ)",
+    "Cherokee/Wagoneer (XJ)",
+    "Grand Cherokee (WJ)"
+],
+"2002": [
+    "Wrangler (TJ)",
+    "Liberty/Cherokee (KJ)",
+    "Grand Cherokee (WJ)"
+],
+"2003": [
+    "Wrangler (TJ)",
+    "Liberty/Cherokee (KJ)",
+    "Grand Cherokee (WJ)"
+],
+"2004": [
+    "Wrangler (TJ)",
+    "<a href=\"/wiki/Jeep_Wrangler_(TJ)#Wrangler_Unlimited\" title=\"Jeep Wrangler (TJ)\">Wrangler Unlimited (LJ)</a>",
+    "Liberty/Cherokee (KJ)",
+    "Grand Cherokee (WJ)"
+],
+"2005": [
+    "Wrangler (TJ)",
+    "<a href=\"/wiki/Jeep_Wrangler_(TJ)#Wrangler_Unlimited\" title=\"Jeep Wrangler (TJ)\">Wrangler Unlimited (LJ)</a>",
+    "Liberty/Cherokee (KJ)",
+    "Grand Cherokee (WK)"
+],
+"2006": [
+    "Wrangler (TJ)",
+    "<a href=\"/wiki/Jeep_Wrangler_(TJ)#Wrangler_Unlimited\" title=\"Jeep Wrangler (TJ)\">Wrangler Unlimited (LJ)</a>",
+    "Liberty/Cherokee (KJ)",
+    "Grand Cherokee (WK)",
+    "Commander (XK)"
+],
+"2007": [
+    "Wrangler (JK)",
+    "Wrangler Unlimited (JKU)",
+    "Compass (MK49)",
+    "Patriot (MK74)",
+    "Liberty/Cherokee (KJ)",
+    "Grand Cherokee (WK)",
+    "Commander (XK)"
+],
+"2008": [
+    "Wrangler (JK)",
+    "Wrangler Unlimited (JKU)",
+    "Compass (MK49)",
+    "Patriot (MK74)",
+    "Liberty/Cherokee (KK)",
+    "Grand Cherokee (WK)",
+    "Commander (XK)"
+],
+"2009": [
+    "Wrangler (JK)",
+    "Wrangler Unlimited (JKU)",
+    "Compass (MK49)",
+    "Patriot (MK74)",
+    "Liberty/Cherokee (KK)",
+    "Grand Cherokee (WK)",
+    "Commander (XK)"
+],
+"2010": [
+    "Wrangler (JK)",
+    "Wrangler Unlimited (JKU)",
+    "Compass (MK49)",
+    "Patriot (MK74)",
+    "Liberty/Cherokee (KK)",
+    "Grand Cherokee (WK)",
+    "Commander (XK)"
+],
+"2011": [
+    "Wrangler (JK)",
+    "Wrangler Unlimited (JKU)",
+    "Compass (MK49)",
+    "Patriot (MK74)",
+    "Liberty/Cherokee (KK)",
+    "Grand Cherokee (WK2)"
+],
+"2012": [
+    "Wrangler (JK)",
+    "Wrangler Unlimited (JKU)",
+    "Compass (MK49)",
+    "Patriot (MK74)",
+    "Liberty/Cherokee (KK)",
+    "Grand Cherokee (WK2)"
+],
+"2013": [
+    "Wrangler (JK)",
+    "Wrangler Unlimited (JKU)",
+    "Compass (MK49)",
+    "Patriot (MK74)",
+    "Liberty/Cherokee (KK)",
+    "Grand Cherokee (WK2)"
+],
+"2014": [
+    "Wrangler (JK)",
+    "Wrangler Unlimited (JKU)",
+    "Compass (MK49)",
+    "Patriot (MK74)",
+    "Cherokee (KL)",
+    "Grand Cherokee (WK2)"
+],
+"2015": [
+    "Wrangler (JK)",
+    "Wrangler Unlimited (JKU)",
+    "Renegade (BU)",
+    "Compass (MK49)",
+    "Patriot (MK74)",
+    "Cherokee (KL)",
+    "Grand Cherokee (WK2)"
+],
+"2016": [
+    "Wrangler (JK)",
+    "Wrangler Unlimited (JKU)",
+    "Renegade (BU)",
+    "Compass (MK49)",
+    "Patriot (MK74)",
+    "Cherokee (KL)",
+    "Grand Cherokee (WK2)"
+],
+"2017": [
+    "Wrangler (JK)",
+    "Wrangler Unlimited (JKU)",
+    "Renegade (BU)",
+    "Compass (MP)",
+    "Cherokee (KL)",
+    "Grand Cherokee (WK2)"
+],
+"2018": [
+    "Wrangler (JL)",
+    "Wrangler Unlimited (JLU)",
+    "Renegade (BU)",
+    "Compass (MP)",
+    "Cherokee (KL)",
+    "Grand Commander",
+    "Grand Cherokee (WK2)"
+],
+"2019": [
+    "Wrangler (JL)",
+    "Wrangler Unlimited (JLU)",
+    "Renegade (BU)",
+    "Compass (MP)",
+    "Cherokee (KL)",
+    "Grand Commander",
+    "Grand Cherokee (WK2)",
+    "Gladiator (JT)"
+],
+"2020": [
+    "Wrangler (JL)",
+    "Wrangler Unlimited (JLU)",
+    "Renegade (BU)",
+    "Compass (MP)",
+    "Cherokee (KL)",
+    "Grand Commander",
+    "Grand Cherokee (WK2)",
+    "Gladiator (JT)"
+],
+"2021": [
+    "Wrangler (JL)",
+    "Wrangler Unlimited (JLU)",
+    "Renegade (BU)",
+    "Compass (MP)",
+    "Cherokee (KL)",
+    "Commander",
+    "Grand Commander",
+    "Grand Cherokee (WL)",
+    "Wagoneer/Grand Wagoneer (WS)",
+    "Gladiator (JT)"
+],
+"2022": [
+    "Wrangler (JL)",
+    "Wrangler Unlimited (JLU)",
+    "Renegade (BU)",
+    "Compass (MP)",
+    "Cherokee (KL)",
+    "Commander",
+    "Grand Commander",
+    "Grand Cherokee (WL)",
+    "Wagoneer/Grand Wagoneer (WS)",
+    "Gladiator (JT)"
+]
+}

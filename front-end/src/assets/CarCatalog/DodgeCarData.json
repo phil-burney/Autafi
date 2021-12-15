@@ -1,0 +1,571 @@
+{
+  "1946": [
+      "Deluxe",
+      "Custom"
+  ],
+  "1947": [
+      "Deluxe",
+      "Custom"
+  ],
+  "1948": [
+      "Deluxe",
+      "Custom"
+  ],
+  "1949": [
+      "Wayfarer",
+      "Meadowbrook",
+      "Coronet"
+  ],
+  "1950": [
+      "Wayfarer",
+      "Meadowbrook",
+      "Coronet"
+  ],
+  "1951": [
+      "Wayfarer",
+      "Meadowbrook",
+      "Coronet"
+  ],
+  "1952": [
+      "Wayfarer",
+      "Meadowbrook",
+      "Coronet"
+  ],
+  "1953": [
+      "Meadowbrook",
+      "Coronet"
+  ],
+  "1954": [
+      "Meadowbrook",
+      "Coronet",
+      "Royal"
+  ],
+  "1955": [
+      "Coronet",
+      "Royal",
+      "Custom Royal",
+      "La&nbsp;Femme"
+  ],
+  "1956": [
+      "Coronet",
+      "Royal",
+      "Custom Royal",
+      "La&nbsp;Femme"
+  ],
+  "1957": [
+      "Coronet",
+      "Royal",
+      "Custom Royal"
+  ],
+  "1958": [
+      "Coronet",
+      "Royal",
+      "Custom Royal"
+  ],
+  "1959": [
+      "Coronet",
+      "Royal",
+      "Custom Royal"
+  ],
+  "1960": [
+      "Dart",
+      "Matador",
+      "Polara"
+  ],
+  "1961": [
+      "Lancer",
+      "Dart",
+      "Polara"
+  ],
+  "1962": [
+      "Lancer",
+      "Dart",
+      "Polara",
+      "880/Custom 880"
+  ],
+  "1963": [
+      "Dart",
+      "330",
+      "Polara",
+      "880/Custom 880"
+  ],
+  "1964": [
+      "Dart",
+      "330",
+      "Polara",
+      "880/Custom 880"
+  ],
+  "1965": [
+      "Dart",
+      "Coronet",
+      "Polara",
+      "880",
+      "Monaco"
+  ],
+  "1966": [
+      "Dart",
+      "Coronet",
+      "Polara",
+      "Monaco",
+      "Charger"
+  ],
+  "1967": [
+      "Dart",
+      "Coronet",
+      "Polara",
+      "Monaco",
+      "Charger"
+  ],
+  "1968": [
+      "Dart",
+      "Coronet",
+      "Polara",
+      "Monaco",
+      "Super Bee",
+      "Charger"
+  ],
+  "1969": [
+      "Dart",
+      "Coronet",
+      "Polara",
+      "Monaco",
+      "Super Bee",
+      "Charger"
+  ],
+  "1970": [
+      "Dart",
+      "Coronet",
+      "Polara",
+      "Monaco",
+      "Challenger",
+      "Super Bee",
+      "Charger"
+  ],
+  "1971": [
+      "Colt",
+      "Dart",
+      "Coronet",
+      "Polara",
+      "Monaco",
+      "Challenger",
+      "Super Bee",
+      "Charger"
+  ],
+  "1972": [
+      "Colt",
+      "Dart",
+      "Coronet",
+      "Polara",
+      "Monaco",
+      "Challenger",
+      "Charger"
+  ],
+  "1973": [
+      "Colt",
+      "Dart",
+      "Coronet",
+      "Polara",
+      "Monaco",
+      "Challenger",
+      "Charger"
+  ],
+  "1974": [
+      "Colt",
+      "Dart",
+      "Coronet",
+      "Monaco",
+      "Challenger",
+      "Charger"
+  ],
+  "1975": [
+      "Colt",
+      "Dart",
+      "Coronet",
+      "Monaco",
+      "Charger"
+  ],
+  "1976": [
+      "Colt",
+      "Dart",
+      "Coronet",
+      "Monaco",
+      "Charger Sport",
+      "Charger"
+  ],
+  "1977": [
+      "Colt",
+      "Aspen",
+      "Diplomat",
+      "Monaco",
+      "Royal Monaco",
+      "Charger"
+  ],
+  "1978": [
+      "Omni",
+      "Colt",
+      "Aspen",
+      "Diplomat",
+      "Monaco",
+      "Challenger",
+      "Charger",
+      "Magnum"
+  ],
+  "1979": [
+      "Omni",
+      "Colt",
+      "Colt",
+      "Aspen",
+      "Diplomat",
+      "St.&nbsp;Regis",
+      "Challenger",
+      "Magnum"
+  ],
+  "1980": [
+    "Colt",
+    "Omni",
+    "Omni 024",
+    "Colt",
+    "Aspen",
+    "Mirada",
+    "Diplomat",
+    "St. Regis",
+    "Challenger"
+],
+"1981": [
+    "Colt",
+    "Omni",
+    "Omni 024",
+    "Colt",
+    "Aries",
+    "Mirada",
+    "Diplomat",
+    "St. Regis",
+    "Challenger"
+],
+"1982": [
+    "Colt",
+    "Omni",
+    "Omni 024",
+    "400",
+    "Aries",
+    "Mirada",
+    "Diplomat",
+    "Challenger"
+],
+"1983": [
+    "Colt",
+    "Omni",
+    "Charger",
+    "400",
+    "Aries",
+    "600",
+    "Diplomat",
+    "Shelby Charger",
+    "Challenger"
+],
+"1984": [
+    "Colt",
+    "Colt Vista",
+    "Omni",
+    "Charger",
+    "Aries",
+    "600",
+    "Diplomat",
+    "Shelby Charger",
+    "Daytona",
+    "Conquest"
+],
+"1985": [
+    "Colt",
+    "Colt Vista",
+    "Omni",
+    "Charger",
+    "Aries",
+    "Lancer",
+    "600",
+    "Diplomat",
+    "Shelby Charger",
+    "Daytona",
+    "Conquest"
+],
+"1986": [
+    "Colt",
+    "Colt Vista",
+    "Omni",
+    "Charger",
+    "Aries",
+    "Lancer",
+    "600",
+    "Diplomat",
+    "Shelby GLH-S",
+    "Daytona",
+    "Conquest"
+],
+"1987": [
+    "Colt",
+    "Colt Vista",
+    "Omni",
+    "Charger",
+    "Shadow",
+    "Aries",
+    "Lancer",
+    "600",
+    "Diplomat",
+    "Shelby GLH-S",
+    "Daytona"
+],
+"1988": [
+    "Colt",
+    "Colt Vista",
+    "Omni",
+    "Shadow",
+    "Aries",
+    "Lancer",
+    "600",
+    "Dynasty",
+    "Diplomat",
+    "Shelby CSX",
+    "Daytona"
+],
+"1989": [
+    "Colt",
+    "Colt Vista",
+    "Omni",
+    "Shadow",
+    "Aries",
+    "Lancer",
+    "Spirit",
+    "Dynasty",
+    "Diplomat",
+    "Shelby CSX",
+    "Daytona"
+],
+"1990": [
+    "Colt",
+    "Colt Vista",
+    "Omni",
+    "Shadow",
+    "Spirit",
+    "Dynasty",
+    "Monaco",
+    "Daytona"
+],
+"1991": [
+    "Colt",
+    "Colt Vista",
+    "Shadow",
+    "Spirit",
+    "Dynasty",
+    "Monaco",
+    "Daytona",
+    "Stealth"
+],
+"1992": [
+    "Colt",
+    "Shadow",
+    "Spirit",
+    "Dynasty",
+    "Monaco",
+    "Daytona",
+    "Stealth",
+    "Viper"
+],
+"1993": [
+    "Colt",
+    "Shadow",
+    "Spirit",
+    "Dynasty",
+    "Intrepid",
+    "Daytona",
+    "Stealth",
+    "Viper"
+],
+"1994": [
+    "Colt",
+    "Shadow",
+    "Spirit",
+    "Intrepid",
+    "Stealth",
+    "Viper"
+],
+"1995": [
+    "Neon",
+    "Spirit",
+    "Stratus",
+    "Intrepid",
+    "Avenger",
+    "Stealth",
+    "Viper"
+],
+"1996": [
+    "Neon",
+    "Stratus",
+    "Intrepid",
+    "Avenger",
+    "Stealth",
+    "Viper"
+],
+"1997": [
+    "Neon",
+    "Stratus",
+    "Intrepid",
+    "Avenger",
+    "Viper"
+],
+"1998": [
+    "Neon",
+    "Stratus",
+    "Intrepid",
+    "Avenger",
+    "Viper"
+],
+"1999": [
+    "Neon",
+    "Stratus",
+    "Intrepid",
+    "Avenger",
+    "Viper"
+],
+"2000": [
+    "Neon",
+    "Stratus",
+    "Intrepid",
+    "Avenger",
+    "Viper"
+],
+"2001": [
+    "Neon",
+    "Stratus (Sedan)",
+    "Intrepid",
+    "Stratus (Coupe)",
+    "Viper"
+],
+"2002": [
+    "Neon",
+    "Stratus (Sedan)",
+    "Intrepid",
+    "Stratus (Coupe)",
+    "Viper"
+],
+"2003": [
+    "Neon",
+    "Stratus (Sedan)",
+    "Intrepid",
+    "SRT-4",
+    "Stratus (Coupe)",
+    "Viper"
+],
+"2004": [
+    "Neon",
+    "Stratus (Sedan)",
+    "Intrepid",
+    "SRT-4",
+    "Stratus (Coupe)",
+    "Viper"
+],
+"2005": [
+    "Neon",
+    "Stratus (Sedan)",
+    "Magnum",
+    "SRT-4",
+    "Stratus (Coupe)",
+    "Viper"
+],
+"2006": [
+    "Stratus (Sedan)",
+    "Charger",
+    "Magnum",
+    "Viper"
+],
+"2007": [
+    "Caliber",
+    "Charger",
+    "Magnum",
+    "Viper"
+],
+"2008": [
+    "Caliber",
+    "Avenger",
+    "Charger",
+    "Magnum",
+    "Challenger",
+    "Viper"
+],
+"2009": [
+    "Caliber",
+    "Avenger",
+    "Charger",
+    "Challenger",
+    "Viper"
+],
+"2010": [
+    "Caliber",
+    "Avenger",
+    "Charger",
+    "Challenger",
+    "Viper"
+],
+"2011": [
+    "Caliber",
+    "Avenger",
+    "Charger",
+    "Challenger"
+],
+"2012": [
+    "Caliber",
+    "Avenger",
+    "Charger",
+    "Challenger"
+],
+"2013": [
+    "Dart",
+    "Avenger",
+    "Charger",
+    "Challenger",
+    "Viper"
+],
+"2014": [
+    "Dart",
+    "Avenger",
+    "Charger",
+    "Challenger",
+    "Viper"
+],
+"2015": [
+    "Dart",
+    "Charger",
+    "Challenger",
+    "Viper"
+],
+"2016": [
+    "Dart",
+    "Charger",
+    "Challenger",
+    "Viper"
+],
+"2017": [
+    "Charger",
+    "Challenger",
+    "Viper"
+],
+"2018": [
+    "Charger",
+    "Challenger"
+],
+"2019": [
+    "Charger",
+    "Challenger"
+],
+"2020": [
+    "Charger",
+    "Challenger"
+],
+"2021": [
+    "Charger",
+    "Challenger"
+],
+"2022": [
+    "Charger",
+    "Challenger"
+]
+}
