@@ -17,6 +17,8 @@ const PartBounty = require('./models/partbounty')
 const CarSale = require('./models/carsales')
 const PartSale = require('./models/partsales');
 
+const mailgun = require("mailgun-js");
+
 app.use(bodyParser.json({ limit: '50mb', extended: true }))
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
@@ -189,6 +191,32 @@ app.put('/api/user/validatetoken', (req, res) => {
     } else {
         res.status(404).send({ message: "User not found!" });
     }
+
+})
+app.put('/api/user/email/changepassword', (req, res) => {
+    
+    const mg = mailgun({ apiKey: process.env.MAILGUN_DOMAIN, domain: process.env.MAILGUN_BASE_URL });
+    const data = {
+        from: 'peburney@gmail.com',
+        to: req.body.email + ", peburney@ncsu.edu", 
+        subject: 'Hello',
+        text: 'Testing some Mailgun awesomness!'
+    };
+    mg.messages().send(data, function (error, body) {
+        console.log(data);
+    });
+
+
+
+})
+
+
+app.put('/api/user/changepassword', (req, res) => {
+    let user = User.findByMame(req.body.username);
+    user.password = req.body.password
+    user.save().then(() => {
+        console.log('Password changed')
+    })
 
 })
 
