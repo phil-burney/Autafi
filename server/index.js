@@ -16,8 +16,9 @@ const CarBounty = require('./models/carbounty')
 const PartBounty = require('./models/partbounty')
 const CarSale = require('./models/carsales')
 const PartSale = require('./models/partsales');
+const nodemailer = require('nodemailer')
+const mailgun = require("mailgun-js")
 
-const mailgun = require("mailgun-js");
 
 app.use(bodyParser.json({ limit: '50mb', extended: true }))
 app.use(express.urlencoded({ extended: true }));
@@ -194,21 +195,25 @@ app.put('/api/user/validatetoken', (req, res) => {
 
 })
 app.put('/api/user/email/changepassword', (req, res) => {
-    
-    const mg = mailgun({ apiKey: process.env.MAILGUN_DOMAIN, domain: process.env.MAILGUN_BASE_URL });
+
+    const mg = mailgun({ apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN });
     const data = {
-        from: 'peburney@gmail.com',
-        to: req.body.email + ", peburney@ncsu.edu", 
+        from: 'test@autaphi.com',
+        to: 'peburney@gmail.com',
         subject: 'Hello',
         text: 'Testing some Mailgun awesomness!'
     };
     mg.messages().send(data, function (error, body) {
-        console.log(data);
+        if(error) {
+            console.log(error)
+            console.log(mg)
+        } else {
+        console.log(body);
+        }
     });
 
-
-
 })
+
 
 
 app.put('/api/user/changepassword', (req, res) => {
