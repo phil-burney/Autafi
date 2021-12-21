@@ -2,7 +2,7 @@
   <div id="bg">
     <div class="p-5 d-flex justify-content-center">
       <div id="signupbox" class="p-5 d-flex flex-column justify-content-center">
-        <h1>Sign Up</h1>
+        <h1 class="align-self-center">Sign Up</h1>
 
         <div>
           <input
@@ -12,12 +12,11 @@
             type="text"
             placeholder="Email"
           />
-    
+
           <div class="errormsg">
             {{ error.email }}
           </div>
         </div>
-
 
         <div>
           <input
@@ -27,13 +26,11 @@
             type="text"
             placeholder="Username"
           />
-      
+
           <div class="errormsg">
             {{ error.username }}
           </div>
         </div>
-
-    
 
         <div>
           <input
@@ -43,8 +40,8 @@
             type="password"
             placeholder="Password"
           />
-         
-          <div class="errormsg">
+
+          <div class="errormsg mb-5 text-wrap">
             {{ error.password }}
           </div>
         </div>
@@ -57,13 +54,12 @@
             type="password"
             placeholder="Retype Password"
           />
-         
+
           <div class="errormsg">
             {{ error.password2 }}
           </div>
         </div>
 
-      
         <bounty-button
           label="Sign Up!"
           class="align-self-center p-2"
@@ -110,29 +106,52 @@ export default class SignUpPage extends Vue {
     }
     console.log("register account");
 
-    APIUserHelper.fetchUserSignup(
-      this.sentEmail,
-      this.sentUsername,
-      this.sentPassword
-    )
-      .catch((err) => {
-        this.error.signup = err.message;
-      })
-      .then((response) => {
-        if (response.ok) {
-          this.$router.push("signup/success");
-        } else {
-          return response.json()
-        }
-      }).then(data => this.error.signup = data.message)
-     
+    //   APIUserHelper.fetchUserSignup(
+    //     this.sentEmail,
+    //     this.sentUsername,
+    //     this.sentPassword
+    //   )
+    //     .catch((err) => {
+    //       this.error.signup = err.message;
+    //     })
+    //     .then((response) => {
+    //       if (response.ok) {
+    //         this.$router.push("signup/success");
+    //       } else {
+    //         return response.json()
+    //       }
+    //     }).then(data => this.error.signup = data.message)
+  }
+  clearErrors() {
+    var elements = document.getElementsByClassName("error");
+    while (elements.length > 0) {
+      elements[0].classList.remove("error");
+    }
+    this.error = {
+      email: "",
+      username: "",
+      password: "",
+      password2: "",
+      signup: "",
+    };
   }
   validateForm() {
+    this.clearErrors();
     let validform = true;
     if (this.sentEmail == "") {
       let x = document.getElementById("n-email");
       x.classList.add("error");
       this.error.email = "Email required!";
+      validform = false;
+    }
+    //W3C Email regex
+    //eslint-disable-next-line
+    let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    //eslint-disable-next-line
+    if (!this.sentEmail.match(emailRegex)) {
+       let x = document.getElementById("n-email");
+      x.classList.add("error");
+      this.error.email = "Invalid email format!";
       validform = false;
     }
     if (this.sentUsername == "") {
@@ -145,6 +164,14 @@ export default class SignUpPage extends Vue {
       let z = document.getElementById("n-password");
       z.classList.add("error");
       this.error.password = "Password required!";
+      validform = false;
+    }
+
+    if (!this.sentPassword.match("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&*]){8,}")) {
+      let z = document.getElementById("n-password");
+      z.classList.add("error");
+      this.error.password =
+        "Password have at least 8 characters, one lowercase letter, one number and one special character (!,@,#,$,%,&,*)!";
       validform = false;
     }
     if (this.sentPassword2 == "") {
@@ -166,12 +193,12 @@ export default class SignUpPage extends Vue {
 <style scoped>
 .box {
   text-align: center;
-  
+
   padding: 10px;
 }
 
 input {
-  width: 200px
+  width: 300px;
 }
 
 #signupbox {
@@ -194,7 +221,7 @@ input {
 }
 .errormsg {
   color: red;
-  width:200px;
-  height: 60px;
+  width: 300px;
+  height: 40px;
 }
 </style>
