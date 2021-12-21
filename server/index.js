@@ -16,8 +16,12 @@ const CarBounty = require('./models/carbounty')
 const PartBounty = require('./models/partbounty')
 const CarSale = require('./models/carsales')
 const PartSale = require('./models/partsales');
+const PasswordResetToken = require('./models/passwordresettoken')
 const nodemailer = require('nodemailer')
 const mailgun = require("mailgun-js")
+const crypto = require('crypto');
+const passwordresettoken = require('./models/passwordresettoken');
+const bcrypt = require("bcryptjs")
 
 
 app.use(bodyParser.json({ limit: '50mb', extended: true }))
@@ -194,36 +198,86 @@ app.put('/api/user/validatetoken', (req, res) => {
     }
 
 })
-app.put('/api/user/email/changepassword', (req, res) => {
+
+app.put('/api/user/resetpassword', async (req, res) => {
+
+    let user = await User.findByName(req.body.user);
+
+    let token = await PasswordResetToken.findOne({ user: user._id });
+    console.log(token)
+    console.log(req.body.token)
+    let isValid;
+    if (token) {
+        isValid = await bcrypt.compare(req.body.token, token.token);
+    }
+    console.log(isValid)
+    if (isValid) {
+        user.password = req.body.password;
+        await user.save()
+        res.status(200).send({ message: "Password changed successfully" })
+
+    } else {
+        res.status(404).send({ message: "The link has expired!" })
+    }
+
+
+})
+
+app.put('/api/user/email/resetpassword', async (req, res) => {
+
 
     const mg = mailgun({ apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN });
     const data = {
-        from: 'test@autaphi.com',
-        to: 'peburney@gmail.com',
-        subject: 'Hello',
-        text: 'Testing some Mailgun awesomness!'
+        from: 'passwordreset@autaphi.com',
+        to: req.body.email,
+        subject: 'Password Reset Information',
     };
+    let resetToken = crypto.randomBytes(32).toString("hex");
+    let user = await User.findByEmail(req.body.email);
+
+    let link = `${process.env.BASE_URL}/resetpassword/form/?token=${resetToken}&user=${user.username}`
+
+    if (user != null) {
+        data.html = '<h3> Password Reset </h3> <div> Hello! A password reset has been requested for your account.  In order to do so, follow the' +
+            ' link below.  The link expires in one hour ' + link + '</div>'
+        // See if token exists and if so, delete it
+        let dbToken = await PasswordResetToken.findOne({ user: user._id });
+        if (dbToken) {
+            await dbToken.deleteOne();
+        }
+        bcrypt.genSalt(10, async function (saltError, salt) {
+            if (saltError) {
+                return saltError
+            } else {
+                await bcrypt.hash(resetToken, salt, async function (hashError, hash) {
+                    if (hashError) {
+                        return
+                    }
+                    await new PasswordResetToken({
+                        userId: user._id,
+                        token: hash,
+                        createdAt: Date.now(),
+                    }).save();
+                })
+            }
+        })
+
+    } else {
+        data.html = '<h3> Password Reset </h3> <div> Hello! A password reset has been requested.  However, there is no Autafi account' +
+            ' asscociated with this email. </div>'
+    }
     mg.messages().send(data, function (error, body) {
-        if(error) {
-            console.log(error)
-            console.log(mg)
+        if (error) {
+            res.status(error.statusCode).send({ message: "Server error.  Please Try Again" });
         } else {
-        console.log(body);
+            res.status(200).send({ message: "Success!" });
         }
     });
 
+
+
 })
 
-
-
-app.put('/api/user/changepassword', (req, res) => {
-    let user = User.findByMame(req.body.username);
-    user.password = req.body.password
-    user.save().then(() => {
-        console.log('Password changed')
-    })
-
-})
 
 app.post('/api/login', (req, res) => {
 

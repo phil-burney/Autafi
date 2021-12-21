@@ -43,5 +43,5 @@ const partSchema = new Schema({
 },
 { timestamps: true });
 
-const PartSale = mongoose.model('PartSale', partSchema);
+const PartSale = mongoose.model('partsale', partSchema);
 module.exports = PartSale;

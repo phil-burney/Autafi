@@ -2,8 +2,11 @@ import LandingPage from '../components/Pages/LandingPage.vue'
 import SignupPage from '../components/Pages/SignupPage.vue'
 import LoginPage from '../components/Pages/LoginPage.vue'
 import Dashboard from '../components/Pages/Dashboard.vue'
+import PasswordResetRequestPage from '../components/Pages/PasswordResetRequestPage.vue'
 import SignupSuccessPage from '../components/Pages/SuccessRegisterPage.vue'
 import ListingSuccessPage from '../components/Pages/SuccessListingPage.vue'
+import PasswordEmailSuccessPage from '../components/Pages/PasswordEmailSuccessPage.vue'
+import PasswordResetPage from '../components/Pages/PasswordResetPage.vue'
 import CarsOrPartsPageBounty from '../components/Pages/CarOrPartSelection/CarsOrPartsPageBounty.vue'
 import CarsOrPartsPageSale from '../components/Pages/CarOrPartSelection/CarsOrPartsPageSale.vue'
 import ListingSelection from '../components/Pages/CarOrPartSelection/ListingSelection.vue'
@@ -16,11 +19,15 @@ import CarBountyListPage from '../components/Pages/List/CarBountyListPage.vue'
 import PartSaleListPage from '../components/Pages/List/PartSalesListPage.vue'
 import CarSaleListPage from '../components/Pages/List/CarSalesListPage.vue'
 
+
 const routes = [
     { path: '/', component: LandingPage },
     { path: '/login', component: LoginPage },
     { path: '/signup', component: SignupPage },
     { path: '/signup/success', component: SignupSuccessPage },
+    { path: '/resetpassword/request', component: PasswordResetRequestPage },
+    { path: '/resetpassword/confirmation', component: PasswordEmailSuccessPage },
+    { path: '/resetpassword/form/*', component: PasswordResetPage },
     {
         path: '/selectcarsorpartsbounty', component: CarsOrPartsPageBounty, meta: {
             requiresAuth: true

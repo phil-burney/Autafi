@@ -5,13 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start_local": "node index.js && set BASE_URL=\"http://localhost:8080\"",
+    "start_server": "node index.js && BASE_URL=\"http://autafi.com\""
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.ncsu.edu/CSC-WebApps-F21/WEBAPPS-12"
-  },
-  "author": "brooney",
+  "author": "peburney",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",

@@ -11,8 +11,7 @@
       <div class="row">
         <h1 class="col header text-left d-flex justify-content-left m-3 p-3">
           <router-link to="/">
-            <p id="swapTitle">Swap</p>
-            <p id="meetTitle">Meet</p>
+            <p id="swapTitle">Autafi</p>
           </router-link>
         </h1>
 
@@ -104,9 +103,6 @@ export default class App extends Vue {
       .then(() => {
         this.$store.commit("setUser", this.$cookie.get("name"));
       });
-    if (this.$router.currentRoute.path != "/") {
-      this.$router.push("/");
-    }
   }
 
 }

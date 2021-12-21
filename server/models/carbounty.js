@@ -36,5 +36,5 @@ const carSchema = new Schema({
     }
 }, { timestamps: true });
 
-const CarBounty = mongoose.model('CarBounty', carSchema);
+const CarBounty = mongoose.model('carbounty', carSchema);
 module.exports = CarBounty;

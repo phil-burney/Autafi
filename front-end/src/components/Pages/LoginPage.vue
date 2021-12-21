@@ -1,12 +1,12 @@
 <template>
   <div id="bg">
     <div class="p-5 d-flex justify-content-center">
-      <div id="signupbox" class="p-5 d-flex flex-column justify-content-center">
-        <h1>Login</h1>
+      <div id="signupbox" class="m-5 p-5 d-flex flex-column justify-content-center">
+        <h1 class = "align-self-center p-3">Login</h1>
 
-        <div>
+        <div class = "align-self-center">
           <input
-            class="p-2"
+            class="p-2 "
             id="n-username"
             v-model="sentUsername"
             type="text"
@@ -20,7 +20,7 @@
 
         <br />
 
-        <div>
+        <div class = "align-self-center">
           <input
             class="p-2"
             id="n-password2"
@@ -33,13 +33,18 @@
             {{ error.password }}
           </div>
         </div>
-        <br />
+        <div class="d-flex align-content-center pt-5">
         <bounty-button
           label="Log In!"
-          class="align-self-center  p-2"
+          class = "m-2"
           v-on:buttonClick="submitForm"
-        >
-        </bounty-button>
+        />
+        <bounty-button
+          label="Forgot Password?"
+          class = "m-2"
+          v-on:buttonClick="resetPassword"
+        />
+        </div>
         <div class="errormsg p-2">
           {{ error.login }}
         </div>
@@ -103,6 +108,10 @@ export default class LoginPage extends Vue {
       validform = false;
     }
     return validform;
+  }
+  resetPassword() {
+    this.$router.push("/resetpassword/request")
+
   }
 }
 </script>

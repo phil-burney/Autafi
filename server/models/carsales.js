@@ -36,5 +36,5 @@ const carSchema = new Schema({
     }
 }, { timestamps: true });
 
-const CarSale = mongoose.model('CarSale', carSchema);
+const CarSale = mongoose.model('carsale', carSchema);
 module.exports = CarSale;

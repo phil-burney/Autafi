@@ -40,5 +40,5 @@ const partSchema = new Schema({
     }
 }, { timestamps: true });
 
-const PartBounty = mongoose.model('PartBounty', partSchema);
+const PartBounty = mongoose.model('partbounty', partSchema);
 module.exports = PartBounty;
