@@ -80,7 +80,7 @@ export default class LoginPage extends Vue {
       .then((response) => {
         console.log(response);
         if (response.ok) {
-          this.$router.push("/");
+          this.$router.push("/resetpassword/confirmation");
         } else {
           return response.json();
         }

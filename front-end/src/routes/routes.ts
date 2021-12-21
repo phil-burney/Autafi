@@ -6,6 +6,7 @@ import PasswordResetRequestPage from '../components/Pages/PasswordResetRequestPa
 import SignupSuccessPage from '../components/Pages/SuccessRegisterPage.vue'
 import ListingSuccessPage from '../components/Pages/SuccessListingPage.vue'
 import PasswordEmailSuccessPage from '../components/Pages/PasswordEmailSuccessPage.vue'
+import PasswordResetConfirmationPage from '../components/Pages/PasswordResetConfirmationPage.vue'
 import PasswordResetPage from '../components/Pages/PasswordResetPage.vue'
 import CarsOrPartsPageBounty from '../components/Pages/CarOrPartSelection/CarsOrPartsPageBounty.vue'
 import CarsOrPartsPageSale from '../components/Pages/CarOrPartSelection/CarsOrPartsPageSale.vue'
@@ -26,8 +27,9 @@ const routes = [
     { path: '/signup', component: SignupPage },
     { path: '/signup/success', component: SignupSuccessPage },
     { path: '/resetpassword/request', component: PasswordResetRequestPage },
-    { path: '/resetpassword/confirmation', component: PasswordEmailSuccessPage },
+    { path: '/resetpassword/request/confirmation', component: PasswordEmailSuccessPage },
     { path: '/resetpassword/form/*', component: PasswordResetPage },
+    { path: '/resetpassword/confirmation', component: PasswordResetConfirmationPage },
     {
         path: '/selectcarsorpartsbounty', component: CarsOrPartsPageBounty, meta: {
             requiresAuth: true

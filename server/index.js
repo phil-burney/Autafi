@@ -74,8 +74,6 @@ let partSales = 0;
 
 
 app.post("/api/partbounty", upload.single('partImage'), function (req, res) {
-    console.log("POST /partbounty");
-    console.log(req.body);
     const newpart = new PartBounty({
         title: req.body.title,
         year: req.body.year,
@@ -100,7 +98,6 @@ app.post("/api/partbounty", upload.single('partImage'), function (req, res) {
 
 app.get('/api/partbounty', (req, res) => {
 
-    console.log("GET /partbounty");
     PartBounty.find()
         .then((result) => {
             res.status(200).send(result);
@@ -112,8 +109,6 @@ app.get('/api/partbounty', (req, res) => {
 
 app.post("/api/carbounty", upload.single('carImage'), function (req, res) {
 
-    console.log("POST /carbounty");
-    console.log(req.body);
 
     //Currently only posting car to database without image
     const newcar = new CarBounty({
@@ -139,7 +134,6 @@ app.post("/api/carbounty", upload.single('carImage'), function (req, res) {
 
 app.get('/api/carbounty', (req, res) => {
 
-    console.log("GET /carbounty");
     CarBounty.find()
         .then((result) => {
             res.status(200).send(result);
@@ -150,15 +144,11 @@ app.get('/api/carbounty', (req, res) => {
 })
 
 app.post('/api/user/signup', (req, res) => {
-    console.log("new user");
-    console.log(req.body);
     //Find identical email
     User.findByEmail(req.body.email).then((data) => {
-        console.log(data)
         if (data == null) {
             // Find identical username
             User.findByName(req.body.username).then((data) => {
-                console.log(data)
                 if (data == null) {
                     createUser()
                 }
@@ -168,7 +158,6 @@ app.post('/api/user/signup', (req, res) => {
             })
         }
         else {
-            console.log("bad email")
             res.status(403).send({ message: 'Email already associated with another account!' });
         }
         return
@@ -186,11 +175,9 @@ app.post('/api/user/signup', (req, res) => {
 })
 
 app.put('/api/user/validatetoken', (req, res) => {
-    console.log(req.cookies)
     let token = req.cookies['token']
     if (token) {
         User.findByToken(token).then((data) => {
-            console.log(data.username + " pinged the server")
             res.status(200).send({ message: "User found!" });
         })
     } else {
@@ -204,17 +191,23 @@ app.put('/api/user/resetpassword', async (req, res) => {
     let user = await User.findByName(req.body.user);
 
     let token = await PasswordResetToken.findOne({ user: user._id });
-    console.log(token)
-    console.log(req.body.token)
     let isValid;
     if (token) {
         isValid = await bcrypt.compare(req.body.token, token.token);
     }
-    console.log(isValid)
     if (isValid) {
         user.password = req.body.password;
         await user.save()
+        await token.delete();
         res.status(200).send({ message: "Password changed successfully" })
+        const mg = mailgun({ apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN });
+        const data = {
+            from: 'passwordreset@autaphi.com',
+            to: req.body.email,
+            subject: 'Password Reset Information',
+            html: '<h3> Password Reset </h3> <div> Hello! A password reset has been requested for your account.  In order to do so, follow the' +
+                ' link below.  The link expires in one hour ' + link + '</div>'
+        }
 
     } else {
         res.status(404).send({ message: "The link has expired!" })
@@ -287,7 +280,6 @@ app.post('/api/login', (req, res) => {
                 if (user != null) {
                     let newToken = user.generateAuthToken()
                     user.token = newToken;
-                    console.log(user.username + " has logged in.");
                     user.save().then(() => {
                         res.cookie("token", newToken, {
                             sameSite: 'strict',
@@ -314,7 +306,6 @@ app.post('/api/login', (req, res) => {
 })
 
 app.put('/api/logout', (req, res) => {
-    console.log('logout')
     if (req.cookies['name']) {
         User.findByName(req.cookies['name']).then(user => {
             user.token = null;
@@ -338,7 +329,6 @@ app.put('/api/logout', (req, res) => {
 });
 
 app.post("/api/partsale", upload.single('partImage'), function (req, res) {
-    console.log("POST /partsale");
 
     const newpart = new PartSale({
         title: req.body.title,
@@ -365,7 +355,6 @@ app.post("/api/partsale", upload.single('partImage'), function (req, res) {
 
 app.get('/api/partsale', (req, res) => {
 
-    console.log("GET /partsale");
 
     PartSale.find({}).exec(function (error, posts) {
         res.send(posts);
@@ -374,7 +363,6 @@ app.get('/api/partsale', (req, res) => {
 
 app.post("/api/carsale", upload.single('carImage'), function (req, res) {
 
-    console.log("POST /carsale");
 
     //Currently only posting car to database without image
     const newcar = new CarSale({
@@ -400,7 +388,6 @@ app.post("/api/carsale", upload.single('carImage'), function (req, res) {
 
 app.get('/api/carsale', (req, res) => {
 
-    console.log("GET /carsale");
     CarSale.find()
         .then((result) => {
             res.status(200).send(result);
@@ -415,7 +402,6 @@ app.get('/api/appstatus', (req, res) => {
     var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     var dateTime = date + ' ' + time;
-    console.log("GET /appstatus")
     User.find()
         .then((result) => {
             numUsers = result.length;

@@ -56,7 +56,7 @@ export default class LoginPage extends Vue {
     APIUserHelper.fetchEmailtoChangePassword(this.email)
       .then((response) => {
         if (response.ok) {
-           this.$router.push("/resetpassword/confirmation");
+           this.$router.push("/resetpassword/request/confirmation");
         } else {
           return response.json();
         }
