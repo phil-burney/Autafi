@@ -106,21 +106,21 @@ export default class SignUpPage extends Vue {
     }
     console.log("register account");
 
-    //   APIUserHelper.fetchUserSignup(
-    //     this.sentEmail,
-    //     this.sentUsername,
-    //     this.sentPassword
-    //   )
-    //     .catch((err) => {
-    //       this.error.signup = err.message;
-    //     })
-    //     .then((response) => {
-    //       if (response.ok) {
-    //         this.$router.push("signup/success");
-    //       } else {
-    //         return response.json()
-    //       }
-    //     }).then(data => this.error.signup = data.message)
+      APIUserHelper.fetchUserSignup(
+        this.sentEmail,
+        this.sentUsername,
+        this.sentPassword
+      )
+        .catch((err) => {
+          this.error.signup = err.message;
+        })
+        .then((response) => {
+          if (response.ok) {
+            this.$router.push("signup/success");
+          } else {
+            return response.json()
+          }
+        }).then(data => this.error.signup = data.message)
   }
   clearErrors() {
     var elements = document.getElementsByClassName("error");

@@ -199,15 +199,23 @@ app.put('/api/user/resetpassword', async (req, res) => {
         user.password = req.body.password;
         await user.save()
         await token.delete();
-        res.status(200).send({ message: "Password changed successfully" })
+        
         const mg = mailgun({ apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN });
         const data = {
-            from: 'passwordreset@autaphi.com',
-            to: req.body.email,
-            subject: 'Password Reset Information',
-            html: '<h3> Password Reset </h3> <div> Hello! A password reset has been requested for your account.  In order to do so, follow the' +
-                ' link below.  The link expires in one hour ' + link + '</div>'
+            from: 'passwordresetconfirmation@autaphi.com',
+            to: user.email,
+            subject: 'Password Reset Confirmation',
+            html: '<h3> Password Reset </h3> <div> Hello! The Autafi account associated with this email has just had its password reset.' +
+            'if you believe that this was in error, please contact peburney@gmail.com. </div>'
         }
+        mg.messages().send(data, function (error, body) {
+            if (error) {
+                res.status(error.statusCode).send({ message: "Server error.  Please Try Again" });
+            } else {
+                res.status(200).send({ message: "Password changed successfully" })
+            }
+        });
+        
 
     } else {
         res.status(404).send({ message: "The link has expired!" })

@@ -14,9 +14,9 @@
             type="password"
             placeholder="Password"
           />
-        </div>
-        <div class="errormsg mb-3 align-self-center">
-          {{ error.password }}
+          <div class="errormsg mb-5 align-self-center">
+            {{ error.password }}
+          </div>
         </div>
 
         <div class="align-self-center">
@@ -27,9 +27,9 @@
             type="password"
             placeholder="Retype Password"
           />
-        </div>
-        <div class="errormsg mb-5 align-self-center">
-          {{ error.password2 }}
+          <div class="errormsg mb-3 align-self-center">
+            {{ error.password2 }}
+          </div>
         </div>
 
         <bounty-button
@@ -91,13 +91,34 @@ export default class LoginPage extends Vue {
         }
       });
   }
-
+  clearErrors() {
+    var elements = document.getElementsByClassName("error");
+    while (elements.length > 0) {
+      elements[0].classList.remove("error");
+    }
+    this.error = {
+      password: "",
+      password2: "",
+    };
+  }
   validateForm() {
+    this.clearErrors();
     let validform = true;
     if (this.sentPassword == "") {
       let z = document.getElementById("n-password");
       z.classList.add("error");
       this.error.password = "Password required!";
+      validform = false;
+    }
+    if (
+      !this.sentPassword.match(
+        "(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&*]){8,}"
+      )
+    ) {
+      let z = document.getElementById("n-password");
+      z.classList.add("error");
+      this.error.password =
+        "Password have at least 8 characters, one lowercase letter, one number and one special character (!,@,#,$,%,&,*)!";
       validform = false;
     }
     if (this.sentPassword2 == "") {
@@ -142,6 +163,10 @@ export default class LoginPage extends Vue {
 }
 .errormsg {
   color: red;
-  height: 20px;
+  width: 300px;
+  height: 40px;
+}
+input {
+  width: 300px;
 }
 </style>
