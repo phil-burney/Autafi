@@ -104,7 +104,6 @@ export default class SignUpPage extends Vue {
     if (this.validateForm() == false) {
       return;
     }
-    console.log("register account");
 
       APIUserHelper.fetchUserSignup(
         this.sentEmail,

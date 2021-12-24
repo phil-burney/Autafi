@@ -49,7 +49,6 @@ export default class Dashboard extends Vue {
     fetch('/api/appstatus', options)
     .then(response => response.json())
     .then((data) => {
-      console.log(data);
       this.userCount = data.users;
       this.carBounties = data.carBounties;
       this.partBounties = data.partBounties;

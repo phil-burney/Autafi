@@ -140,8 +140,7 @@ export default class CarsBountyPage extends Vue {
 
 
   submitPacket() {
-    console.log(this.packet);
-    console.log(this.packet);
+
     const options = {
       method: "POST",
       headers: {

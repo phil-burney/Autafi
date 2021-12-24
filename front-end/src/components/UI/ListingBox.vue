@@ -72,7 +72,7 @@ export default class ListingBox extends ListingProps {
     super();
   }
   seeMore() {
-    console.log("boo");
+    console.log("")
   }
   created() {
     if (this.listing.images[0]) {

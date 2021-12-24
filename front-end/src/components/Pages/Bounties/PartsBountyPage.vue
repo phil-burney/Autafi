@@ -147,9 +147,7 @@ export default class PartsPage extends Vue {
   }
   validateForm() {
     let validform = true;
-    console.log(parseInt(this.packet.salePrice));
     if (this.packet.title == undefined || this.packet.title == "") {
-      console.log(this.packet.title);
       this.errorMsg = "Ensure that your post has a title!";
       return false;
     }
@@ -183,7 +181,7 @@ export default class PartsPage extends Vue {
       return;
     }
     this.packet.bounty = parseInt(this.packet.bounty);
-    console.log(this.packet)
+
     
 
     APIPostingHelper.makePartBounty(this.packet).then((response) => {

@@ -134,9 +134,7 @@ export default class CarsBountyPage extends Vue {
   }
   validateForm() {
     let validform = true;
-    console.log(parseInt(this.packet.bounty));
     if (this.packet.title == undefined || this.packet.title == "") {
-      console.log(this.packet.title);
       this.errorMsg = "Ensure that your post has a title!";
       return false;
     }

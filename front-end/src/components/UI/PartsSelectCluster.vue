@@ -120,9 +120,7 @@ export default class PartsSelectCluster extends Vue {
   setModelOptions(year, make) {
     this.modelOptions = findByMake(year, make);
   }
-  submitPacket() {
-    console.log(this.packet);
-  }
+
 }
 </script>
 

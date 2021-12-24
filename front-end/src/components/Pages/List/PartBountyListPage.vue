@@ -54,7 +54,7 @@ export default class PartsBountyListPage extends Vue {
     await APIListingHelper.fetchPartBounties().then(
       (result) => (this.listings = result)
     );
-    console.log(this.listings);
+
   }
 
   data() {
@@ -85,7 +85,7 @@ export default class PartsBountyListPage extends Vue {
   }
   setPart(part) {
     this.packet.part = part;
-    console.log(this.packet)
+
   }
 }
 </script>

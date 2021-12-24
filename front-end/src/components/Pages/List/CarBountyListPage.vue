@@ -40,7 +40,7 @@ export default class CarBountyListPage extends Vue {
     await APIListingHelper.fetchCarBounties().then(
       (result) => (this.listings = result)
     );
-    console.log(this.listings);
+
   }
   data() {
     return {
@@ -64,7 +64,7 @@ export default class CarBountyListPage extends Vue {
   }
   setModel(model) {
     this.packet.model = model;
-    console.log(this.packet)
+
 
   }
 

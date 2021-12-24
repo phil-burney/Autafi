@@ -78,7 +78,6 @@ export default class LoginPage extends Vue {
         this.error.signup = err.message;
       })
       .then((response) => {
-        console.log(response);
         if (response.ok) {
           this.$router.push("/resetpassword/confirmation");
         } else {

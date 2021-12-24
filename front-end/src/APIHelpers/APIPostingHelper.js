@@ -13,7 +13,6 @@ export default class APIPostingHelper {
       body: JSON.stringify(content)
     }
     let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/carsale", options);
-    console.log(data)
     let returnData = await data.json();
 
     return returnData;
@@ -33,7 +32,6 @@ export default class APIPostingHelper {
     let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/carbounty", options);
 
     let returnData = await data.json();
-    console.log(returnData)
     return returnData;
 
   }
@@ -49,7 +47,6 @@ export default class APIPostingHelper {
       body: JSON.stringify(content)
     }
     let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/partsale", options);
-    console.log(data)
     let returnData = await data.json();
 
     return returnData;
@@ -67,7 +64,6 @@ export default class APIPostingHelper {
       body: JSON.stringify(content)
     }
     let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/partbounty", options);
-    console.log(data)
     let returnData = await data.json();
 
     return returnData;

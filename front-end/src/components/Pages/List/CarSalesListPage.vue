@@ -66,7 +66,7 @@ export default class CarSalesListPage extends Vue {
     await APIListingHelper.fetchCarSales().then(
       (result) => (this.listings = result)
     );
-    console.log(this.listings);
+
   }
 }
 </script>

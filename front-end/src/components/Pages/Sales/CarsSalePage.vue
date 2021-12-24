@@ -125,9 +125,9 @@ export default class CarsSalePage extends Vue {
   }
   validateForm() {
     let validform = true;
-    console.log(parseInt(this.packet.salePrice))
+
     if(this.packet.title == undefined || this.packet.title ==""){
-      console.log(this.packet.title)
+
       this.errorMsg = "Ensure that your post has a title!"
       return false
     }

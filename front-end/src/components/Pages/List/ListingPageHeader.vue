@@ -103,7 +103,7 @@ export default class PartsSaleListPage extends Vue {
   }
 
   submitPacket() {
-    console.log(this.packet);
+
   }
 }
 </script>

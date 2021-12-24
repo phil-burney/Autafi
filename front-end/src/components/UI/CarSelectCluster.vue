@@ -104,9 +104,7 @@ export default class CarSelectCluster extends Vue {
     this.modelOptions = findByMake(year, make);
     
   }
-  submitPacket() {
-    console.log(this.packet);
-  }
+
 }
 </script>
 

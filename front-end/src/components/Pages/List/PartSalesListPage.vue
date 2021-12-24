@@ -49,7 +49,6 @@ export default class PartsSaleListPage extends Vue {
     await APIListingHelper.fetchPartSales().then(
       (result) => (this.listings = result)
     );
-    console.log(this.listings);
   }
 
   data() {
@@ -80,7 +79,7 @@ export default class PartsSaleListPage extends Vue {
   }
   setPart(part) {
     this.packet.part = part;
-    console.log(this.packet)
+
   }
 }
 </script>

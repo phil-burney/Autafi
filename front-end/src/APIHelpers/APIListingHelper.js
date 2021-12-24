@@ -68,7 +68,6 @@ export default class APIListingHelper {
             cache: "default",
         };
         let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/carsale", options);
-        console.log(data)
         let returnData = await data.json();
 
         return returnData;
