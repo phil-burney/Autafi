@@ -16,7 +16,7 @@
     
     <div id="heroimg" class="p-6 d-flex justify-content-center">
       <img src = "../../assets/bronco.jpg" class="img-fluid">
-        <h3 class="d-flex text-center p-2" id="supportingtext">The marketplace for classic cars and hard to find parts</h3>
+        <h3 class="d-flex text-center p-3" id="supportingtext">The marketplace for classic cars and hard to find parts</h3>
     </div>
 
     <section class="body">
@@ -85,15 +85,15 @@ export default class LandingPage extends Vue {
 
 #supportingtext{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background: rgba(63, 63, 63, 0.7);
-    color:orange;
+  background: rgba(255, 255, 255, 0.5);
+    color:rgb(10, 118, 248);
     position:absolute;
     text-align: center;
     top: 70%;
     font-size: 3.5vw;
     width: fit-content;
   block-size: fit-content;
-  border-radius: 3px
+  border-radius: 10px
    
 
 }
@@ -101,31 +101,9 @@ export default class LandingPage extends Vue {
     position:relative;
     
 }
-#calltoaction{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: #111111;
-  width: 500px;
-  color: white;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 10px 0;
-  align-items: center;
-  justify-content: space-around;
-  display: flex;
-  float: none;
-  border-radius: 15px;
-  box-shadow: 0 25px 20px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.19);
-  offset: 50px;
 
-}
 .body{
-  background-color: grey;
-
-}
-div [class*="swapbutton"]{
-  background-color: orange;
-  width: fit-content;
-  block-size: fit-content
+  background-color: white;
 
 }
 div>img{

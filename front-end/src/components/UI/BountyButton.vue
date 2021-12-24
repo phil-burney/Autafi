@@ -29,7 +29,7 @@ export default class BountyButton extends Button{
 <style scoped>
  div [class*="bountybutton"] {
   color: black;
-  background-color: orange;
+  background-color: rgb(10, 118, 248);
   border: black solid 3px;
   border-radius: 10px;
 

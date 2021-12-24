@@ -89,7 +89,7 @@ img[class*="smallImg"] {
 }
 div [class*="imgbutton"] {
   color: black;
-  background-color: orange;
+  background-color: red;
   border: black solid 3px;
   border-radius: 0% !important;
 }

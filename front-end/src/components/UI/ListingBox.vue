@@ -89,18 +89,21 @@ export default class ListingBox extends ListingProps {
 </script>
 
 <style scoped>
+div {
+  color: black
+}
 div [class*="sale-box"] {
   border: grey solid 1px;
   border-radius: 10px;
 }
 div [class*="title"] {
   border: black solid 2px;
-  background: orange;
+  background: rgb(10, 118, 248);
   border-radius: 5px;
 }
 div [class*="descriptionbox"] {
   border: black solid 2px;
-  background: orange;
+  background: rgb(10, 118, 248);
   border-radius: 5px;
   height: 250px;
   min-width: 200px;

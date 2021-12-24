@@ -122,17 +122,9 @@ export default class LoginPage extends Vue {
   padding: 10px;
 }
 
-.pop-out-enter-active,
-.pop-out-leave-active {
-  transition: all 0.5s;
-}
-.pop-out-enter,
-.pop-out-leave-active {
-  opacity: 0;
-  transform: translateY(24px);
-}
 #signupbox {
   background-color: rgba(109, 109, 109, 0.9);
+  border-radius: 40px;
 }
 #bg {
   /* The image used */

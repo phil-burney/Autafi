@@ -10,7 +10,6 @@
 </template>
 <script>
 import { Component, Prop, Vue } from "vue-property-decorator";
-
 const DropdownProps = Vue.extend({
   props: {
     content: undefined,
@@ -46,11 +45,11 @@ export default class Dropdown extends DropdownProps{
 <style scoped>
  select[class*="dropdown"]{
    width: 140px;
-   background: orange;
+   background: rgb(10, 118, 248);
    border: black solid 3px
  }
  .option {
-   background: orange;
+   background: rgb(10, 118, 248);
  }
  *{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 

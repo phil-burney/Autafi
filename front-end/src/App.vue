@@ -9,9 +9,9 @@
 
     <div id="headline">
       <div class="row">
-        <h1 class="col header text-left d-flex justify-content-left m-3 p-3">
+        <h1 class="col header text-left d-flex justify-content-left ">
           <router-link to="/">
-            <p id="swapTitle">Autafi</p>
+            <img src = "./assets/inspired_logo_1.svg" class="img-fluid m-2 ps-3" id="logo">
           </router-link>
         </h1>
 
@@ -116,10 +116,6 @@ export default class App extends Vue {
   color: grey;
   display: inline;
 }
-#meetTitle {
-  color: orange;
-  display: inline;
-}
 #headline {
   border: solid grey 1px;
 }
@@ -128,5 +124,8 @@ export default class App extends Vue {
 }
 a:link {
   text-decoration: none;
+}
+#logo {
+  max-height: 100px;
 }
 </style>

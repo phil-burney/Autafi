@@ -206,7 +206,7 @@ app.put('/api/user/resetpassword', async (req, res) => {
             to: user.email,
             subject: 'Password Reset Confirmation',
             html: '<h3> Password Reset </h3> <div> Hello! The Autafi account associated with this email has just had its password reset.' +
-            'if you believe that this was in error, please contact peburney@gmail.com. </div>'
+            '  If you believe that this was in error, please contact peburney@gmail.com. </div>'
         }
         mg.messages().send(data, function (error, body) {
             if (error) {

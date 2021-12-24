@@ -203,6 +203,7 @@ input {
 
 #signupbox {
   background-color: rgba(109, 109, 109, 0.9);
+  border-radius: 40px;
 }
 #bg {
   /* The image used */
