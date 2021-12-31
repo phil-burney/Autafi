@@ -25,7 +25,7 @@
      inkscape:document-units="cm"
      showgrid="true"
      inkscape:zoom="1.0482005"
-     inkscape:cx="72.505213"
+     inkscape:cx="128.31515"
      inkscape:cy="261.87738"
      inkscape:window-width="2560"
      inkscape:window-height="1017"
@@ -47,7 +47,8 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     units="mm">
+     units="mm"
+     showguides="false">
     <inkscape:grid
        type="xygrid"
        id="grid64160"
@@ -311,5 +312,12 @@
        cx="207.00128"
        cy="-90.986282"
        r="5.2212243" />
+    <rect
+       style="fill:#000000;fill-opacity:0;stroke:#babab9;stroke-width:1.8;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect34288"
+       width="27.261005"
+       height="32.561756"
+       x="-140.52753"
+       y="-207.27252" />
   </g>
 </svg>

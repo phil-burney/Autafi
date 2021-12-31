@@ -106,7 +106,6 @@
     "1909": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T"
             ],
             "Packard": [
@@ -117,7 +116,6 @@
     "1910": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T"
             ],
             "Packard": [
@@ -128,7 +126,6 @@
     "1911": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T"
             ],
             "Packard": [
@@ -139,7 +136,6 @@
     "1912": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T"
             ],
             "Packard": [
@@ -151,7 +147,6 @@
     "1913": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T"
             ],
             "Packard": [
@@ -162,7 +157,6 @@
     "1914": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T"
             ],
             "Packard": [
@@ -173,7 +167,6 @@
     "1915": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T"
             ],
             "Packard": [
@@ -184,7 +177,6 @@
     "1916": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T"
             ],
             "Hudson": [
@@ -200,7 +192,6 @@
     "1917": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T"
             ],
             "Hudson": [
@@ -216,7 +207,6 @@
     "1918": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T",
                 "Model TT"
             ],
@@ -234,7 +224,6 @@
         "Makes": {
             "Ford": [
                 "Model T",
-                "Model T",
                 "Model TT"
             ],
             "Hudson": [
@@ -250,7 +239,6 @@
     "1920": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T",
                 "Model TT"
             ],
@@ -268,7 +256,6 @@
         "Makes": {
             "Ford": [
                 "Model T",
-                "Model T",
                 "Model TT"
             ],
             "Hudson": [
@@ -285,7 +272,6 @@
     "1922": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T",
                 "Model TT"
             ],
@@ -308,7 +294,6 @@
         "Makes": {
             "Ford": [
                 "Model T",
-                "Model T",
                 "Model TT"
             ],
             "Hudson": [
@@ -329,7 +314,6 @@
     "1924": {
         "Makes": {
             "Ford": [
-                "Model T",
                 "Model T",
                 "Model TT"
             ],
@@ -353,9 +337,7 @@
             ],
             "Ford": [
                 "Model T",
-                "Model T",
-                "Model TT",
-                "Model T"
+                "Model TT"
             ],
             "Hudson": [
                 "Super Six"
@@ -378,9 +360,7 @@
             ],
             "Ford": [
                 "Model T",
-                "Model T",
-                "Model TT",
-                "Model T"
+                "Model TT"
             ],
             "Hudson": [
                 "Super Six"
@@ -403,9 +383,7 @@
             ],
             "Ford": [
                 "Model T",
-                "Model T",
-                "Model TT",
-                "Model T"
+                "Model TT"
             ],
             "Hudson": [
                 "Super Six"
@@ -430,8 +408,7 @@
             ],
             "Ford": [
                 "Model A",
-                "Model AA",
-                "Model A"
+                "Model AA"
             ],
             "Hudson": [
                 "Super Six"
@@ -459,8 +436,7 @@
             ],
             "Ford": [
                 "Model A",
-                "Model AA",
-                "Model A"
+                "Model AA"
             ],
             "Hudson": [],
             "Lincoln": [
@@ -491,8 +467,7 @@
             ],
             "Ford": [
                 "Model A",
-                "Model AA",
-                "Model A"
+                "Model AA"
             ],
             "Hudson": [],
             "Lincoln": [
@@ -523,8 +498,7 @@
             ],
             "Ford": [
                 "Model A",
-                "Model AA",
-                "Model A"
+                "Model AA"
             ],
             "Hudson": [
                 "Greater Eight"
@@ -556,7 +530,6 @@
                 "Six"
             ],
             "Ford": [
-                "Model B",
                 "Model AA",
                 "Model B"
             ],
@@ -595,8 +568,7 @@
             ],
             "Ford": [
                 "Model 18",
-                "Model BB",
-                "Model 18"
+                "Model BB"
             ],
             "Hudson": [
                 "Super Six"
@@ -633,8 +605,7 @@
             ],
             "Ford": [
                 "Model 40",
-                "Model BB",
-                "Model 40"
+                "Model BB"
             ],
             "Hudson": [],
             "Lincoln": [
@@ -669,7 +640,6 @@
                 "Airstream"
             ],
             "Ford": [
-                "Model 48",
                 "Model 48"
             ],
             "Hudson": [],
@@ -707,8 +677,6 @@
                 "Airstream"
             ],
             "Ford": [
-                "Model 48",
-                "Model 68",
                 "Model 48",
                 "Model 68"
             ],
@@ -749,8 +717,7 @@
             "Ford": [
                 "Standard",
                 "De Luxe",
-                "Standard",
-                "De Luxe"
+                "Standard"
             ],
             "Hudson": [
                 "Terraplane Utility Coupe"
@@ -791,8 +758,6 @@
             "Ford": [
                 "Standard",
                 "De Luxe",
-                "Standard",
-                "De Luxe",
                 "Transit Bus"
             ],
             "Hudson": [
@@ -831,8 +796,6 @@
                 "Six"
             ],
             "Ford": [
-                "Standard",
-                "De Luxe",
                 "Standard",
                 "De Luxe",
                 "Transit Bus"
@@ -876,8 +839,6 @@
                 "Six"
             ],
             "Ford": [
-                "Standard",
-                "De Luxe",
                 "Standard",
                 "De Luxe",
                 "Transit Bus"
@@ -929,8 +890,6 @@
             "Ford": [
                 "Standard",
                 "Deluxe",
-                "Standard",
-                "Deluxe",
                 "Transit Bus"
             ],
             "Hudson": [
@@ -980,8 +939,6 @@
                 "Six"
             ],
             "Ford": [
-                "Standard",
-                "Deluxe",
                 "Standard",
                 "Deluxe",
                 "Transit Bus"
@@ -1063,7 +1020,9 @@
             "Ford": [
                 "Deluxe",
                 "Super Deluxe",
-                "Crestline"
+                "Crestline",
+                "Standard",
+                "Deluxe"
             ],
             "Hudson": [
                 "Commodore",
@@ -1136,7 +1095,9 @@
             "Ford": [
                 "Deluxe",
                 "Super Deluxe",
-                "Crestline"
+                "Crestline",
+                "Standard",
+                "Deluxe"
             ],
             "Frazer": [
                 "Frazer",
@@ -1218,7 +1179,15 @@
             "Ford": [
                 "Deluxe",
                 "Super Deluxe",
-                "Crestline"
+                "Crestline",
+                "F-1",
+                "F-2",
+                "F-3",
+                "F-4",
+                "F-5",
+                "F-6",
+                "F-7",
+                "F-8"
             ],
             "Frazer": [
                 "Frazer",
@@ -1300,7 +1269,15 @@
             "Ford": [
                 "Ford",
                 "Custom Deluxe",
-                "Fairlane"
+                "Fairlane",
+                "F-1",
+                "F-2",
+                "F-3",
+                "F-4",
+                "F-5",
+                "F-6",
+                "F-7",
+                "F-8"
             ],
             "Frazer": [
                 "Frazer",
@@ -1392,7 +1369,15 @@
             "Ford": [
                 "Deluxe",
                 "Custom Deluxe",
-                "Fairlane"
+                "Fairlane",
+                "F-1",
+                "F-2",
+                "F-3",
+                "F-4",
+                "F-5",
+                "F-6",
+                "F-7",
+                "F-8"
             ],
             "Frazer": [
                 "Frazer",
@@ -1489,7 +1474,15 @@
                 "Deluxe",
                 "Custom Deluxe",
                 "Fairlane 500",
-                "Country Squire"
+                "Country Squire",
+                "F-1",
+                "F-2",
+                "F-3",
+                "F-4",
+                "F-5",
+                "F-6",
+                "F-7",
+                "F-8"
             ],
             "Frazer": [
                 "Frazer",
@@ -1596,7 +1589,15 @@
                 "Fairlane 500",
                 "Ranch Wagon",
                 "Country Sedan",
-                "Country Squire"
+                "Country Squire",
+                "F-1",
+                "F-2",
+                "F-3",
+                "F-4",
+                "F-5",
+                "F-6",
+                "F-7",
+                "F-8"
             ],
             "HenryJ": [
                 "Corsair",
@@ -1702,7 +1703,16 @@
                 "Fairlane 500",
                 "Ranch Wagon",
                 "Country Sedan",
-                "Country Squire"
+                "Country Squire",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900"
             ],
             "HenryJ": [
                 "Corsair",
@@ -1820,7 +1830,16 @@
                 "Galaxie",
                 "Ranch Wagon",
                 "Country Sedan",
-                "Country Squire"
+                "Country Squire",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900"
             ],
             "HenryJ": [
                 "Corsair",
@@ -1938,7 +1957,16 @@
                 "Ranch Wagon",
                 "Country Sedan",
                 "Country Squire",
-                "Thunderbird"
+                "Thunderbird",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900"
             ],
             "Hudson": [
                 "Hornet",
@@ -2060,7 +2088,16 @@
                 "Ranch Wagon",
                 "Country Sedan",
                 "Country Squire",
-                "Thunderbird"
+                "Thunderbird",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900"
             ],
             "Hudson": [
                 "Hornet",
@@ -2182,7 +2219,17 @@
                 "Ranch Wagon",
                 "Country Sedan",
                 "Country Squire",
-                "Thunderbird"
+                "Thunderbird",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -2299,15 +2346,6 @@
                 "Royal",
                 "Custom Royal"
             ],
-            "Edsel": [
-                "Citation",
-                "Corsair",
-                "Pacer",
-                "Ranger",
-                "Bermuda",
-                "Villager",
-                "Roundup"
-            ],
             "Ford": [
                 "Custom",
                 "Fairlane",
@@ -2316,7 +2354,17 @@
                 "Ranch Wagon",
                 "Country Sedan",
                 "Country Squire",
-                "Thunderbird"
+                "Thunderbird",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -2434,11 +2482,6 @@
                 "Royal",
                 "Custom Royal"
             ],
-            "Edsel": [
-                "Corsair",
-                "Ranger",
-                "Villager"
-            ],
             "Ford": [
                 "Custom 300",
                 "Fairlane",
@@ -2447,7 +2490,17 @@
                 "Ranch Wagon",
                 "Country Sedan",
                 "Country Squire",
-                "Thunderbird"
+                "Thunderbird",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -2560,10 +2613,6 @@
                 "Matador",
                 "Polara"
             ],
-            "Edsel": [
-                "Ranger",
-                "Villager"
-            ],
             "Ford": [
                 "Falcon",
                 "Fairlane",
@@ -2572,7 +2621,17 @@
                 "Ranch Wagon",
                 "Country Sedan",
                 "Country Squire",
-                "Thunderbird"
+                "Thunderbird",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -2692,7 +2751,18 @@
                 "Ranch Wagon",
                 "Country Sedan",
                 "Country Squire",
-                "Thunderbird"
+                "Thunderbird",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -2817,7 +2887,18 @@
                 "Ranch Wagon",
                 "Country Sedan",
                 "Country Squire",
-                "Thunderbird"
+                "Thunderbird",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -2942,7 +3023,18 @@
                 "Ranch Wagon",
                 "Country Sedan",
                 "Country Squire",
-                "Thunderbird"
+                "Thunderbird",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -3067,7 +3159,18 @@
                 "Country Sedan",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -3204,7 +3307,18 @@
                 "Country Sedan",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -3339,7 +3453,19 @@
                 "Country Sedan",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -3474,7 +3600,19 @@
                 "Country Sedan",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -3614,7 +3752,19 @@
                 "Country Sedan",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -3755,7 +3905,19 @@
                 "Country Sedan",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "F-900",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -3899,7 +4061,18 @@
                 "Country Sedan",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -4034,7 +4207,18 @@
                 "Country Sedan",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -4166,7 +4350,19 @@
                 "Country Sedan",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "Courier",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -4297,7 +4493,19 @@
                 "Country Sedan",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "Courier",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -4429,7 +4637,19 @@
                 "Country Squire",
                 "Elite",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "Courier",
+                "F-100",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -4565,7 +4785,20 @@
                 "Country Squire",
                 "Elite",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "Courier",
+                "F-100",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "Econoline"
             ],
             "Imperial": [
                 "Imperial Custom",
@@ -4698,7 +4931,20 @@
                 "Country Squire",
                 "Elite",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "Courier",
+                "F-100",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "Econoline"
             ],
             "Jeep": [
                 "CJ-5",
@@ -4824,7 +5070,20 @@
                 "Ranch Wagon",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "Courier",
+                "F-100",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "Econoline"
             ],
             "Jeep": [
                 "CJ-5",
@@ -4952,7 +5211,20 @@
                 "LTD",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "Courier",
+                "F-100",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "Econoline"
             ],
             "Jeep": [
                 "CJ-5",
@@ -5078,7 +5350,20 @@
                 "LTD",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranchero",
+                "Courier",
+                "F-100",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-750",
+                "F-800",
+                "Econoline"
             ],
             "Jeep": [
                 "CJ-5",
@@ -5209,7 +5494,17 @@
                 "Country Squire",
                 "Thunderbird",
                 "Sport compact",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Courier",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Econoline"
             ],
             "Geo": [
                 "Metro",
@@ -5342,7 +5637,17 @@
                 "LTD",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Courier",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Econoline"
             ],
             "Geo": [
                 "Metro",
@@ -5474,7 +5779,17 @@
                 "LTD",
                 "Country Squire",
                 "Thunderbird",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Courier",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Econoline"
             ],
             "Geo": [
                 "Metro",
@@ -5615,7 +5930,17 @@
                 "Country Squire",
                 "Thunderbird",
                 "EXP",
-                "Mustang"
+                "Mustang",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Econoline"
             ],
             "Geo": [
                 "Metro",
@@ -5756,7 +6081,18 @@
                 "Country Squire",
                 "Thunderbird",
                 "EXP",
-                "Mustang"
+                "Mustang",
+                "Bronco II",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Econoline"
             ],
             "Geo": [
                 "Metro",
@@ -5898,7 +6234,18 @@
                 "Country Squire",
                 "Thunderbird",
                 "EXP",
-                "Mustang"
+                "Mustang",
+                "Bronco II",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Econoline"
             ],
             "Geo": [
                 "Metro",
@@ -6041,7 +6388,19 @@
                 "Country Squire",
                 "Thunderbird",
                 "EXP",
-                "Mustang"
+                "Mustang",
+                "Bronco II",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Aerostar",
+                "Econoline"
             ],
             "Geo": [
                 "Metro",
@@ -6183,7 +6542,19 @@
                 "Country Squire",
                 "Thunderbird",
                 "EXP",
-                "Mustang"
+                "Mustang",
+                "Bronco II",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Aerostar",
+                "Econoline"
             ],
             "Geo": [
                 "Metro",
@@ -6315,7 +6686,19 @@
                 "Country Squire",
                 "Thunderbird",
                 "EXP",
-                "Mustang"
+                "Mustang",
+                "Bronco II",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Aerostar",
+                "Econoline"
             ],
             "Geo": [
                 "Metro",
@@ -6444,7 +6827,19 @@
                 "Country Squire",
                 "Thunderbird",
                 "EXP",
-                "Mustang"
+                "Mustang",
+                "Bronco II",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Aerostar",
+                "Econoline"
             ],
             "Geo": [
                 "Tracker"
@@ -6563,7 +6958,20 @@
                 "Country Squire",
                 "Thunderbird",
                 "Probe",
-                "Mustang"
+                "Mustang",
+                "Bronco II",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Aerostar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (YJ)",
@@ -6678,7 +7086,20 @@
                 "Country Squire",
                 "Thunderbird",
                 "Probe",
-                "Mustang"
+                "Mustang",
+                "Explorer",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-Super Duty",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Aerostar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (YJ)",
@@ -6794,7 +7215,21 @@
                 "Crown Victoria",
                 "Thunderbird",
                 "Probe",
-                "Mustang"
+                "Mustang",
+                "Explorer",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-Super Duty",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "SVT Lightning",
+                "Aerostar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (YJ)",
@@ -6903,7 +7338,21 @@
                 "Crown Victoria",
                 "Thunderbird",
                 "Probe",
-                "Mustang"
+                "Mustang",
+                "Explorer",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-Super Duty",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "SVT Lightning",
+                "Aerostar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (YJ)",
@@ -7007,7 +7456,21 @@
                 "Crown Victoria",
                 "Thunderbird",
                 "Probe",
-                "Mustang"
+                "Mustang",
+                "Explorer",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-Super Duty",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "SVT Lightning",
+                "Aerostar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (YJ)",
@@ -7117,7 +7580,22 @@
                 "Crown Victoria",
                 "Thunderbird",
                 "Probe",
-                "Mustang"
+                "Mustang",
+                "Explorer",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-Super Duty",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "SVT Lightning",
+                "Aerostar",
+                "Windstar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (YJ)",
@@ -7222,7 +7700,21 @@
                 "Crown Victoria",
                 "Thunderbird",
                 "Probe",
-                "Mustang"
+                "Mustang",
+                "Explorer",
+                "Bronco",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-Super Duty",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Aerostar",
+                "Windstar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (TJ)",
@@ -7322,7 +7814,21 @@
                 "Crown Victoria",
                 "Thunderbird",
                 "Probe",
-                "Mustang"
+                "Mustang",
+                "Explorer",
+                "Expedition",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-Super Duty",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Aerostar",
+                "Windstar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (TJ)",
@@ -7420,7 +7926,19 @@
                 "Taurus",
                 "Crown Victoria",
                 "Probe",
-                "Mustang"
+                "Mustang",
+                "Explorer",
+                "Expedition",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "Windstar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (TJ)",
@@ -7519,7 +8037,20 @@
                 "Taurus",
                 "Crown Victoria",
                 "Escort ZX2",
-                "Mustang"
+                "Mustang",
+                "Explorer",
+                "Expedition",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-500",
+                "F-600",
+                "F-700",
+                "F-800",
+                "SVT Lightning",
+                "Windstar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (TJ)",
@@ -7618,7 +8149,21 @@
                 "Taurus",
                 "Crown Victoria",
                 "Escort ZX2",
-                "Mustang"
+                "Mustang",
+                "Explorer",
+                "Expedition",
+                "Excursion",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "SVT Lightning",
+                "Windstar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (TJ)",
@@ -7712,7 +8257,23 @@
                 "Taurus",
                 "Crown Victoria",
                 "Escort ZX2",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Explorer",
+                "Expedition",
+                "Excursion",
+                "Ranger",
+                "Explorer Sport Trac",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "SVT Lightning",
+                "Windstar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (TJ)",
@@ -7807,7 +8368,23 @@
                 "Crown Victoria",
                 "Thunderbird",
                 "ZX2",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Explorer",
+                "Expedition",
+                "Excursion",
+                "Ranger",
+                "Explorer Sport Trac",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "SVT Lightning",
+                "Windstar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (TJ)",
@@ -7897,7 +8474,23 @@
                 "Crown Victoria",
                 "Thunderbird",
                 "ZX2",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Explorer",
+                "Expedition",
+                "Excursion",
+                "Ranger",
+                "Explorer Sport Trac",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "SVT Lightning",
+                "Windstar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (TJ)",
@@ -7990,7 +8583,23 @@
                 "Crown Victoria",
                 "Thunderbird",
                 "ZX2",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Explorer",
+                "Expedition",
+                "Excursion",
+                "Ranger",
+                "Explorer Sport Trac",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "SVT Lightning",
+                "Freestar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (TJ)",
@@ -8086,7 +8695,23 @@
                 "Five Hundred",
                 "Thunderbird",
                 "Mustang",
-                "GT"
+                "GT",
+                "Escape",
+                "Freestyle",
+                "Explorer",
+                "Expedition",
+                "Excursion",
+                "Ranger",
+                "Explorer Sport Trac",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "Freestar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (TJ)",
@@ -8180,7 +8805,21 @@
                 "Crown Victoria",
                 "Five Hundred",
                 "Mustang",
-                "GT"
+                "GT",
+                "Escape",
+                "Freestyle",
+                "Explorer",
+                "Expedition",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "Freestar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (TJ)",
@@ -8275,7 +8914,24 @@
                 "Taurus",
                 "Crown Victoria",
                 "Five Hundred",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Edge",
+                "Freestyle",
+                "Explorer",
+                "Expedition",
+                "Expedition EL/Max",
+                "Ranger",
+                "Explorer Sport Trac",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "Freestar",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (JK)",
@@ -8369,7 +9025,22 @@
                 "Fusion",
                 "Crown Victoria",
                 "Five Hundred",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Edge",
+                "Taurus X",
+                "Explorer",
+                "Expedition",
+                "Ranger",
+                "Explorer Sport Trac",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (JK)",
@@ -8459,7 +9130,23 @@
                 "Fusion",
                 "Crown Victoria",
                 "Five Hundred",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Edge",
+                "Taurus X",
+                "Flex",
+                "Explorer",
+                "Expedition",
+                "Ranger",
+                "Explorer Sport Trac",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (JK)",
@@ -8543,7 +9230,24 @@
                 "Fusion",
                 "Crown Victoria",
                 "Taurus",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Edge",
+                "Flex",
+                "Explorer",
+                "Expedition",
+                "Ranger",
+                "Explorer Sport Trac",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "SVT Raptor",
+                "Transit Connect",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (JK)",
@@ -8622,7 +9326,23 @@
                 "Fusion",
                 "Crown Victoria",
                 "Taurus",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Edge",
+                "Explorer",
+                "Flex",
+                "Expedition",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "SVT Raptor",
+                "Transit Connect",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (JK)",
@@ -8689,7 +9409,22 @@
                 "Focus",
                 "Fusion",
                 "Taurus",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Edge",
+                "Explorer",
+                "Flex",
+                "Expedition",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "SVT Raptor",
+                "Transit Connect",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (JK)",
@@ -8756,7 +9491,23 @@
                 "Fusion",
                 "Taurus",
                 "Focus ST",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Edge",
+                "Explorer",
+                "Flex",
+                "Expedition",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "SVT Raptor",
+                "Transit Connect",
+                "C-MAX",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (JK)",
@@ -8823,7 +9574,23 @@
                 "Fusion",
                 "Taurus",
                 "Focus ST",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Edge",
+                "Explorer",
+                "Flex",
+                "Expedition",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "SVT Raptor",
+                "Transit Connect",
+                "C-MAX",
+                "Econoline"
             ],
             "Jeep": [
                 "Wrangler (JK)",
@@ -8890,7 +9657,23 @@
                 "Taurus",
                 "Fiesta ST",
                 "Focus ST",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Edge",
+                "Explorer",
+                "Flex",
+                "Expedition",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "Transit Connect",
+                "C-MAX",
+                "Transit",
+                "E-Series"
             ],
             "Jeep": [
                 "Wrangler (JK)",
@@ -8962,7 +9745,23 @@
                 "Fiesta ST",
                 "Focus ST",
                 "Focus RS",
-                "Mustang"
+                "Mustang",
+                "Escape",
+                "Edge",
+                "Explorer",
+                "Flex",
+                "Expedition",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "Transit Connect",
+                "C-MAX",
+                "Transit",
+                "E-Series"
             ],
             "Jeep": [
                 "Wrangler (JK)",
@@ -9034,7 +9833,24 @@
                 "Focus ST",
                 "Focus RS",
                 "Mustang",
-                "GT"
+                "GT",
+                "Escape",
+                "Edge",
+                "Explorer",
+                "Flex",
+                "Expedition",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "Raptor",
+                "Transit Connect",
+                "C-MAX",
+                "Transit",
+                "E-Series"
             ],
             "Jeep": [
                 "Wrangler (JK)",
@@ -9100,7 +9916,25 @@
                 "Focus ST",
                 "Focus RS",
                 "Mustang",
-                "GT"
+                "GT",
+                "EcoSport",
+                "Escape",
+                "Edge",
+                "Explorer",
+                "Flex",
+                "Expedition",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "Raptor",
+                "Transit Connect",
+                "C-MAX",
+                "Transit",
+                "E-Series"
             ],
             "Jeep": [
                 "Wrangler (JL)",
@@ -9166,7 +10000,26 @@
                 "Taurus",
                 "Fiesta ST",
                 "Mustang",
-                "GT"
+                "GT",
+                "EcoSport",
+                "Escape",
+                "Edge",
+                "Explorer",
+                "Flex",
+                "Expedition",
+                "Expedition Max",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "Raptor",
+                "Transit Connect",
+                "Transit",
+                "E-Series"
             ],
             "Jeep": [
                 "Wrangler (JL)",
@@ -9229,7 +10082,25 @@
                 "Fusion",
                 "Fiesta ST",
                 "Mustang",
-                "GT"
+                "GT",
+                "EcoSport",
+                "Escape",
+                "Edge",
+                "Explorer",
+                "Expedition",
+                "Expedition Max",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "Raptor",
+                "Transit Connect",
+                "Transit",
+                "E-Series"
             ],
             "Jeep": [
                 "Wrangler (JL)",
@@ -9285,7 +10156,28 @@
             ],
             "Ford": [
                 "Mustang",
-                "GT"
+                "GT",
+                "EcoSport",
+                "Bronco Sport",
+                "Escape",
+                "Mustang Mach-E",
+                "Edge",
+                "Explorer",
+                "Bronco",
+                "Expedition",
+                "Expedition Max",
+                "Ranger",
+                "F-150",
+                "F-250",
+                "F-350",
+                "F-450",
+                "F-550",
+                "F-650",
+                "F-750",
+                "Raptor",
+                "Transit Connect",
+                "Transit",
+                "E-Series"
             ],
             "Jeep": [
                 "Wrangler (JL)",
@@ -9338,7 +10230,23 @@
             ],
             "Ford": [
                 "Mustang",
-                "GT"
+                "GT",
+                "EcoSport",
+                "Bronco Sport",
+                "Escape",
+                "Mustang Mach-E",
+                "Edge",
+                "Explorer",
+                "Bronco",
+                "Expedition",
+                "Expedition Max",
+                "Maverick",
+                "Ranger",
+                "F-150",
+                "Raptor",
+                "Transit Connect",
+                "Transit",
+                "E-Series"
             ],
             "Jeep": [
                 "Wrangler (JL)",
@@ -9359,11 +10267,5 @@
                 "Navigator"
             ]
         }
-    },
-    "2023": {
-        "Makes": {
-            "Lincoln": []
-        }
     }
-    
 }

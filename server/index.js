@@ -5,11 +5,9 @@ const app = express()
 const router = express.Router()
 const port = 3030;
 const bodyParser = require('body-parser')
-const multer = require('multer')
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const cors = require('cors');
-const upload = multer({ dest: 'uploads/' })
 const mongoose = require('mongoose')
 const User = require('./models/user')
 const CarBounty = require('./models/carbounty')
@@ -17,7 +15,6 @@ const PartBounty = require('./models/partbounty')
 const CarSale = require('./models/carsales')
 const PartSale = require('./models/partsales');
 const PasswordResetToken = require('./models/passwordresettoken')
-const nodemailer = require('nodemailer')
 const mailgun = require("mailgun-js")
 const crypto = require('crypto');
 const passwordresettoken = require('./models/passwordresettoken');
@@ -53,7 +50,7 @@ app.use(session({
 }));
 
 //connect to mongo db
-const dbURI = 'mongodb+srv://admin:1234@cluster.n0ev0.mongodb.net/swapmeet?retryWrites=true&w=majority'
+const dbURI = process.env.DATABASE_URI
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedtopology: true })
     .then((result) => console.log('connected to db'))
     .catch((err) => console.log(err));
@@ -73,7 +70,7 @@ let partSales = 0;
 
 
 
-app.post("/api/partbounty", upload.single('partImage'), function (req, res) {
+app.post("/api/partbounty", function (req, res) {
     const newpart = new PartBounty({
         title: req.body.title,
         year: req.body.year,
@@ -107,7 +104,7 @@ app.get('/api/partbounty', (req, res) => {
         })
 })
 
-app.post("/api/carbounty", upload.single('carImage'), function (req, res) {
+app.post("/api/carbounty", function (req, res) {
 
 
     //Currently only posting car to database without image
@@ -336,7 +333,7 @@ app.put('/api/logout', (req, res) => {
 
 });
 
-app.post("/api/partsale", upload.single('partImage'), function (req, res) {
+app.post("/api/partsale", function (req, res) {
 
     const newpart = new PartSale({
         title: req.body.title,
@@ -369,7 +366,7 @@ app.get('/api/partsale', (req, res) => {
     })
 })
 
-app.post("/api/carsale", upload.single('carImage'), function (req, res) {
+app.post("/api/carsale", function (req, res) {
 
 
     //Currently only posting car to database without image

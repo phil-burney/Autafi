@@ -24,7 +24,7 @@
         <div class="row">
           <div class="col-md p-4 text-center" id="benefits">
 
-            <h2>SwapMeet has a multitude of ways to faclilitate the matching of buyers and sellers. </h2>
+            <h2>Autafi has a multitude of ways to facilitate the matching of buyers and sellers. </h2>
 
           </div>
           
@@ -45,7 +45,7 @@
             <span class="p-1">
               All users have the ability to create sales pages
               for the cars and parts that they are selling, allowing potential buyers to view parts and then message the
-              seller.  Whether you are buying or selling cars or parts, SwapMeet has an option that will suit
+              seller.  Whether you are buying or selling cars or parts, Autafi has an option that will suit
               you.
             </span>
 
