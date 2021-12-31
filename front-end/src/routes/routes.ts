@@ -19,6 +19,7 @@ import PartBountyListPage from '../components/Pages/List/PartBountyListPage.vue'
 import CarBountyListPage from '../components/Pages/List/CarBountyListPage.vue'
 import PartSaleListPage from '../components/Pages/List/PartSalesListPage.vue'
 import CarSaleListPage from '../components/Pages/List/CarSalesListPage.vue'
+import CookiePolicyPage from '../components/Pages/CookiePolicy.vue'
 
 
 const routes = [
@@ -26,6 +27,7 @@ const routes = [
     { path: '/login', component: LoginPage },
     { path: '/signup', component: SignupPage },
     { path: '/signup/success', component: SignupSuccessPage },
+    { path: '/cookie/policy', component: CookiePolicyPage },
     { path: '/resetpassword/request', component: PasswordResetRequestPage },
     { path: '/resetpassword/request/confirmation', component: PasswordEmailSuccessPage },
     { path: '/resetpassword/form/*', component: PasswordResetPage },
