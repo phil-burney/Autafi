@@ -47,7 +47,8 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     units="mm">
+     units="mm"
+     showguides="false">
     <inkscape:grid
        type="xygrid"
        id="grid64160"

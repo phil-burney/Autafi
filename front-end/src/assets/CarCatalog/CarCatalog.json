@@ -1346,7 +1346,9 @@
                 "Seventy-Five"
             ],
             "Chevrolet": [
-                "Deluxe"
+                "Deluxe",
+                "Suburban",
+                "Advance Design"
             ],
             "Chrysler": [
                 "Royal",
@@ -1451,7 +1453,9 @@
                 "Seventy-Five"
             ],
             "Chevrolet": [
-                "Deluxe"
+                "Deluxe",
+                "Suburban",
+                "Advance Design"
             ],
             "Chrysler": [
                 "Windsor",
@@ -1563,7 +1567,9 @@
                 "Seventy-Five"
             ],
             "Chevrolet": [
-                "Deluxe"
+                "Deluxe",
+                "Suburban",
+                "Advance Design"
             ],
             "Chrysler": [
                 "Windsor",
@@ -1680,7 +1686,9 @@
                 "Special&nbsp;150",
                 "Deluxe&nbsp;210",
                 "Bel Air",
-                "Corvette"
+                "Corvette",
+                "Suburban",
+                "Advance Design"
             ],
             "Chrysler": [
                 "Windsor",
@@ -1806,7 +1814,9 @@
                 "Special&nbsp;150",
                 "Deluxe&nbsp;210",
                 "Bel Air",
-                "Corvette"
+                "Corvette",
+                "Suburban",
+                "Advance Design"
             ],
             "Chrysler": [
                 "Windsor",
@@ -1932,7 +1942,9 @@
                 "Bel Air",
                 "Beauville",
                 "Nomad",
-                "Corvette"
+                "Corvette",
+                "Suburban",
+                "Task Force"
             ],
             "Chrysler": [
                 "Windsor",
@@ -1948,7 +1960,7 @@
                 "Coronet",
                 "Royal",
                 "Custom Royal",
-                "La&nbsp;Femme"
+                "La Femme"
             ],
             "Ford": [
                 "Mainline",
@@ -2038,7 +2050,8 @@
         "Makes": {
             "AMC": [
                 "Metropolitan",
-                "Six &amp; V8",
+                "Six",
+                "V8",
                 "Nash Ambassador",
                 "Hudson Hornet",
                 "Hudson Wasp"
@@ -2061,7 +2074,9 @@
                 "Bel Air",
                 "Beauville",
                 "Nomad",
-                "Corvette"
+                "Corvette",
+                "Suburban",
+                "Task Force"
             ],
             "Chrysler": [
                 "Windsor",
@@ -2078,7 +2093,7 @@
                 "Coronet",
                 "Royal",
                 "Custom Royal",
-                "La&nbsp;Femme"
+                "La Femme"
             ],
             "Ford": [
                 "Mainline",
@@ -2167,7 +2182,8 @@
         "Makes": {
             "AMC": [
                 "Metropolitan",
-                "Six &amp; V8",
+                "Six",
+                "V8",
                 "Rebel",
                 "Nash Ambassador",
                 "Hudson Hornet"
@@ -2191,7 +2207,9 @@
                 "Bel Air",
                 "Beauville",
                 "Nomad",
-                "Corvette"
+                "Corvette",
+                "Suburban",
+                "Task Force"
             ],
             "Chrysler": [
                 "Windsor",
@@ -2326,7 +2344,9 @@
                 "Bel Air",
                 "Impala",
                 "Nomad",
-                "Corvette"
+                "Corvette",
+                "Suburban",
+                "Task Force"
             ],
             "Chrysler": [
                 "Windsor",
@@ -2462,7 +2482,10 @@
                 "Bel Air",
                 "Impala",
                 "Nomad",
-                "Corvette"
+                "Corvette",
+                "Suburban",
+                "El Camino",
+                "Task Force"
             ],
             "Chrysler": [
                 "Windsor",
@@ -2595,7 +2618,10 @@
                 "Bel Air",
                 "Impala",
                 "Nomad",
-                "Corvette"
+                "Corvette",
+                "Suburban",
+                "El Camino",
+                "C/K"
             ],
             "Chrysler": [
                 "Windsor",
@@ -2611,7 +2637,13 @@
             "Dodge": [
                 "Dart",
                 "Matador",
-                "Polara"
+                "Polara",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Falcon",
@@ -2728,7 +2760,10 @@
                 "Biscayne",
                 "Bel Air",
                 "Impala",
-                "Corvette"
+                "Corvette",
+                "Suburban",
+                "C/K",
+                "Greenbrier"
             ],
             "Chrysler": [
                 "Newport",
@@ -2741,7 +2776,13 @@
             "Dodge": [
                 "Lancer",
                 "Dart",
-                "Polara"
+                "Polara",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Falcon",
@@ -2860,7 +2901,10 @@
                 "Biscayne",
                 "Bel Air",
                 "Impala",
-                "Corvette"
+                "Corvette",
+                "Suburban",
+                "C/K",
+                "Greenbrier"
             ],
             "Chrysler": [
                 "Newport",
@@ -2875,7 +2919,14 @@
                 "Lancer",
                 "Dart",
                 "Polara",
-                "880/Custom 880"
+                "880",
+                "Custom 880",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Falcon",
@@ -2996,7 +3047,10 @@
                 "Biscayne",
                 "Bel Air",
                 "Impala",
-                "Corvette"
+                "Corvette",
+                "Suburban",
+                "C/K",
+                "Greenbrier"
             ],
             "Chrysler": [
                 "Newport",
@@ -3011,7 +3065,14 @@
                 "Dart",
                 "330",
                 "Polara",
-                "880/Custom 880"
+                "880",
+                "Custom 880",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Falcon",
@@ -3131,7 +3192,13 @@
                 "Biscayne",
                 "Bel Air",
                 "Impala",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "Suburban",
+                "El Camino",
+                "C/K",
+                "Van",
+                "Greenbrier"
             ],
             "Chrysler": [
                 "Newport",
@@ -3146,7 +3213,15 @@
                 "Dart",
                 "330",
                 "Polara",
-                "880/Custom 880"
+                "880",
+                "Custom 880",
+                "A100",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Falcon",
@@ -3278,7 +3353,13 @@
                 "Bel Air",
                 "Impala",
                 "Caprice",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "Suburban",
+                "El Camino",
+                "C/K",
+                "Van",
+                "SportVan"
             ],
             "Chrysler": [
                 "Newport",
@@ -3293,7 +3374,14 @@
                 "Coronet",
                 "Polara",
                 "880",
-                "Monaco"
+                "Monaco",
+                "A100",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Falcon",
@@ -3426,7 +3514,13 @@
                 "Bel Air",
                 "Impala",
                 "Caprice",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "Suburban",
+                "El Camino",
+                "C/K",
+                "Van",
+                "SportVan"
             ],
             "Chrysler": [
                 "Newport",
@@ -3439,7 +3533,14 @@
                 "Coronet",
                 "Polara",
                 "Monaco",
-                "Charger"
+                "Charger",
+                "A100",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Falcon",
@@ -3573,7 +3674,13 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "Suburban",
+                "El Camino",
+                "C/K",
+                "Van",
+                "SportVan"
             ],
             "Chrysler": [
                 "Newport",
@@ -3586,7 +3693,14 @@
                 "Coronet",
                 "Polara",
                 "Monaco",
-                "Charger"
+                "Charger",
+                "A100",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Falcon",
@@ -3723,7 +3837,14 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "C/K",
+                "Van",
+                "SportVan"
             ],
             "Chrysler": [
                 "Newport",
@@ -3737,7 +3858,14 @@
                 "Polara",
                 "Monaco",
                 "Super Bee",
-                "Charger"
+                "Charger",
+                "A100",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Falcon",
@@ -3877,7 +4005,14 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "C/K",
+                "Van",
+                "SportVan"
             ],
             "Chrysler": [
                 "Newport",
@@ -3891,7 +4026,14 @@
                 "Polara",
                 "Monaco",
                 "Super Bee",
-                "Charger"
+                "Charger",
+                "A100",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Falcon",
@@ -4029,7 +4171,14 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "C/K",
+                "Van",
+                "SportVan"
             ],
             "Chrysler": [
                 "Newport",
@@ -4045,7 +4194,15 @@
                 "Monaco",
                 "Challenger",
                 "Super Bee",
-                "Charger"
+                "Charger",
+                "A100",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600",
+                "LCF"
             ],
             "Ford": [
                 "Falcon",
@@ -4178,7 +4335,14 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "C/K",
+                "Van",
+                "Beauville"
             ],
             "Chrysler": [
                 "Newport",
@@ -4194,7 +4358,15 @@
                 "Monaco",
                 "Challenger",
                 "Super Bee",
-                "Charger"
+                "Charger",
+                "Tradesman",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600",
+                "LCF"
             ],
             "Ford": [
                 "Pinto",
@@ -4323,7 +4495,15 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "LUV",
+                "C/K",
+                "Van",
+                "Beauville"
             ],
             "Chrysler": [
                 "Newport",
@@ -4337,7 +4517,15 @@
                 "Polara",
                 "Monaco",
                 "Challenger",
-                "Charger"
+                "Charger",
+                "Tradesman",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600",
+                "LCF"
             ],
             "Ford": [
                 "Pinto",
@@ -4466,7 +4654,15 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "LUV",
+                "C/K",
+                "Van",
+                "Beauville"
             ],
             "Chrysler": [
                 "Newport",
@@ -4480,7 +4676,15 @@
                 "Polara",
                 "Monaco",
                 "Challenger",
-                "Charger"
+                "Charger",
+                "Tradesman",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600",
+                "LCF"
             ],
             "Ford": [
                 "Pinto",
@@ -4610,7 +4814,16 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "K5 Blazer",
+                "Suburban",
+                "El Toro",
+                "El Camino",
+                "LUV",
+                "C/K",
+                "Van",
+                "Beauville"
             ],
             "Chrysler": [
                 "Newport",
@@ -4623,7 +4836,16 @@
                 "Coronet",
                 "Monaco",
                 "Challenger",
-                "Charger"
+                "Charger",
+                "Ramcharger",
+                "Tradesman",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600",
+                "LCF"
             ],
             "Ford": [
                 "Pinto",
@@ -4759,7 +4981,16 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "K5 Blazer",
+                "Suburban",
+                "El Toro",
+                "El Camino",
+                "LUV",
+                "C/K",
+                "Van",
+                "Beauville"
             ],
             "Chrysler": [
                 "Newport",
@@ -4772,7 +5003,16 @@
                 "Dart",
                 "Coronet",
                 "Monaco",
-                "Charger"
+                "Charger",
+                "Ramcharger",
+                "Tradesman",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600",
+                "LCF"
             ],
             "Ford": [
                 "Pinto",
@@ -4904,7 +5144,16 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "K5 Blazer",
+                "Suburban",
+                "El Toro",
+                "El Camino",
+                "LUV",
+                "C/K",
+                "Van",
+                "Beauville"
             ],
             "Chrysler": [
                 "Newport",
@@ -4918,7 +5167,15 @@
                 "Coronet",
                 "Monaco",
                 "Charger Sport",
-                "Charger"
+                "Charger",
+                "Ramcharger",
+                "Tradesman",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Pinto",
@@ -5043,7 +5300,16 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "K5 Blazer",
+                "Suburban",
+                "El Toro",
+                "El Camino",
+                "LUV",
+                "C/K",
+                "Van",
+                "Beauville"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -5058,7 +5324,15 @@
                 "Diplomat",
                 "Monaco",
                 "Royal Monaco",
-                "Charger"
+                "Charger",
+                "Ramcharger",
+                "Tradesman",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Pinto",
@@ -5182,7 +5456,16 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "K5 Blazer",
+                "Suburban",
+                "El Toro",
+                "El Camino",
+                "LUV",
+                "C/K",
+                "Van",
+                "Beauville"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -5199,7 +5482,15 @@
                 "Monaco",
                 "Challenger",
                 "Charger",
-                "Magnum"
+                "Magnum",
+                "Ramcharger",
+                "Tradesman",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Fiesta",
@@ -5288,7 +5579,6 @@
     "1979": {
         "Makes": {
             "AMC": [
-                "LeCar",
                 "Spirit",
                 "Concord",
                 "Pacer",
@@ -5321,7 +5611,15 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Veraneio",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "LUV",
+                "C/K",
+                "Van",
+                "Beauville"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -5334,12 +5632,21 @@
             "Dodge": [
                 "Omni",
                 "Colt",
-                "Colt",
                 "Aspen",
                 "Diplomat",
-                "St.&nbsp;Regis",
+                "St. Regis",
                 "Challenger",
-                "Magnum"
+                "Magnum",
+                "Ramcharger",
+                "Ram Van",
+                "Ram Wagon",
+                "D-50",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Fiesta",
@@ -5429,7 +5736,6 @@
     "1980": {
         "Makes": {
             "AMC": [
-                "LeCar",
                 "Spirit",
                 "Concord",
                 "Pacer",
@@ -5465,7 +5771,13 @@
                 "Caprice",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "LUV",
+                "C/K",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -5478,12 +5790,21 @@
                 "Colt",
                 "Omni",
                 "Omni 024",
-                "Colt",
                 "Aspen",
                 "Mirada",
                 "Diplomat",
                 "St. Regis",
-                "Challenger"
+                "Challenger",
+                "Ramcharger",
+                "Ram Van",
+                "Ram Wagon",
+                "D-50",
+                "D-100",
+                "D-200",
+                "D-300",
+                "D-400",
+                "D-500",
+                "D-600"
             ],
             "Ford": [
                 "Fiesta",
@@ -5573,16 +5894,21 @@
                 "Safari",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "K5 Jimmy",
+                "Suburban",
+                "Caballero",
+                "C/K",
+                "G-Series"
             ]
         }
     },
     "1981": {
         "Makes": {
             "AMC": [
-                "LeCar",
                 "Spirit",
                 "Concord",
-                "18i/Sportwagon",
                 "Eagle"
             ],
             "Buick": [
@@ -5609,7 +5935,12 @@
                 "Caprice",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "C/K",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -5623,12 +5954,18 @@
                 "Colt",
                 "Omni",
                 "Omni 024",
-                "Colt",
                 "Aries",
                 "Mirada",
                 "Diplomat",
                 "St. Regis",
-                "Challenger"
+                "Challenger",
+                "Ramcharger",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "D150",
+                "D250",
+                "D350"
             ],
             "Ford": [
                 "Escort",
@@ -5713,16 +6050,21 @@
                 "Safari",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "K5 Jimmy",
+                "Suburban",
+                "Caballero",
+                "C/K",
+                "G-Series"
             ]
         }
     },
     "1982": {
         "Makes": {
             "AMC": [
-                "LeCar",
                 "Spirit",
                 "Concord",
-                "18i/Sportwagon",
                 "Eagle"
             ],
             "Buick": [
@@ -5753,7 +6095,13 @@
                 "Caprice",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "S-10",
+                "C/K",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -5770,7 +6118,15 @@
                 "Aries",
                 "Mirada",
                 "Diplomat",
-                "Challenger"
+                "Challenger",
+                "Ramcharger",
+                "Rampage",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "D150",
+                "D250",
+                "D350"
             ],
             "Ford": [
                 "Escort",
@@ -5858,18 +6214,22 @@
                 "Safari",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "K5 Jimmy",
+                "Suburban",
+                "Caballero",
+                "S-15 Sonoma",
+                "C/K",
+                "G-Series"
             ]
         }
     },
     "1983": {
         "Makes": {
             "AMC": [
-                "LeCar",
                 "Spirit",
                 "Concord",
-                "Alliance",
-                "18i/Sportwagon",
-                "Fuego",
                 "Eagle"
             ],
             "Buick": [
@@ -5899,7 +6259,13 @@
                 "Impala",
                 "Caprice",
                 "Monte Carlo",
-                "Camaro"
+                "Camaro",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "S-10",
+                "C/K",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -5920,7 +6286,15 @@
                 "600",
                 "Diplomat",
                 "Shelby Charger",
-                "Challenger"
+                "Challenger",
+                "Ramcharger",
+                "Rampage",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "Ram D150",
+                "Ram D250",
+                "Ram D350"
             ],
             "Ford": [
                 "Escort",
@@ -6010,16 +6384,21 @@
                 "Safari",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "S-15 Jimmy",
+                "K5 Jimmy",
+                "Suburban",
+                "Caballero",
+                "S-15 Sonoma",
+                "C/K",
+                "G-Series"
             ]
         }
     },
     "1984": {
         "Makes": {
             "AMC": [
-                "Encore",
-                "Alliance",
-                "18i/Sportwagon",
-                "Fuego",
                 "Eagle"
             ],
             "Buick": [
@@ -6050,7 +6429,14 @@
                 "Caprice",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "S-10 Blazer",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "S-10",
+                "C/K",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -6071,7 +6457,17 @@
                 "Diplomat",
                 "Shelby Charger",
                 "Daytona",
-                "Conquest"
+                "Conquest",
+                "Ramcharger",
+                "Rampage",
+                "Caravan",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "Ram D100",
+                "Ram D150",
+                "Ram D250",
+                "Ram D350"
             ],
             "Ford": [
                 "Escort",
@@ -6158,16 +6554,21 @@
                 "Grand Prix",
                 "Fiero",
                 "Firebird"
+            ],
+            "GMC": [
+                "S-15 Jimmy",
+                "K5 Jimmy",
+                "Suburban",
+                "Caballero",
+                "S-15 Sonoma",
+                "C/K",
+                "G-Series"
             ]
         }
     },
     "1985": {
         "Makes": {
             "AMC": [
-                "Encore",
-                "Alliance",
-                "18i/Sportwagon",
-                "Fuego",
                 "Eagle"
             ],
             "Buick": [
@@ -6202,7 +6603,15 @@
                 "Caprice",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "S-10 Blazer",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "S-10",
+                "C/K",
+                "Astro",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -6224,7 +6633,16 @@
                 "Diplomat",
                 "Shelby Charger",
                 "Daytona",
-                "Conquest"
+                "Conquest",
+                "Ramcharger",
+                "Caravan",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "Ram D100",
+                "Ram D150",
+                "Ram D250",
+                "Ram D350"
             ],
             "Ford": [
                 "Escort",
@@ -6313,16 +6731,22 @@
                 "Grand Prix",
                 "Fiero",
                 "Firebird"
+            ],
+            "GMC": [
+                "S-15 Jimmy",
+                "K5 Jimmy",
+                "Suburban",
+                "Caballero",
+                "S-15 Sonoma",
+                "C/K",
+                "Safari",
+                "G-Series"
             ]
         }
     },
     "1986": {
         "Makes": {
             "AMC": [
-                "Encore",
-                "Alliance",
-                "18i/Sportwagon",
-                "Fuego",
                 "Eagle"
             ],
             "Buick": [
@@ -6355,7 +6779,15 @@
                 "Caprice",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "S-10 Blazer",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "S-10",
+                "C/K",
+                "Astro",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -6377,7 +6809,16 @@
                 "Diplomat",
                 "Shelby GLH-S",
                 "Daytona",
-                "Conquest"
+                "Conquest",
+                "Ramcharger",
+                "Caravan",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "Ram D100",
+                "Ram D150",
+                "Ram D250",
+                "Ram D350"
             ],
             "Ford": [
                 "Escort",
@@ -6467,15 +6908,22 @@
                 "Grand Prix",
                 "Fiero",
                 "Firebird"
+            ],
+            "GMC": [
+                "S-15 Jimmy",
+                "K5 Jimmy",
+                "Suburban",
+                "Caballero",
+                "S-15 Sonoma",
+                "C/K",
+                "Safari",
+                "G-Series"
             ]
         }
     },
     "1987": {
         "Makes": {
             "AMC": [
-                "Alliance",
-                "Medallion",
-                "GTA",
                 "Eagle"
             ],
             "Buick": [
@@ -6511,7 +6959,15 @@
                 "Caprice",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "S-10 Blazer",
+                "K5 Blazer",
+                "Suburban",
+                "El Camino",
+                "S-10",
+                "C/K",
+                "Astro",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -6532,7 +6988,19 @@
                 "600",
                 "Diplomat",
                 "Shelby GLH-S",
-                "Daytona"
+                "Daytona",
+                "Raider",
+                "Ramcharger",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "Dakota",
+                "Ram D100",
+                "Ram D150",
+                "Ram D250",
+                "Ram D350"
             ],
             "Ford": [
                 "Escort",
@@ -6618,6 +7086,16 @@
                 "Grand Prix",
                 "Fiero",
                 "Firebird"
+            ],
+            "GMC": [
+                "S-15 Jimmy",
+                "K5 Jimmy",
+                "Suburban",
+                "Caballero",
+                "S-15 Sonoma",
+                "C/K",
+                "Safari",
+                "G-Series"
             ]
         }
     },
@@ -6653,7 +7131,14 @@
                 "Caprice",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "S-10 Blazer",
+                "K5 Blazer",
+                "Suburban",
+                "S-10",
+                "C/K",
+                "Astro",
+                "Van"
             ],
             "Chrysler": [
                 "Town & Country",
@@ -6675,7 +7160,19 @@
                 "Dynasty",
                 "Diplomat",
                 "Shelby CSX",
-                "Daytona"
+                "Daytona",
+                "Raider",
+                "Ramcharger",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "Dakota",
+                "Ram D100",
+                "Ram D150",
+                "Ram D250",
+                "Ram D350"
             ],
             "Ford": [
                 "Festiva",
@@ -6762,6 +7259,15 @@
                 "Grand Prix",
                 "Fiero",
                 "Firebird"
+            ],
+            "GMC": [
+                "S-15 Jimmy",
+                "K5 Jimmy",
+                "Suburban",
+                "S-15 Sonoma",
+                "Sierra",
+                "Safari",
+                "G-Series"
             ]
         }
     },
@@ -6795,7 +7301,15 @@
                 "Celebrity",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Tracker",
+                "S-10 Blazer",
+                "K5 Blazer",
+                "Suburban",
+                "S-10",
+                "C/K",
+                "Astro",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -6816,7 +7330,19 @@
                 "Dynasty",
                 "Diplomat",
                 "Shelby CSX",
-                "Daytona"
+                "Daytona",
+                "Raider",
+                "Ramcharger",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "Dakota",
+                "Ram D100",
+                "Ram D150",
+                "Ram D250",
+                "Ram D350"
             ],
             "Ford": [
                 "Festiva",
@@ -6897,6 +7423,15 @@
                 "Safari",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "S-15 Jimmy",
+                "K5 Jimmy",
+                "Suburban",
+                "S-15 Sonoma",
+                "Sierra",
+                "Safari",
+                "G-Series"
             ]
         }
     },
@@ -6929,7 +7464,16 @@
                 "Lumina",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Tracker",
+                "S-10 Blazer",
+                "K5 Blazer",
+                "Suburban",
+                "S-10",
+                "C/K",
+                "Lumina APV",
+                "Astro",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -6947,7 +7491,17 @@
                 "Spirit",
                 "Dynasty",
                 "Monaco",
-                "Daytona"
+                "Daytona",
+                "Ramcharger",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "Dakota",
+                "Ram D150",
+                "Ram D250",
+                "Ram D350"
             ],
             "Ford": [
                 "Festiva",
@@ -7024,6 +7578,15 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "S-15 Jimmy",
+                "K5 Jimmy",
+                "Suburban",
+                "S-15 Sonoma",
+                "Sierra",
+                "Safari",
+                "G-Series"
             ]
         }
     },
@@ -7057,7 +7620,16 @@
                 "Lumina",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Tracker",
+                "S-10 Blazer",
+                "K5 Blazer",
+                "Suburban",
+                "S-10",
+                "C/K",
+                "Lumina APV",
+                "Astro",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -7075,7 +7647,17 @@
                 "Dynasty",
                 "Monaco",
                 "Daytona",
-                "Stealth"
+                "Stealth",
+                "Ramcharger",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "Dakota",
+                "Ram D150",
+                "Ram D250",
+                "Ram D350"
             ],
             "Ford": [
                 "Festiva",
@@ -7155,6 +7737,16 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "S-15 Jimmy",
+                "K5 Jimmy",
+                "Suburban",
+                "S-15 Sonoma",
+                "Syclone",
+                "Sierra",
+                "Safari",
+                "G-Series"
             ]
         }
     },
@@ -7188,7 +7780,15 @@
                 "Lumina",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "S-10 Blazer",
+                "Blazer",
+                "Suburban",
+                "S-10",
+                "C/K",
+                "Lumina APV",
+                "Astro",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -7205,7 +7805,17 @@
                 "Monaco",
                 "Daytona",
                 "Stealth",
-                "Viper"
+                "Viper",
+                "Ramcharger",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "Dakota",
+                "Ram D150",
+                "Ram D250",
+                "Ram D350"
             ],
             "Ford": [
                 "Festiva",
@@ -7279,6 +7889,16 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "S-15 Jimmy",
+                "Typhoon",
+                "Yukon",
+                "Suburban",
+                "S-15 Sonoma",
+                "Sierra",
+                "Safari",
+                "G-Series"
             ]
         }
     },
@@ -7310,7 +7930,15 @@
                 "Lumina",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "S-10 Blazer",
+                "Blazer",
+                "Suburban",
+                "S-10",
+                "C/K",
+                "Lumina APV",
+                "Astro",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -7328,7 +7956,17 @@
                 "Intrepid",
                 "Daytona",
                 "Stealth",
-                "Viper"
+                "Viper",
+                "Ramcharger",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Ram 50",
+                "Dakota",
+                "Ram D150",
+                "Ram D250",
+                "Ram D350"
             ],
             "Ford": [
                 "Festiva",
@@ -7401,6 +8039,16 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "S-15 Jimmy",
+                "Typhoon",
+                "Yukon",
+                "Suburban",
+                "S-15 Sonoma",
+                "Sierra",
+                "Safari",
+                "G-Series"
             ]
         }
     },
@@ -7429,7 +8077,15 @@
                 "Impala&nbsp;SS",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "S-10 Blazer",
+                "Blazer",
+                "Suburban",
+                "S-10",
+                "C/K",
+                "Lumina",
+                "Astro",
+                "Van"
             ],
             "Chrysler": [
                 "LeBaron",
@@ -7446,7 +8102,16 @@
                 "Spirit",
                 "Intrepid",
                 "Stealth",
-                "Viper"
+                "Viper",
+                "Ramcharger",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Aspire",
@@ -7520,6 +8185,15 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "S-15 Jimmy",
+                "Yukon",
+                "Suburban",
+                "Sonoma",
+                "Sierra",
+                "Safari",
+                "G-Series"
             ]
         }
     },
@@ -7551,7 +8225,16 @@
                 "Caprice",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "S-10 Blazer",
+                "Blazer",
+                "Tahoe",
+                "Suburban",
+                "S-10",
+                "C/K",
+                "Lumina",
+                "Astro",
+                "Van"
             ],
             "Chrysler": [
                 "Sebring",
@@ -7570,7 +8253,16 @@
                 "Intrepid",
                 "Avenger",
                 "Stealth",
-                "Viper"
+                "Viper",
+                "Ramcharger",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Aspire",
@@ -7642,6 +8334,15 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "Jimmy",
+                "Yukon",
+                "Suburban",
+                "Sonoma",
+                "Sierra",
+                "Safari",
+                "G-Series"
             ]
         }
     },
@@ -7673,7 +8374,15 @@
                 "Caprice",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Blazer",
+                "Tahoe",
+                "Suburban",
+                "S-10",
+                "C/K",
+                "Lumina",
+                "Astro",
+                "Van"
             ],
             "Chrysler": [
                 "Sebring",
@@ -7690,7 +8399,16 @@
                 "Intrepid",
                 "Avenger",
                 "Stealth",
-                "Viper"
+                "Viper",
+                "Ramcharger",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Aspire",
@@ -7763,6 +8481,15 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "Jimmy",
+                "Yukon",
+                "Suburban",
+                "Sonoma",
+                "Sierra",
+                "Safari",
+                "Savana"
             ]
         }
     },
@@ -7790,7 +8517,15 @@
                 "Lumina",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Blazer",
+                "Tahoe",
+                "Suburban",
+                "S-10",
+                "C/K",
+                "Venture",
+                "Astro",
+                "Express"
             ],
             "Chrysler": [
                 "Sebring",
@@ -7804,7 +8539,15 @@
                 "Stratus",
                 "Intrepid",
                 "Avenger",
-                "Viper"
+                "Viper",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Aspire",
@@ -7878,6 +8621,15 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "Jimmy",
+                "Yukon",
+                "Suburban",
+                "Sonoma",
+                "Sierra",
+                "Safari",
+                "Savana"
             ]
         }
     },
@@ -7905,7 +8657,16 @@
                 "Lumina",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Tracker",
+                "Blazer",
+                "Tahoe",
+                "Suburban",
+                "S-10",
+                "C/K",
+                "Venture",
+                "Astro",
+                "Express"
             ],
             "Chrysler": [
                 "Sebring",
@@ -7918,7 +8679,16 @@
                 "Stratus",
                 "Intrepid",
                 "Avenger",
-                "Viper"
+                "Viper",
+                "Durango",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Escort",
@@ -7987,6 +8757,15 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "Jimmy",
+                "Yukon",
+                "Suburban",
+                "Sonoma",
+                "Sierra",
+                "Safari",
+                "Savana"
             ]
         }
     },
@@ -8014,7 +8793,16 @@
                 "Lumina",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Tracker",
+                "Blazer",
+                "Tahoe",
+                "Suburban",
+                "S-10",
+                "Silverado",
+                "Venture",
+                "Astro",
+                "Express"
             ],
             "Chrysler": [
                 "Sebring",
@@ -8029,7 +8817,16 @@
                 "Stratus",
                 "Intrepid",
                 "Avenger",
-                "Viper"
+                "Viper",
+                "Durango",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Escort",
@@ -8098,6 +8895,15 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "Jimmy",
+                "Yukon",
+                "Suburban",
+                "Sonoma",
+                "Sierra",
+                "Safari",
+                "Savana"
             ]
         }
     },
@@ -8125,7 +8931,16 @@
                 "Impala",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Tracker",
+                "Blazer",
+                "Tahoe",
+                "Suburban",
+                "S-10",
+                "Silverado",
+                "Venture",
+                "Astro",
+                "Express"
             ],
             "Chrysler": [
                 "Sebring",
@@ -8140,7 +8955,16 @@
                 "Stratus",
                 "Intrepid",
                 "Avenger",
-                "Viper"
+                "Viper",
+                "Durango",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Escort",
@@ -8206,6 +9030,15 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "Jimmy",
+                "Yukon",
+                "Yukon XL",
+                "Sonoma",
+                "Sierra",
+                "Safari",
+                "Savana"
             ]
         }
     },
@@ -8232,7 +9065,16 @@
                 "Impala",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Tracker",
+                "Blazer",
+                "Tahoe",
+                "Suburban",
+                "S-10",
+                "Silverado",
+                "Venture",
+                "Astro",
+                "Express"
             ],
             "Chrysler": [
                 "PT Cruiser",
@@ -8249,7 +9091,16 @@
                 "Stratus (Sedan)",
                 "Intrepid",
                 "Stratus (Coupe)",
-                "Viper"
+                "Viper",
+                "Durango",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Escort",
@@ -8316,6 +9167,15 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "Jimmy",
+                "Yukon",
+                "Yukon XL",
+                "Sonoma",
+                "Sierra",
+                "Safari",
+                "Savana"
             ]
         }
     },
@@ -8343,7 +9203,18 @@
                 "Impala",
                 "Monte Carlo",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Tracker",
+                "Blazer",
+                "TrailBlazer",
+                "Tahoe",
+                "Suburban",
+                "Avalanche",
+                "S-10",
+                "Silverado",
+                "Venture",
+                "Astro",
+                "Express"
             ],
             "Chrysler": [
                 "PT Cruiser",
@@ -8359,7 +9230,16 @@
                 "Stratus (Sedan)",
                 "Intrepid",
                 "Stratus (Coupe)",
-                "Viper"
+                "Viper",
+                "Durango",
+                "CV",
+                "GCV",
+                "Ram Van",
+                "Ram Wagon",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Escort",
@@ -8423,6 +9303,15 @@
                 "Trans&nbsp;Sport",
                 "Grand Prix",
                 "Firebird"
+            ],
+            "GMC": [
+                "Envoy",
+                "Yukon",
+                "Yukon XL",
+                "Sonoma",
+                "Sierra",
+                "Safari",
+                "Savana"
             ]
         }
     },
@@ -8450,7 +9339,19 @@
                 "Malibu",
                 "Impala",
                 "Monte Carlo",
-                "Corvette"
+                "Corvette",
+                "Tracker",
+                "Blazer",
+                "TrailBlazer",
+                "Tahoe",
+                "Suburban",
+                "Avalanche",
+                "SSR",
+                "S-10",
+                "Silverado",
+                "Venture",
+                "Astro",
+                "Express"
             ],
             "Chrysler": [
                 "PT Cruiser",
@@ -8466,7 +9367,15 @@
                 "Intrepid",
                 "SRT-4",
                 "Stratus (Coupe)",
-                "Viper"
+                "Viper",
+                "Durango",
+                "CV",
+                "GCV",
+                "Sprinter",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Focus",
@@ -8526,6 +9435,15 @@
                 "Vibe",
                 "Trans&nbsp;Sport",
                 "Grand Prix"
+            ],
+            "GMC": [
+                "Envoy",
+                "Yukon",
+                "Yukon XL",
+                "Sonoma",
+                "Sierra",
+                "Safari",
+                "Savana"
             ]
         }
     },
@@ -8557,7 +9475,20 @@
                 "Malibu",
                 "Impala",
                 "Monte Carlo",
-                "Corvette"
+                "Corvette",
+                "Tracker",
+                "Blazer",
+                "TrailBlazer",
+                "Tahoe",
+                "Suburban",
+                "Avalanche",
+                "SSR",
+                "S-10",
+                "Colorado",
+                "Silverado",
+                "Venture",
+                "Astro",
+                "Express"
             ],
             "Chrysler": [
                 "PT Cruiser",
@@ -8575,7 +9506,16 @@
                 "Intrepid",
                 "SRT-4",
                 "Stratus (Coupe)",
-                "Viper"
+                "Viper",
+                "Durango",
+                "CV",
+                "GCV",
+                "Sprinter",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500",
+                "Ram SRT-10"
             ],
             "Ford": [
                 "Focus",
@@ -8636,6 +9576,16 @@
                 "Vibe",
                 "Trans&nbsp;Sport",
                 "GTO"
+            ],
+            "GMC": [
+                "Envoy",
+                "Yukon",
+                "Yukon XL",
+                "Sonoma",
+                "Canyon",
+                "Sierra",
+                "Safari",
+                "Savana"
             ]
         }
     },
@@ -8669,7 +9619,19 @@
                 "Malibu",
                 "Impala",
                 "Monte Carlo",
-                "Corvette"
+                "Corvette",
+                "Equinox",
+                "Blazer",
+                "TrailBlazer",
+                "Tahoe",
+                "Suburban",
+                "Avalanche",
+                "SSR",
+                "Colorado",
+                "Silverado",
+                "Uplander",
+                "Astro",
+                "Express"
             ],
             "Chrysler": [
                 "PT Cruiser",
@@ -8686,7 +9648,16 @@
                 "Magnum",
                 "SRT-4",
                 "Stratus (Coupe)",
-                "Viper"
+                "Viper",
+                "Durango",
+                "CV",
+                "GCV",
+                "Sprinter",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500",
+                "Ram SRT-10"
             ],
             "Ford": [
                 "Focus",
@@ -8745,6 +9716,15 @@
                 "Vibe",
                 "Montana SV6",
                 "GTO"
+            ],
+            "GMC": [
+                "Envoy",
+                "Yukon",
+                "Yukon XL",
+                "Canyon",
+                "Sierra",
+                "Safari",
+                "Savana"
             ]
         }
     },
@@ -8781,7 +9761,18 @@
                 "Malibu",
                 "Impala",
                 "Monte Carlo",
-                "Corvette"
+                "Corvette",
+                "Captiva Sport",
+                "Equinox",
+                "TrailBlazer",
+                "Tahoe",
+                "Suburban",
+                "Avalanche",
+                "SSR",
+                "Colorado",
+                "Silverado",
+                "Uplander",
+                "Express"
             ],
             "Chrysler": [
                 "PT Cruiser",
@@ -8796,7 +9787,16 @@
                 "Stratus (Sedan)",
                 "Charger",
                 "Magnum",
-                "Viper"
+                "Viper",
+                "Durango",
+                "CV",
+                "GCV",
+                "Sprinter",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500",
+                "Ram SRT-10"
             ],
             "Ford": [
                 "Focus",
@@ -8854,6 +9854,14 @@
                 "Montana SV6",
                 "Solstice",
                 "GTO"
+            ],
+            "GMC": [
+                "Envoy",
+                "Yukon",
+                "Yukon XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
             ]
         }
     },
@@ -8890,7 +9898,17 @@
                 "Malibu",
                 "Impala",
                 "Monte Carlo",
-                "Corvette"
+                "Corvette",
+                "Captiva Sport",
+                "Equinox",
+                "TrailBlazer",
+                "Tahoe",
+                "Suburban",
+                "Avalanche",
+                "Colorado",
+                "Silverado",
+                "Uplander",
+                "Express"
             ],
             "Chrysler": [
                 "PT Cruiser",
@@ -8906,7 +9924,16 @@
                 "Caliber",
                 "Charger",
                 "Magnum",
-                "Viper"
+                "Viper",
+                "Nitro",
+                "Durango",
+                "CV",
+                "GCV",
+                "Sprinter",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Focus",
@@ -8967,6 +9994,15 @@
                 "Vibe",
                 "Montana SV6",
                 "Solstice"
+            ],
+            "GMC": [
+                "Acadia",
+                "Envoy",
+                "Yukon",
+                "Yukon&nbsp;XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
             ]
         }
     },
@@ -9001,7 +10037,17 @@
                 "Cobalt",
                 "Malibu",
                 "Impala",
-                "Corvette"
+                "Corvette",
+                "Captiva Sport",
+                "Equinox",
+                "TrailBlazer",
+                "Tahoe",
+                "Suburban",
+                "Avalanche",
+                "Colorado",
+                "Silverado",
+                "Uplander",
+                "Express"
             ],
             "Chrysler": [
                 "PT Cruiser",
@@ -9018,7 +10064,15 @@
                 "Charger",
                 "Magnum",
                 "Challenger",
-                "Viper"
+                "Viper",
+                "Nitro",
+                "Durango",
+                "Grand Caravan",
+                "Sprinter",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Focus",
@@ -9076,6 +10130,15 @@
                 "Vibe",
                 "Montana SV6",
                 "Solstice"
+            ],
+            "GMC": [
+                "Acadia",
+                "Envoy",
+                "Yukon",
+                "Yukon&nbsp;XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
             ]
         }
     },
@@ -9109,7 +10172,18 @@
                 "Cobalt",
                 "Malibu",
                 "Impala",
-                "Corvette"
+                "Corvette",
+                "Captiva Sport",
+                "Equinox",
+                "Traverse",
+                "TrailBlazer",
+                "Tahoe",
+                "Suburban",
+                "Avalanche",
+                "Colorado",
+                "Silverado",
+                "Uplander",
+                "Express"
             ],
             "Chrysler": [
                 "PT Cruiser",
@@ -9123,7 +10197,16 @@
                 "Avenger",
                 "Charger",
                 "Challenger",
-                "Viper"
+                "Viper",
+                "Journey",
+                "Nitro",
+                "Durango",
+                "Grand Caravan",
+                "Sprinter",
+                "Dakota",
+                "Ram 1500",
+                "Ram 2500",
+                "Ram 3500"
             ],
             "Ford": [
                 "Focus",
@@ -9181,6 +10264,15 @@
                 "Vibe",
                 "Montana SV6",
                 "Solstice"
+            ],
+            "GMC": [
+                "Acadia",
+                "Envoy",
+                "Yukon",
+                "Yukon&nbsp;XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
             ]
         }
     },
@@ -9210,7 +10302,16 @@
                 "Malibu",
                 "Impala",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Captiva Sport",
+                "Equinox",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Avalanche",
+                "Colorado",
+                "Silverado",
+                "Express"
             ],
             "Chrysler": [
                 "PT Cruiser",
@@ -9223,7 +10324,10 @@
                 "Avenger",
                 "Charger",
                 "Challenger",
-                "Viper"
+                "Viper",
+                "Journey",
+                "Nitro",
+                "Grand Caravan"
             ],
             "Ford": [
                 "Focus",
@@ -9277,6 +10381,23 @@
                 "Matiz/Matiz G2",
                 "G6",
                 "Vibe"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon&nbsp;XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
+            ],
+            "Ram": [
+                "Dakota",
+                "1500",
+                "2500",
+                "3500",
+                "4500",
+                "5500"
             ]
         }
     },
@@ -9307,7 +10428,16 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Captiva Sport",
+                "Equinox",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Avalanche",
+                "Colorado",
+                "Silverado",
+                "Express"
             ],
             "Chrysler": [
                 "Chrysler 200",
@@ -9318,7 +10448,11 @@
                 "Caliber",
                 "Avenger",
                 "Charger",
-                "Challenger"
+                "Challenger",
+                "Journey",
+                "Nitro",
+                "Durango",
+                "Grand Caravan"
             ],
             "Ford": [
                 "Fiesta",
@@ -9365,6 +10499,23 @@
                 "Milan",
                 "Grand Marquis",
                 "Mariner"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon&nbsp;XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
+            ],
+            "Ram": [
+                "Dakota",
+                "1500",
+                "2500",
+                "3500",
+                "4500",
+                "5500"
             ]
         }
     },
@@ -9391,7 +10542,16 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Captiva Sport",
+                "Equinox",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Avalanche",
+                "Colorado",
+                "Silverado",
+                "Express"
             ],
             "Chrysler": [
                 "Chrysler 200",
@@ -9402,7 +10562,10 @@
                 "Caliber",
                 "Avenger",
                 "Charger",
-                "Challenger"
+                "Challenger",
+                "Journey",
+                "Durango",
+                "Grand Caravan"
             ],
             "Ford": [
                 "Fiesta",
@@ -9441,6 +10604,23 @@
                 "MKT",
                 "Navigator",
                 "Mark LT"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon&nbsp;XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
+            ],
+            "Ram": [
+                "1500",
+                "2500",
+                "3500",
+                "4500",
+                "5500",
+                "Ram C/V"
             ]
         }
     },
@@ -9471,7 +10651,15 @@
                 "Impala",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Captiva Sport",
+                "Equinox",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Avalanche",
+                "Silverado",
+                "Express"
             ],
             "Chrysler": [
                 "Chrysler 200",
@@ -9483,7 +10671,10 @@
                 "Avenger",
                 "Charger",
                 "Challenger",
-                "Viper"
+                "Viper",
+                "Journey",
+                "Durango",
+                "Grand Caravan"
             ],
             "Ford": [
                 "Fiesta",
@@ -9524,6 +10715,22 @@
                 "MKT",
                 "Navigator",
                 "Mark LT"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon&nbsp;XL",
+                "Sierra",
+                "Savana"
+            ],
+            "Ram": [
+                "1500",
+                "2500",
+                "3500",
+                "4500",
+                "5500",
+                "Ram C/V"
             ]
         }
     },
@@ -9554,7 +10761,16 @@
                 "SS",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Trax",
+                "Captiva Sport",
+                "Equinox",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Silverado",
+                "City Express",
+                "Express"
             ],
             "Chrysler": [
                 "Chrysler 200",
@@ -9566,7 +10782,10 @@
                 "Avenger",
                 "Charger",
                 "Challenger",
-                "Viper"
+                "Viper",
+                "Journey",
+                "Durango",
+                "Grand Caravan"
             ],
             "Ford": [
                 "Fiesta",
@@ -9607,6 +10826,23 @@
                 "MKT",
                 "Navigator",
                 "Mark LT"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon&nbsp;XL",
+                "Sierra",
+                "Savana"
+            ],
+            "Ram": [
+                "1500",
+                "2500",
+                "3500",
+                "4500",
+                "5500",
+                "ProMaster",
+                "Ram C/V"
             ]
         }
     },
@@ -9637,7 +10873,17 @@
                 "SS",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Trax",
+                "Captiva Sport",
+                "Equinox",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Colorado",
+                "Silverado",
+                "City Express",
+                "Express"
             ],
             "Chrysler": [
                 "Chrysler 200",
@@ -9648,7 +10894,10 @@
                 "Dart",
                 "Charger",
                 "Challenger",
-                "Viper"
+                "Viper",
+                "Journey",
+                "Durango",
+                "Grand Caravan"
             ],
             "Ford": [
                 "Fiesta",
@@ -9691,6 +10940,25 @@
                 "MKX",
                 "MKT",
                 "Navigator"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
+            ],
+            "Ram": [
+                "1500",
+                "2500",
+                "3500",
+                "4500",
+                "5500",
+                "ProMaster City",
+                "ProMaster",
+                "Ram C/V"
             ]
         }
     },
@@ -9724,7 +10992,17 @@
                 "SS",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Trax",
+                "Captiva Sport",
+                "Equinox",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Colorado",
+                "Silverado",
+                "City Express",
+                "Express"
             ],
             "Chrysler": [
                 "Chrysler 200",
@@ -9735,7 +11013,10 @@
                 "Dart",
                 "Charger",
                 "Challenger",
-                "Viper"
+                "Viper",
+                "Journey",
+                "Durango",
+                "Grand Caravan"
             ],
             "Ford": [
                 "Fiesta",
@@ -9779,6 +11060,24 @@
                 "MKX → Nautilus",
                 "MKT",
                 "Navigator"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
+            ],
+            "Ram": [
+                "1500",
+                "2500",
+                "3500",
+                "4500",
+                "5500",
+                "ProMaster City",
+                "ProMaster"
             ]
         }
     },
@@ -9812,7 +11111,17 @@
                 "SS",
                 "Caprice",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Trax",
+                "Captiva Sport",
+                "Equinox",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Colorado",
+                "Silverado",
+                "City Express",
+                "Express"
             ],
             "Chrysler": [
                 "Chrysler 200",
@@ -9822,7 +11131,10 @@
             "Dodge": [
                 "Charger",
                 "Challenger",
-                "Viper"
+                "Viper",
+                "Journey",
+                "Durango",
+                "Grand Caravan"
             ],
             "Ford": [
                 "Fiesta",
@@ -9867,6 +11179,24 @@
                 "MKX → Nautilus",
                 "MKT",
                 "Navigator"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
+            ],
+            "Ram": [
+                "1500",
+                "2500",
+                "3500",
+                "4500",
+                "5500",
+                "ProMaster City",
+                "ProMaster"
             ]
         }
     },
@@ -9897,7 +11227,17 @@
                 "Malibu",
                 "Impala",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Trax",
+                "Captiva Sport",
+                "Equinox",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Colorado",
+                "Silverado",
+                "City Express",
+                "Express"
             ],
             "Chrysler": [
                 "300",
@@ -9905,7 +11245,10 @@
             ],
             "Dodge": [
                 "Charger",
-                "Challenger"
+                "Challenger",
+                "Journey",
+                "Durango",
+                "Grand Caravan"
             ],
             "Ford": [
                 "Fiesta",
@@ -9952,6 +11295,24 @@
                 "MKX → Nautilus",
                 "MKT",
                 "Navigator"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
+            ],
+            "Ram": [
+                "1500",
+                "2500",
+                "3500",
+                "4500",
+                "5500",
+                "ProMaster City",
+                "ProMaster"
             ]
         }
     },
@@ -9984,7 +11345,16 @@
                 "Malibu",
                 "Impala",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Trax",
+                "Equinox",
+                "Blazer",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Colorado",
+                "Silverado",
+                "Express"
             ],
             "Chrysler": [
                 "300",
@@ -9992,7 +11362,10 @@
             ],
             "Dodge": [
                 "Charger",
-                "Challenger"
+                "Challenger",
+                "Journey",
+                "Durango",
+                "Grand Caravan"
             ],
             "Ford": [
                 "Fiesta",
@@ -10038,6 +11411,24 @@
                 "MKX → Nautilus",
                 "MKT",
                 "Navigator"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
+            ],
+            "Ram": [
+                "1500",
+                "2500",
+                "3500",
+                "4500",
+                "5500",
+                "ProMaster City",
+                "ProMaster"
             ]
         }
     },
@@ -10067,7 +11458,16 @@
                 "Malibu",
                 "Impala",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Trax",
+                "Equinox",
+                "Blazer",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Colorado",
+                "Silverado",
+                "Express"
             ],
             "Chrysler": [
                 "300",
@@ -10076,7 +11476,10 @@
             ],
             "Dodge": [
                 "Charger",
-                "Challenger"
+                "Challenger",
+                "Journey",
+                "Durango",
+                "Grand Caravan"
             ],
             "Ford": [
                 "Fusion",
@@ -10119,6 +11522,24 @@
                 "MKX → Nautilus",
                 "Aviator",
                 "Navigator"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
+            ],
+            "Ram": [
+                "1500",
+                "2500",
+                "3500",
+                "4500",
+                "5500",
+                "ProMaster City",
+                "ProMaster"
             ]
         }
     },
@@ -10143,7 +11564,17 @@
                 "Spark",
                 "Malibu",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Trax",
+                "Trailblazer",
+                "Equinox",
+                "Blazer",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Colorado",
+                "Silverado",
+                "Express"
             ],
             "Chrysler": [
                 "300",
@@ -10152,7 +11583,8 @@
             ],
             "Dodge": [
                 "Charger",
-                "Challenger"
+                "Challenger",
+                "Durango"
             ],
             "Ford": [
                 "Mustang",
@@ -10196,6 +11628,24 @@
                 "MKX → Nautilus",
                 "Aviator",
                 "Navigator"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon XL",
+                "Canyon",
+                "Sierra",
+                "Savana"
+            ],
+            "Ram": [
+                "1500",
+                "2500",
+                "3500",
+                "4500",
+                "5500",
+                "ProMaster City",
+                "ProMaster"
             ]
         }
     },
@@ -10222,7 +11672,18 @@
                 "Spark",
                 "Malibu",
                 "Camaro",
-                "Corvette"
+                "Corvette",
+                "Trax",
+                "Trailblazer",
+                "Bolt EUV",
+                "Equinox",
+                "Blazer",
+                "Traverse",
+                "Tahoe",
+                "Suburban",
+                "Colorado",
+                "Silverado",
+                "Express"
             ],
             "Dodge": [
                 "Charger",
@@ -10265,6 +11726,16 @@
                 "MKX → Nautilus",
                 "Aviator",
                 "Navigator"
+            ],
+            "GMC": [
+                "Terrain",
+                "Acadia",
+                "Yukon",
+                "Yukon XL",
+                "Canyon",
+                "Sierra",
+                "Hummer EV",
+                "Savana"
             ]
         }
     }

@@ -182,7 +182,7 @@ export default class PartsPage extends Vue {
     }
     this.packet.bounty = parseInt(this.packet.bounty);
 
-    
+    console.log(this.packet)
 
     APIPostingHelper.makePartBounty(this.packet).then((response) => {
     }).then(() => { this.$router.push("/listing/success")});

@@ -19,6 +19,19 @@ const mailgun = require("mailgun-js")
 const crypto = require('crypto');
 const passwordresettoken = require('./models/passwordresettoken');
 const bcrypt = require("bcryptjs")
+var multer = require('multer');
+
+// Set up multer
+var storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploadsaa')
+    },
+    filename: (req, file, cb) => {
+        cb(null, file.fieldname + '-' + Date.now())
+    }
+});
+  
+var upload = multer({ storage: storage });
 
 
 app.use(bodyParser.json({ limit: '50mb', extended: true }))
@@ -70,7 +83,7 @@ let partSales = 0;
 
 
 
-app.post("/api/partbounty", function (req, res) {
+app.post("/api/partbounty", upload.array("files"), function (req, res) {
     const newpart = new PartBounty({
         title: req.body.title,
         year: req.body.year,
@@ -175,10 +188,10 @@ app.put('/api/user/validatetoken', (req, res) => {
     let token = req.cookies['token']
     if (token) {
         User.findByToken(token).then((data) => {
-            res.status(200).send({ message: "User found!" });
+            res.status(200);
         })
     } else {
-        res.status(404).send({ message: "User not found!" });
+        res.status(404);
     }
 
 })

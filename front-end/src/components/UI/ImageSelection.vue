@@ -42,11 +42,11 @@ export default class ImageSelector extends Vue {
   onSelectFile() {
     const input = this.$refs.fileInput;
     const files = input.files;
+    console.log(files)
     if (files && files[0]) {
       const reader = new FileReader();
       reader.readAsDataURL(files[0]);
       reader.onload = (e) => {
-        const preview = document.getElementById("preview");
         let photo = { photo: reader.result, id: this.photoArray.length };
         this.photoArray.push(photo);
         this.currentPhoto = photo.photo;
@@ -89,7 +89,7 @@ img[class*="smallImg"] {
 }
 div [class*="imgbutton"] {
   color: black;
-  background-color: red;
+  background-color: rgb(10, 118, 248);
   border: black solid 3px;
   border-radius: 0% !important;
 }
