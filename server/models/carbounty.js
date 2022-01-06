@@ -30,10 +30,10 @@ const carSchema = new Schema({
         type: Number,
         required: true
     },
-    images: {
-        type: Array,
-        required: false
-    }
+    images: [{
+        data: Buffer,
+        contentType: String
+    }]
 }, { timestamps: true });
 
 const CarBounty = mongoose.model('carbounty', carSchema);

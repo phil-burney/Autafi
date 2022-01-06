@@ -20,17 +20,19 @@ const crypto = require('crypto');
 const passwordresettoken = require('./models/passwordresettoken');
 const bcrypt = require("bcryptjs")
 var multer = require('multer');
+var fs = require('fs');
+var path = require('path');
 
 // Set up multer
 var storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, 'uploadsaa')
+        cb(null, 'uploads')
     },
     filename: (req, file, cb) => {
         cb(null, file.fieldname + '-' + Date.now())
     }
 });
-  
+
 var upload = multer({ storage: storage });
 
 
@@ -92,13 +94,25 @@ app.post("/api/partbounty", upload.array("files"), function (req, res) {
         part: req.body.part,
         description: req.body.description,
         bounty: req.body.bounty,
-        images: req.body.photos,
+        images: [],
         email: req.body.email,
     });
+    console.log(__dirname)
+    let dir = path.join(__dirname + '/uploads/' + newpart._id)
+    console.log(dir)
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir, { recursive: true });
+    }
+    req.body.photos.forEach((image) => {
+        let newImageObject = {
+            data: fs.readFileSync(dir + '/' + 1),
+            contentType: 'image/png'
+        }
+        newpart.images.push(newImageObject)
+    })
 
     newpart.save()
-        .then(() => {
-            // send back response
+        .then(() => {  
             res.status(200).send({ message: 'Part successfully entered' });
         })
         .catch((err) => {
@@ -209,14 +223,14 @@ app.put('/api/user/resetpassword', async (req, res) => {
         user.password = req.body.password;
         await user.save()
         await token.delete();
-        
+
         const mg = mailgun({ apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN });
         const data = {
             from: 'passwordresetconfirmation@autaphi.com',
             to: user.email,
             subject: 'Password Reset Confirmation',
             html: '<h3> Password Reset </h3> <div> Hello! The Autafi account associated with this email has just had its password reset.' +
-            '  If you believe that this was in error, please contact peburney@gmail.com. </div>'
+                '  If you believe that this was in error, please contact peburney@gmail.com. </div>'
         }
         mg.messages().send(data, function (error, body) {
             if (error) {
@@ -225,7 +239,7 @@ app.put('/api/user/resetpassword', async (req, res) => {
                 res.status(200).send({ message: "Password changed successfully" })
             }
         });
-        
+
 
     } else {
         res.status(404).send({ message: "The link has expired!" })

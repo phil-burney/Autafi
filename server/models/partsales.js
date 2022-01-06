@@ -34,10 +34,10 @@ const partSchema = new Schema({
         type: Number,
         required: true
     },
-    images: {
-        type: Array,
-        required: false
-    }
+    images: [{
+        data: Buffer,
+        contentType: String
+    }]
 }, {
 
 },
