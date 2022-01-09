@@ -34,10 +34,9 @@ const partSchema = new Schema({
         type: Number,
         required: true
     },
-    images: [{
-        data: Buffer,
-        contentType: String
-    }]
+    images: {
+        type: [String]
+    }
 }, { timestamps: true });
 
 const PartBounty = mongoose.model('partbounty', partSchema);

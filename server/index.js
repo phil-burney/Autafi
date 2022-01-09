@@ -20,20 +20,30 @@ const crypto = require('crypto');
 const passwordresettoken = require('./models/passwordresettoken');
 const bcrypt = require("bcryptjs")
 var multer = require('multer');
-var fs = require('fs');
+var fs = require('fs-extra');
 var path = require('path');
 
+
+app.use(express.static('uploads'));
 // Set up multer
 var storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, 'uploads')
+        let dir = (__dirname + '\\uploads\\temp\\' + req.body.email)
+        req.body.dest = dir
+        if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir, { recursive: true });
+        }
+        cb(null, dir)
     },
     filename: (req, file, cb) => {
-        cb(null, file.fieldname + '-' + Date.now())
+        let fileFormat = file.mimetype.split('/');
+        cb(null, 'photo' + '-' + Date.now() + '.' + fileFormat[fileFormat.length - 1])
     }
 });
 
 var upload = multer({ storage: storage });
+
+// Serve static image content publicly
 
 
 app.use(bodyParser.json({ limit: '50mb', extended: true }))
@@ -41,7 +51,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 //session cookie
 app.use(cookieParser());
-
 
 app.use(function (req, res, next) {
     res.setHeader('mode', 'cors');
@@ -52,9 +61,6 @@ app.use(function (req, res, next) {
 
     next();
 });
-// Serve static html/js/css content publically
-
-
 
 //session middleware
 app.use(session({
@@ -85,7 +91,7 @@ let partSales = 0;
 
 
 
-app.post("/api/partbounty", upload.array("files"), function (req, res) {
+app.post("/api/partbounty", upload.array("photo"), async function (req, res) {
     const newpart = new PartBounty({
         title: req.body.title,
         year: req.body.year,
@@ -94,35 +100,32 @@ app.post("/api/partbounty", upload.array("files"), function (req, res) {
         part: req.body.part,
         description: req.body.description,
         bounty: req.body.bounty,
-        images: [],
         email: req.body.email,
     });
-    console.log(__dirname)
-    let dir = path.join(__dirname + '/uploads/' + newpart._id)
-    console.log(dir)
-    if (!fs.existsSync(dir)){
+    let dir = path.join(__dirname + '/uploads/part/bounty/' + newpart._id)
+    if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
     }
-    req.body.photos.forEach((image) => {
-        let newImageObject = {
-            data: fs.readFileSync(dir + '/' + 1),
-            contentType: 'image/png'
-        }
-        newpart.images.push(newImageObject)
+    fs.move(req.body.dest, dir, { overwrite: true }, () => {
+        console.log("move successful")
+        fs.readdirSync(dir).forEach((img) => {
+            newpart.images.push('http://localhost:3030' + '/part/bounty/' + newpart._id + '/' + img)
+        })
+        console.log(newpart.images)
+        newpart.save()
+            .then(() => {
+                //res.status(200).send({ message: 'Part successfully entered' });
+            })
+            .catch((err) => {
+                console.log(err);
+            })
     })
-
-    newpart.save()
-        .then(() => {  
-            res.status(200).send({ message: 'Part successfully entered' });
-        })
-        .catch((err) => {
-            console.log(err);
-        })
 })
 
 app.get('/api/partbounty', (req, res) => {
-
+    let formData = new FormData()
     PartBounty.find()
+        
         .then((result) => {
             res.status(200).send(result);
         })
