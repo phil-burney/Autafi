@@ -114,7 +114,7 @@ app.post("/api/partbounty", upload.array("photo"), async function (req, res) {
         console.log(newpart.images)
         newpart.save()
             .then(() => {
-                //res.status(200).send({ message: 'Part successfully entered' });
+                res.status(200).send({ message: 'Part successfully entered' });
             })
             .catch((err) => {
                 console.log(err);
@@ -123,9 +123,8 @@ app.post("/api/partbounty", upload.array("photo"), async function (req, res) {
 })
 
 app.get('/api/partbounty', (req, res) => {
-    let formData = new FormData()
     PartBounty.find()
-        
+
         .then((result) => {
             res.status(200).send(result);
         })

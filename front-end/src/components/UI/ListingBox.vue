@@ -12,7 +12,7 @@
           class="p-2 img-fluid"
           :src="currentPhoto"
         />
-        
+
         <img v-else id="image" src="../../assets/part.svg" class="img-fluid" />
         </div>
       </div>
@@ -45,7 +45,7 @@
             <div class="p-2">{{ listing.description }}</div>
           </div>
         <h5 class="pt-3">Email: {{ listing.email }}</h5>
-    
+
       </div>
     </div>
   </div>
@@ -76,7 +76,8 @@ export default class ListingBox extends ListingProps {
   }
   created() {
     if (this.listing.images[0]) {
-      this.currentPhoto = this.listing.images[0].photo;
+      this.currentPhoto = this.listing.images[0];
+      console.log(this.currentPhoto)
     }
   }
   data() {
