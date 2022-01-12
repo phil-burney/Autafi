@@ -182,9 +182,21 @@ export default class PartsPage extends Vue {
     }
     this.packet.bounty = parseInt(this.packet.bounty);
 
-    console.log(this.packet)
+    let formPacket = new FormData()
 
-    APIPostingHelper.makePartBounty(this.packet).then((response) => {
+    formPacket.append("title", this.packet.title)
+    formPacket.append("year", this.packet.year)
+    formPacket.append("make", this.packet.make)
+    formPacket.append("model", this.packet.model)
+    formPacket.append("part", this.packet.part)
+    formPacket.append("description", this.packet.description)
+    formPacket.append("bounty", this.packet.bounty)
+    formPacket.append("email", this.packet.email)
+    this.packet.photos.forEach((photo) => {
+      formPacket.append("photo", photo)
+    })
+
+    APIPostingHelper.makePartBounty(formPacket).then((response) => {
     }).then(() => { this.$router.push("/listing/success")});
   }
 }

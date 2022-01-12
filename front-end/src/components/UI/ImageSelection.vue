@@ -49,14 +49,16 @@ export default class ImageSelector extends Vue {
       reader.onload = (e) => {
         let photo = { photo: reader.result, id: this.photoArray.length };
         this.photoArray.push(photo);
+        this.fileArray.push(files[0])
         this.currentPhoto = photo.photo;
-        this.$emit("newPhoto", this.photoArray);
+        this.$emit("newPhoto", this.fileArray);
       };
     }
   }
   data() {
     return {
       photoArray: [],
+      fileArray:[],
       currentPhoto: undefined,
     };
   }

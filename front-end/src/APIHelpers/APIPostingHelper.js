@@ -58,10 +58,7 @@ export default class APIPostingHelper {
       method: "POST",
       mode: "cors",
       credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-    },
-      body: JSON.stringify(content)
+      body: content
     }
     let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/partbounty", options);
     let returnData = await data.json();
