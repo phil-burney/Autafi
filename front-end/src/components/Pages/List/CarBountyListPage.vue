@@ -1,6 +1,6 @@
 <template>
   <div id="carbountylistpage">
-    <listing-page :isCar="true" title="Car Bounty MarketPlace"
+    <listing-page :isCar="true" title="Car Bounty Posts"
     v-on:newYear="setYear"
       v-on:newMake="setMake"
       v-on:newModel="setModel"
@@ -9,11 +9,11 @@
       <listing-box class = "p-2" :listing="listing" :isBountyListing="true"
       v-if="
           (listing.year == packet.year && listing.make == packet.make && listing.model == packet.model) ||
-          (listing.year == packet.year && '' == packet.make && '' == packet.model) || 
+          (listing.year == packet.year && '' == packet.make && '' == packet.model) ||
           (listing.year == packet.year && listing.make == packet.make && '' == packet.model) ||
           (packet.year == undefined)
-        
-        " 
+
+        "
       />
     </div>
   </div>

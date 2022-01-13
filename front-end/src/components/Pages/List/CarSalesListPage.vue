@@ -2,16 +2,16 @@
   <div id="carsaleslistpage">
     <listing-page
       :isCar="true"
-      title="Car Sale MarketPlace"
+      title="Car Sales Posts"
       v-on:newYear="setYear"
       v-on:newMake="setMake"
       v-on:newModel="setModel"
-      
+
     />
     <div class="p-2" v-for="listing in listings" :key="listing._id">
-      <listing-box class="p-2" :listing="listing" 
+      <listing-box class="p-2" :listing="listing"
       v-if="(listing.year == packet.year && listing.make == packet.make && listing.model == packet.model) ||
-          (listing.year == packet.year && '' == packet.make && '' == packet.model) || 
+          (listing.year == packet.year && '' == packet.make && '' == packet.model) ||
           (listing.year == packet.year && listing.make == packet.make && '' == packet.model) ||
           (packet.year == undefined)"/>
     </div>

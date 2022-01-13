@@ -32,11 +32,7 @@
             v-if="this.$store.state.user == null"
             class="d-flex flex-row p-2"
           >
-            <div class="">
-              <router-link to="/listingSelect">
-                <bounty-button class="mx-1" label="View Listings" />
-              </router-link>
-            </div>
+
             <router-link to="/login">
               <bounty-button label="Login" />
             </router-link>
@@ -50,19 +46,8 @@
 
           <div
             v-else
-            class="
-              p-2
-              col
-              d-sm-inline-flex
-              flex-row
-              align-items-end
-              justify-content-end
-            "
           >
             <div class="p-1">
-              <router-link to="/listingSelect">
-                <bounty-button label="View Listings" />
-              </router-link>
             </div>
             <div class="p-1">Welcome, {{ this.$store.state.user }}</div>
             <bounty-button
@@ -70,15 +55,15 @@
               label="Logout"
               v-on:buttonClick="logout"
             />
-            <router-link to="/selectcarsorpartsbounty">
-              <bounty-button class="m-1" label="Post Bounty" />
-            </router-link>
-            <router-link to="/selectcarsorpartssale">
-              <bounty-button class="m-1" label="Post Sale" />
-            </router-link>
           </div>
-           <nav-drop-down />
-           <div> aaa</div>
+          <nav-drop-down
+            :links="[
+              { title: 'Car Bounties', link: '/cars/bounty/list' },
+              { title: 'Car Sale Posts', link: '/cars/sale/list' },
+              { title: 'Part Bounties', link: '/parts/bounty/list' },
+              { title: 'Part Sale Posts', link: '/parts/sale/list' },
+            ]"
+          />
         </div>
       </div>
     </div>

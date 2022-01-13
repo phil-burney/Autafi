@@ -2,7 +2,7 @@
   <div id="partbountylistpage">
     <listing-page
       :isCar="false"
-      title="Part Bounty MarketPlace"
+      title="Part Bounty Posts"
       v-on:newYear="setYear"
       v-on:newMake="setMake"
       v-on:newModel="setModel"
@@ -12,11 +12,11 @@
       <listing-box
         v-if="
           (listing.year == packet.year && listing.make == packet.make && listing.model == packet.model && listing.part== packet.part) ||
-          (listing.year == packet.year && '' == packet.make && '' == packet.model && ''== packet.part) || 
+          (listing.year == packet.year && '' == packet.make && '' == packet.model && ''== packet.part) ||
           (listing.year == packet.year && listing.make == packet.make && '' == packet.model && ''== packet.part) ||
           (listing.year == packet.year && listing.make == packet.make && listing.model == packet.model && ''== packet.part) ||
           (packet.year == undefined)
-        
+
         "
         :listing="listing"
         :isPartListing="true"
