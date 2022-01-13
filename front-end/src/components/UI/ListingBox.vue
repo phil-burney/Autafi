@@ -32,12 +32,12 @@
           </div>
         </div>
         <div v-else-if="isPartListing" id="imgcontainer" >
-          <img src="../../assets/part.svg" id="defaultimg">
+          <img class = "img-fluid" src="../../assets/part.svg" id="defaultimg">
         </div>
         <div v-else-if="isCarListing" id="imgcontainer">
           <img src="../../assets/car.svg" id="defaultimg">
         </div>
-        
+
       </div>
       <div class="col-md-4 col-lg-3 p-3" id="basicinfo">
         <h2 class="text-nowrap" v-if="isBountyListing">
@@ -148,7 +148,7 @@ div [class*="descriptionbox"] {
 #image {
   width: inherit;
   height: inherit;
-  
+
 }
 #leftarrow {
   height: 50px;
