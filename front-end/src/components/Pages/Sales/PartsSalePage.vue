@@ -165,9 +165,20 @@ export default class CarsSalePage extends Vue {
 
     // Set packet sale price to a number
     this.packet.salePrice = parseInt(this.packet.salePrice)
-    this.packet.email = this.$cookie.get('email')
+    let formPacket = new FormData()
 
-    await APIPostingHelper.makePartSale(this.packet).then((response) => {
+    formPacket.append("title", this.packet.title)
+    formPacket.append("year", this.packet.year)
+    formPacket.append("make", this.packet.make)
+    formPacket.append("model", this.packet.model)
+    formPacket.append("part", this.packet.part)
+    formPacket.append("description", this.packet.description)
+    formPacket.append("salePrice", this.packet.salePrice)
+    formPacket.append("email", this.packet.email)
+    this.packet.photos.forEach((photo) => {
+      formPacket.append("photo", photo)
+    })
+    APIPostingHelper.makePartSale(formPacket).then((response) => {
     }).then(() => { this.$router.push("/listing/success")});
   }
 }

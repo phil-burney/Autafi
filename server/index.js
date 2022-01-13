@@ -82,15 +82,6 @@ router.use('/api', function (req, res, next) {
     next();
 });
 
-
-let numUsers = 0;
-let carBounties = 0;
-let partBounties = 0;
-let carSales = 0;
-let partSales = 0;
-
-
-
 app.post("/api/partbounty", upload.array("photo"), async function (req, res) {
     const newpart = new PartBounty({
         title: req.body.title,
@@ -109,9 +100,8 @@ app.post("/api/partbounty", upload.array("photo"), async function (req, res) {
     fs.move(req.body.dest, dir, { overwrite: true }, () => {
         console.log("move successful")
         fs.readdirSync(dir).forEach((img) => {
-            newpart.images.push('http://localhost:3030' + '/part/bounty/' + newpart._id + '/' + img)
+            newpart.images.push(process.env.THIS_URL + '/part/bounty/' + newpart._id + '/' + img)
         })
-        console.log(newpart.images)
         newpart.save()
             .then(() => {
                 res.status(200).send({ message: 'Part successfully entered' });
@@ -133,7 +123,7 @@ app.get('/api/partbounty', (req, res) => {
         })
 })
 
-app.post("/api/carbounty", function (req, res) {
+app.post("/api/carbounty", upload.array("photo"), async function (req, res) {
 
 
     //Currently only posting car to database without image
@@ -147,8 +137,16 @@ app.post("/api/carbounty", function (req, res) {
         images: req.body.photos,
         email: req.body.email,
     });
-
-    newcar.save()
+    let dir = path.join(__dirname + '/uploads/car/bounty/' + newcar._id)
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.move(req.body.dest, dir, { overwrite: true }, () => {
+        console.log("move successful")
+        fs.readdirSync(dir).forEach((img) => {
+            newcar.images.push(process.env.THIS_URL + '/car/bounty/' + newcar._id + '/' + img)
+        })
+        newcar.save()
         .then(() => {
             // send back response
             res.status(200).send({ message: 'Part successfully entered' });
@@ -156,6 +154,8 @@ app.post("/api/carbounty", function (req, res) {
         .catch((err) => {
             console.log(err);
         })
+    })
+    
 })
 
 app.get('/api/carbounty', (req, res) => {
@@ -168,7 +168,93 @@ app.get('/api/carbounty', (req, res) => {
             console.log(err);
         })
 })
+app.post("/api/partsale", upload.array("photo"), async function (req, res) {
 
+    const newpart = new PartSale({
+        title: req.body.title,
+        year: req.body.year,
+        make: req.body.make,
+        model: req.body.model,
+        part: req.body.part,
+        description: req.body.description,
+        salePrice: req.body.salePrice,
+        images: req.body.photos,
+        email: req.body.email,
+    });
+
+    let dir = path.join(__dirname + '/uploads/part/sale/' + newpart._id)
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.move(req.body.dest, dir, { overwrite: true }, () => {
+        console.log("move successful")
+        fs.readdirSync(dir).forEach((img) => {
+            newpart.images.push(process.env.THIS_URL + '/part/sale/' + newpart._id + '/' + img)
+        })
+        newpart.save()
+            .then(() => {
+                res.status(200).send({ message: 'Part successfully entered' });
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+    })
+
+
+})
+
+app.get('/api/partsale', (req, res) => {
+
+
+    PartSale.find({}).exec(function (error, posts) {
+        res.send(posts);
+    })
+})
+
+app.post("/api/carsale", upload.array("photo"), async function (req, res) {
+
+
+    //Currently only posting car to database without image
+    const newcar = new CarSale({
+        title: req.body.title,
+        year: req.body.year,
+        make: req.body.make,
+        model: req.body.model,
+        description: req.body.description,
+        salePrice: req.body.salePrice,
+        images: req.body.photos,
+        email: req.body.email,
+    });
+
+    let dir = path.join(__dirname + '/uploads/car/sale/' + newcar._id)
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.move(req.body.dest, dir, { overwrite: true }, () => {
+        console.log("move successful")
+        fs.readdirSync(dir).forEach((img) => {
+            newcar.images.push(process.env.THIS_URL + '/car/sale/' + newcar._id + '/' + img)
+        })
+        newcar.save()
+            .then(() => {
+                res.status(200).send({ message: 'Car successfully entered' });
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+    })
+})
+
+app.get('/api/carsale', (req, res) => {
+
+    CarSale.find()
+        .then((result) => {
+            res.status(200).send(result);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+})
 app.post('/api/user/signup', (req, res) => {
     //Find identical email
     User.findByEmail(req.body.email).then((data) => {
@@ -362,109 +448,7 @@ app.put('/api/logout', (req, res) => {
 
 });
 
-app.post("/api/partsale", function (req, res) {
 
-    const newpart = new PartSale({
-        title: req.body.title,
-        year: req.body.year,
-        make: req.body.make,
-        model: req.body.model,
-        part: req.body.part,
-        description: req.body.description,
-        salePrice: req.body.salePrice,
-        images: req.body.photos,
-        email: req.body.email,
-    });
-
-    newpart.save()
-        .then((result) => {
-            // send back response
-            res.status(200).send({ message: 'Part successfully entered' });
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-
-})
-
-app.get('/api/partsale', (req, res) => {
-
-
-    PartSale.find({}).exec(function (error, posts) {
-        res.send(posts);
-    })
-})
-
-app.post("/api/carsale", function (req, res) {
-
-
-    //Currently only posting car to database without image
-    const newcar = new CarSale({
-        title: req.body.title,
-        year: req.body.year,
-        make: req.body.make,
-        model: req.body.model,
-        description: req.body.description,
-        salePrice: req.body.salePrice,
-        images: req.body.photos,
-        email: req.body.email,
-    });
-
-    newcar.save()
-        .then(() => {
-            // send back response
-            res.status(200).send({ message: 'Car Sale successfully entered' });
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-})
-
-app.get('/api/carsale', (req, res) => {
-
-    CarSale.find()
-        .then((result) => {
-            res.status(200).send(result);
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-})
-
-app.get('/api/appstatus', (req, res) => {
-    var today = new Date();
-    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    var dateTime = date + ' ' + time;
-    User.find()
-        .then((result) => {
-            numUsers = result.length;
-            CarBounty.find()
-                .then((response) => {
-                    carBounties = response.length;
-                })
-            CarSale.find()
-                .then((response) => {
-                    carSales = response.length;
-                })
-            PartSale.find()
-                .then((response) => {
-                    partSales = response.length;
-                })
-            PartBounty.find()
-                .then((response) => {
-                    partBounties = result.length;
-                    res.status(200).send({
-                        users: numUsers,
-                        carBounties: carBounties,
-                        partBounties: response.length,
-                        carSales: carSales,
-                        partSales: partSales,
-                        updated: dateTime
-                    })
-                })
-        })
-})
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)

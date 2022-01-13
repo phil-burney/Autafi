@@ -35,7 +35,7 @@
           <img class = "img-fluid" src="../../assets/part.svg" id="defaultimg">
         </div>
         <div v-else-if="isCarListing" id="imgcontainer">
-          <img src="../../assets/car.svg" id="defaultimg">
+          <img class = "img-fluid" src="../../assets/car.svg" id="defaultimg">
         </div>
 
       </div>

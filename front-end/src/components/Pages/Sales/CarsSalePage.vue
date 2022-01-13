@@ -156,8 +156,20 @@ export default class CarsSalePage extends Vue {
       return;
     }
     this.packet.salePrice = parseInt(this.packet.salePrice);
+    let formPacket = new FormData()
 
-    APIPostingHelper.makeCarSale(this.packet).then((response) => {
+    formPacket.append("title", this.packet.title)
+    formPacket.append("year", this.packet.year)
+    formPacket.append("make", this.packet.make)
+    formPacket.append("model", this.packet.model)
+    formPacket.append("description", this.packet.description)
+    formPacket.append("salePrice", this.packet.salePrice)
+    formPacket.append("email", this.packet.email)
+    this.packet.photos.forEach((photo) => {
+      formPacket.append("photo", photo)
+    })
+
+    APIPostingHelper.makeCarSale(formPacket).then((response) => {
     }).then(() => { this.$router.push("/listing/success")});
   }
 }

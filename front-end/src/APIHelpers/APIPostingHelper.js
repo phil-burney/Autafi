@@ -2,15 +2,11 @@
 
 export default class APIPostingHelper {
   static async makeCarSale(content) {
-    let carSales;
     const options = {
       method: "POST",
       mode: "cors",
       credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-    },
-      body: JSON.stringify(content)
+      body: content
     }
     let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/carsale", options);
     let returnData = await data.json();
@@ -19,15 +15,11 @@ export default class APIPostingHelper {
 
   }
   static async makeCarBounty(content) {
-    let carSales;
     const options = {
       method: "POST",
       mode: "cors",
       credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-    },
-      body: JSON.stringify(content)
+      body: content
     }
     let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/carbounty", options);
 
@@ -36,16 +28,13 @@ export default class APIPostingHelper {
 
   }
   static async makePartSale(content) {
-    let carSales;
     const options = {
       method: "POST",
       mode: "cors",
       credentials: "include",
-      headers: {
-        "Content-Type": "application/json",
-    },
-      body: JSON.stringify(content)
+      body: content
     }
+    
     let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/partsale", options);
     let returnData = await data.json();
 
@@ -53,7 +42,6 @@ export default class APIPostingHelper {
 
   }
   static async makePartBounty(content) {
-    let carSales;
     const options = {
       method: "POST",
       mode: "cors",

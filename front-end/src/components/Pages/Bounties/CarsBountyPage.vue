@@ -167,9 +167,19 @@ export default class CarsBountyPage extends Vue {
     if (!this.validateForm()) {
       return;
     }
-    this.packet.bounty = parseInt(this.packet.bounty);
-
-    await APIPostingHelper.makeCarBounty(this.packet).then((response) => {
+    let formPacket = new FormData()
+    console.log(this.packet)
+    formPacket.append("title", this.packet.title)
+    formPacket.append("year", this.packet.year)
+    formPacket.append("make", this.packet.make)
+    formPacket.append("model", this.packet.model)
+    formPacket.append("description", this.packet.description)
+    formPacket.append("bounty", this.packet.bounty)
+    formPacket.append("email", this.packet.email)
+    this.packet.photos.forEach((photo) => {
+      formPacket.append("photo", photo)
+    })
+    APIPostingHelper.makeCarBounty(formPacket).then((response) => {
     }).then(() => { this.$router.push("/listing/success")});
   }
 }
