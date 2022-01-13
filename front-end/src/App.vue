@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -10,26 +9,34 @@
 
     <div id="headline">
       <div class="row">
-        <h1 class="col header text-left d-flex justify-content-left ">
+        <h1 class="col header text-left d-flex justify-content-left">
           <router-link to="/">
-            <img src = "./assets/inspired_logo_1.svg" class="img-fluid m-2 ps-3" id="logo">
+            <img
+              src="./assets/inspired_logo_1.svg"
+              class="img-fluid m-2 ps-3"
+              id="logo"
+            />
           </router-link>
         </h1>
 
-
-        <div class="col-md-4 d-sm-inline-flex flex-row align-items-end justify-content-end">
-
-          
-
+        <div
+          class="
+            col-md-4
+            d-sm-inline-flex
+            flex-row
+            align-items-end
+            justify-content-end
+          "
+        >
           <div
             v-if="this.$store.state.user == null"
             class="d-flex flex-row p-2"
           >
-          <div class="">
-            <router-link to="/listingSelect">
-              <bounty-button class= "mx-1" label="View Listings" />
-            </router-link>
-          </div>
+            <div class="">
+              <router-link to="/listingSelect">
+                <bounty-button class="mx-1" label="View Listings" />
+              </router-link>
+            </div>
             <router-link to="/login">
               <bounty-button label="Login" />
             </router-link>
@@ -41,16 +48,22 @@
             </router-link>
           </div>
 
-
           <div
             v-else
-            class="p-2 col d-sm-inline-flex flex-row align-items-end justify-content-end"
+            class="
+              p-2
+              col
+              d-sm-inline-flex
+              flex-row
+              align-items-end
+              justify-content-end
+            "
           >
-          <div class="p-1">
-            <router-link to="/listingSelect">
-              <bounty-button label="View Listings" />
-            </router-link>
-          </div>
+            <div class="p-1">
+              <router-link to="/listingSelect">
+                <bounty-button label="View Listings" />
+              </router-link>
+            </div>
             <div class="p-1">Welcome, {{ this.$store.state.user }}</div>
             <bounty-button
               class="m-1"
@@ -64,6 +77,8 @@
               <bounty-button class="m-1" label="Post Sale" />
             </router-link>
           </div>
+           <nav-drop-down />
+           <div> aaa</div>
         </div>
       </div>
     </div>
@@ -76,13 +91,15 @@ import { Component, Vue } from "vue-property-decorator";
 import BountyButton from "./components/UI/BountyButton.vue";
 import Dropdown from "./components/UI/Dropdown.vue";
 import store from "./Store";
-import APIUserHelper from "./APIHelpers/APIUserHelper"
+import APIUserHelper from "./APIHelpers/APIUserHelper";
+import NavDropDown from "./components/UI/NavDropdown.vue";
 
 @Component({
   name: "CarsSalePage",
   components: {
     BountyButton,
     Dropdown,
+    NavDropDown,
   },
   store,
 })
@@ -90,22 +107,17 @@ export default class App extends Vue {
   beforeMount() {
     this.$store.commit("setUser", this.$cookie.get("name"));
 
-    APIUserHelper.fetchTokenConf().then(
-      (response) => {
-        if (!response.ok) {
-          this.logout()
-        }
+    APIUserHelper.fetchTokenConf().then((response) => {
+      if (!response.ok) {
+        this.logout();
       }
-    );
+    });
   }
   logout() {
-    
-      APIUserHelper.fetchUserLogout()
-      .then(() => {
-        this.$store.commit("setUser", this.$cookie.get("name"));
-      });
+    APIUserHelper.fetchUserLogout().then(() => {
+      this.$store.commit("setUser", this.$cookie.get("name"));
+    });
   }
-
 }
 </script>
 
