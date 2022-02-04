@@ -51,8 +51,5 @@ export default class Dropdown extends DropdownProps{
  .option {
    background: rgb(10, 118, 248);
  }
- *{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
- }
 
 </style>

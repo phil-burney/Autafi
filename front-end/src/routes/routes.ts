@@ -8,9 +8,6 @@ import ListingSuccessPage from '../components/Pages/SuccessListingPage.vue'
 import PasswordEmailSuccessPage from '../components/Pages/PasswordEmailSuccessPage.vue'
 import PasswordResetConfirmationPage from '../components/Pages/PasswordResetConfirmationPage.vue'
 import PasswordResetPage from '../components/Pages/PasswordResetPage.vue'
-import CarsOrPartsPageBounty from '../components/Pages/CarOrPartSelection/CarsOrPartsPageBounty.vue'
-import CarsOrPartsPageSale from '../components/Pages/CarOrPartSelection/CarsOrPartsPageSale.vue'
-import ListingSelection from '../components/Pages/CarOrPartSelection/ListingSelection.vue'
 import CarsBountyPage from '../components/Pages/Bounties/CarsBountyPage.vue'
 import PartsBountyPage from '../components/Pages/Bounties/PartsBountyPage.vue'
 import CarsSalePage from '../components/Pages/Sales/CarsSalePage.vue'
@@ -32,44 +29,34 @@ const routes = [
     { path: '/resetpassword/request/confirmation', component: PasswordEmailSuccessPage },
     { path: '/resetpassword/form/*', component: PasswordResetPage },
     { path: '/resetpassword/confirmation', component: PasswordResetConfirmationPage },
+   
     {
-        path: '/selectcarsorpartsbounty', component: CarsOrPartsPageBounty, meta: {
+        path: '/bounty/car/create', component: CarsBountyPage, meta: {
             requiresAuth: true
         }
     },
     {
-        path: '/selectcarsorpartssale', component: CarsOrPartsPageSale, meta: {
+        path: '/bounty/part/create', component: PartsBountyPage, meta: {
             requiresAuth: true
         }
     },
     {
-        path: '/cars/createbounty', component: CarsBountyPage, meta: {
+        path: '/sale/car/create', component: CarsSalePage, meta: {
             requiresAuth: true
         }
     },
     {
-        path: '/parts/createbounty', component: PartsBountyPage, meta: {
-            requiresAuth: true
-        }
-    },
-    {
-        path: '/cars/createsale', component: CarsSalePage, meta: {
-            requiresAuth: true
-        }
-    },
-    {
-        path: '/parts/createsale', component: PartsSalePage, meta: {
+        path: '/sale/part/create', component: PartsSalePage, meta: {
             requiresAuth: true
         }
     },
     {
         path: '/listing/success', component: ListingSuccessPage
     },
-    { path: '/cars/bounty/list', component: CarBountyListPage },
-    { path: '/parts/bounty/list', component: PartBountyListPage },
-    { path: '/cars/sale/list', component: CarSaleListPage },
-    { path: '/parts/sale/list', component: PartSaleListPage },
-    { path: '/listingSelect', component: ListingSelection },
+    { path: '/bounty/car/list', component: CarBountyListPage },
+    { path: '/bounty/part/list', component: PartBountyListPage },
+    { path: '/sale/car/list', component: CarSaleListPage },
+    { path: '/sale/part/list', component: PartSaleListPage },
     { path: '/dashboard', component: Dashboard },
 
 ];

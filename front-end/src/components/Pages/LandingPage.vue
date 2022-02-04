@@ -19,12 +19,12 @@
         <h3 class="d-flex text-center p-3" id="supportingtext">The marketplace for classic cars and hard to find parts</h3>
     </div>
 
-    <section class="body">
+    <div class="body">
       <div class="container px-4">
         <div class="row">
           <div class="col-md p-4 text-center" id="benefits">
 
-            <h2>Autafi has a multitude of ways to facilitate the matching of buyers and sellers. </h2>
+            <h2>Autafi is the new way to connect buyers and sellers who are looking for any auto part.</h2>
 
           </div>
           
@@ -32,21 +32,27 @@
         </div>
         <div class="row">
         <div class="row">
-          <div class="col-md p-4" id="benefits">
-            <h3 class = "text-center">Use Our Bounty System&trade;</h3>
-            <span class= "p-1 ">    
-              Our Bounty System&trade; allows buyers to put a bounty on certain parts that they need, allowing sellers
-              to look for buyers for their parts and get the best price.  
+          <div class="col-md p-3" id="benefits">
+            <h3 class = "text-center">Use Autafi's Bounty System&trade;</h3>
+            <span class= "p-1">    
+              Autafi's Bounty System&trade; allows potential buyers to put a bounty on the parts that they need, letting sellers
+              look for buyers for their parts.  
             </span>
 
           </div>
-          <div class="col-md p-4" id="benefits">
-            <h3 class = "text-center">Create Sales Pages</h3>
+          <div class="col-md p-3" id="benefits">
+            <h3 class = "text-center">Create Sales Posts</h3>
             <span class="p-1">
               All users have the ability to create sales pages
-              for the cars and parts that they are selling, allowing potential buyers to view parts and then message the
-              seller.  Whether you are buying or selling cars or parts, Autafi has an option that will suit
-              you.
+              for the cars and parts that they are selling, allowing potential buyers to view parts.
+            </span>
+
+          </div>
+          <div class="col-md p-3" id="benefits">
+            <h3 class = "text-center">Enjoy Autafi's Elegant Interface</h3>
+            <span class="p-1">
+              Autafi was designed with the user experience in mind.  As a result, Autafi is easy to use and navigate while also looking simple
+              and elegant.
             </span>
 
           </div>
@@ -62,7 +68,7 @@
         </div>
 
 
-    </section>
+    </div>
   </div>
 </body>
 
@@ -84,7 +90,6 @@ export default class LandingPage extends Vue {
 <style scoped>
 
 #supportingtext{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background: rgba(255, 255, 255, 0.5);
     color:rgb(10, 118, 248);
     position:absolute;

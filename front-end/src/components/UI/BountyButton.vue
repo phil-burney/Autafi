@@ -27,21 +27,21 @@ export default class BountyButton extends Button{
 </script>
 
 <style scoped>
- div [class*="bountybutton"] {
+.bountybutton {
   color: black;
   background-color: rgb(10, 118, 248);
-  border: black solid 3px;
+  border: grey solid 1px;
   border-radius: 10px;
-
+  
   width: fit-content;
   white-space: nowrap;
 
 }
-div [class*="bountybutton"]:hover {
+.bountybutton:hover {
   color: white;
   background-color: black;
 }
-div [class*="bountybutton"]:active {
+.bountybutton:active {
   background-color: white;
   color:black;
   border: black solid 3px;

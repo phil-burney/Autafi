@@ -159,6 +159,12 @@ export default class SignUpPage extends Vue {
       this.error.username = "Username required!";
       validform = false;
     }
+    if (this.sentUsername.length > 20) {
+      let y = document.getElementById("n-username");
+      y.classList.add("error");
+      this.error.username = "Username length should be less than 20 characters!";
+      validform = false;
+    }
     if (this.sentPassword == "") {
       let z = document.getElementById("n-password");
       z.classList.add("error");
