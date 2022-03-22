@@ -4,7 +4,7 @@
       <img class="img-fluid p-2" id="preview" :src="currentPhoto" />
     </div>
     <div class="d-flex flex-column align-items-center">
-      <label class="imgbutton p-2">
+      <label class="imgbutton p-2" @mouseover="hover">
         Upload Image
         <input
           class="file-input ps-2"
@@ -65,10 +65,25 @@ export default class ImageSelector extends Vue {
   updateCurrentPhoto(clickedPhoto) {
     this.currentPhoto = clickedPhoto;
   }
+  hover(event) {
+    let btn = event.target;
+    console.log('a')
+    btn.onmousemove = function (e) {
+      let rect = e.target.getBoundingClientRect();
+      let x = e.clientX - rect.left;
+      let y = e.clientY - rect.top;
+      btn.style.setProperty("--xz", x + "px");
+      btn.style.setProperty("--yz", y + "px");
+    };
+  }
 }
 </script>
 
 <style scoped>
+:root {
+  --xz: 0%;
+  --yz: 0%;
+}
 #preview {
   min-width: 250px;
   max-height: 290px;
@@ -89,19 +104,29 @@ img[class*="smallImg"] {
 #imglist {
   border-top: grey solid 1px;
 }
-div [class*="imgbutton"] {
+
+.imgbutton {
   color: black;
   background-color: rgb(10, 118, 248);
-  border: black solid 3px;
-  border-radius: 0% !important;
+  border: black solid 1px;
+  border-radius: 10px;
+
+  width: fit-content;
+  white-space: nowrap;
+
 }
-div [class*="imgbutton"]:hover {
-  color: white;
-  background-color: black;
+
+.imgbutton:hover {
+  background: radial-gradient(
+    circle at var(--xz) var(--yz), rgb(48, 159, 187) 2px, rgb(10, 118, 248)
+  );
+
 }
-div [class*="imgbutton"]:active {
-  background-color: white;
-  color:black;
-  border: black solid 3px;
+.imgbutton:active {
+  background: radial-gradient(
+    circle at var(--xz) var(--yz), rgb(3, 39, 83) 2px, rgb(10, 118, 248)
+  );
+  color:white
+
 }
 </style>

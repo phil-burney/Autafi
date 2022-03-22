@@ -111,7 +111,7 @@ export default class CarSelectCluster extends Vue {
 <style scoped>
 #title {
   width: 400;
-  border: black solid 3px;
+  border: grey solid 1px;
 }
 
 

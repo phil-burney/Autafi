@@ -9,19 +9,28 @@
     >
       Menu
     </div>
+    
     <div v-if="listOne" id="underlineShow"></div>
     <div v-else id="underlineHidden"></div>
     <div v-if="active">
+     
       <div id="vert-menu" class="p-3">
+        <div class="d-flex flex-row justify-content-center p-3">
+         <img
+            src="../../../assets/exit_sign.svg"
+            id="logo"
+            @click="resetMenu()"
+          />
+        </div>
         <div v-if="this.$store.state.user == null">
           <router-link class="select" to="/signup">
-            <div @click="active = false" class="navbutton hoverable p-2">
+            <div @click="resetMenu()" class="navbutton hoverable p-2">
               Sign Up
             </div>
           </router-link>
 
           <router-link class="select" to="/login">
-            <div @click="active = false" class="navbutton hoverable p-2">
+            <div @click="resetMenu()" class="navbutton hoverable p-2">
               Login
             </div>
           </router-link>
@@ -30,7 +39,7 @@
           <router-link class="select" to="/">
             <div
               @click="
-                active = false;
+                resetMenu()
                 logout();
               "
               class="navbutton hoverable p-2"
@@ -39,16 +48,14 @@
             </div>
           </router-link>
         </div>
-        <div :class="{activeElement:activeMenu1}">
+        <div :class="{ activeElement: activeMenu1 }">
           <div class="select hoverable p-2" @click="activeMenu1 = !activeMenu1">
             View Listings
           </div>
           <div v-if="activeMenu1" class="mb-2">
             <div
               @click="
-                active = false;
-                activeMenu1 = false;
-                activeMenu2 = false;
+                resetMenu()
               "
               class="listings hoverable p-1"
               v-for="link in viewLinks"
@@ -61,16 +68,17 @@
           </div>
         </div>
 
-        <div :class="{activeElement:activeMenu2}">
+        <div
+          v-if="this.$store.state.user != null"
+          :class="{ activeElement: activeMenu2 }"
+        >
           <div class="select p-2 hoverable" @click="activeMenu2 = !activeMenu2">
             Create Listings
           </div>
           <div v-if="activeMenu2">
             <div
               @click="
-                active = false;
-                activeMenu2 = false;
-                activeMenu1 = false;
+                resetMenu()
               "
               class="listings hoverable p-1"
               v-for="link in makeLinks"
@@ -117,6 +125,12 @@ export default class Dropdown extends NavDropdownProps {
       listOne: false,
     };
   }
+  resetMenu() {
+    this.activeMenu1 = false;
+    this.activeMenu2 = false;
+    this.active = false;
+    this.listOne = false;
+  }
   logout() {
     APIUserHelper.fetchUserLogout().then(() => {
       this.$store.commit("setUser", this.$cookie.get("name"));
@@ -137,8 +151,8 @@ export default class Dropdown extends NavDropdownProps {
   }
 }
 .activeElement {
-    background-color: white;
-    border-radius: 10px;
+  background-color: white;
+  border-radius: 10px;
 }
 #vert-menu {
   position: fixed;

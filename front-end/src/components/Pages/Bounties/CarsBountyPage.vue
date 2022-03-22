@@ -63,7 +63,7 @@
                 id="bounty"
               />
             </div>
-            <bounty-button label = "Place Bounty" class="align-self-end mt-1 p-2" v-on:buttonClick="submitPacket">
+            <bounty-button label = "Place Bounty" class="align-self-end" v-on:buttonClick="submitPacket">
               Place Bounty
             </bounty-button>
           </div>

@@ -178,7 +178,7 @@ export default class CarsSalePage extends Vue {
 <style>
 #title {
   width: 400;
-  border: black solid 3px;
+  border: grey solid 1px;
 }
 textarea {
   min-height: 425;
@@ -192,7 +192,7 @@ textarea {
   height: 425px;
 }
 #saleprice {
-  border: black solid 3px;
+  border: grey solid 1px;
 }
 .error {
   color: red

@@ -205,7 +205,7 @@ export default class PartsPage extends Vue {
 <style scoped>
 #title {
   width: 400;
-  border: black solid 3px;
+  border: grey solid 1px;
 }
 textarea {
   min-height: 425;
@@ -219,6 +219,6 @@ textarea {
   height: 425px;
 }
 #bounty {
-  border: black solid 3px;
+  border: grey solid 1px;
 }
 </style>

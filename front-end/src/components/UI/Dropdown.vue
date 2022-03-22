@@ -46,7 +46,7 @@ export default class Dropdown extends DropdownProps{
  select[class*="dropdown"]{
    width: 140px;
    background: rgb(10, 118, 248);
-   border: black solid 3px
+   border: black solid 2px;
  }
  .option {
    background: rgb(10, 118, 248);
