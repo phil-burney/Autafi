@@ -4,7 +4,7 @@
       <div class="col header text-left d-flex justify-content-left">
         <router-link to="/">
           <img
-            src="./assets/inspired_logo_1.svg"
+            src="./assets/inspired_logo_2.svg"
             class="img-fluid m-2 ps-3 pe-3"
             id="logo"
           />
