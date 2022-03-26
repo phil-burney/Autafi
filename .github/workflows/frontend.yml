@@ -30,5 +30,7 @@ jobs:
           cd Autafi/front-end
           mv dist /srv
           echo "Deployment to digitalocean successful"
+
+          
           
           
