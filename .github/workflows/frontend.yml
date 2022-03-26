@@ -5,9 +5,9 @@ name: Frontend CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ production ]
   pull_request:
-    branches: [ master ]
+    branches: [ production ]
 
 jobs:
   deploy:
@@ -27,7 +27,6 @@ jobs:
           cd build
           git clone git@github.com:phil-burney/Autafi.git
           cd Autafi/front-end
-          npm run build
           mv -r build /srv
           echo "Deployment to digitalocean successful"
           
