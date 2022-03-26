@@ -23,6 +23,7 @@ jobs:
         username: ${{secrets.SSH_USERNAME}}
         script: |
           rm -r build
+          rm -r /srv/dist
           mkdir build
           cd build
           git clone git@github.com:phil-burney/Autafi.git
