@@ -26,7 +26,7 @@ jobs:
           rm -r /srv/dist
           mkdir build
           cd build
-          git clone git@github.com:phil-burney/Autafi.git
+          git clone -b production git@github.com:phil-burney/Autafi.git
           cd Autafi/front-end
           mv dist /srv
           echo "Deployment to digitalocean successful"
