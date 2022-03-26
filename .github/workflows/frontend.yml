@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: Deploy App
-      uses: actions/setup-node@v2
+      uses: appleboy/ssh-action@v0.1.2
       with:
         host: ${{secrets.SSH_HOST}}
         key: ${{secrets.SSH_KEY}}
