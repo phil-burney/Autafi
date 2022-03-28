@@ -35,5 +35,9 @@ const carSchema = new Schema({
     }
 }, { timestamps: true });
 
+carSchema.statics.getPostsByEmail = async function (name) {
+  return await CarBounty.find({name})
+}
+
 const CarBounty = mongoose.model('carbounty', carSchema);
 module.exports = CarBounty;

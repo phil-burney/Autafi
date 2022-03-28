@@ -1,5 +1,7 @@
 /* eslint-disable */
-require('dotenv').config({ path: "./.env" })
+var path = require('path');
+
+require('dotenv').config({path: __dirname + "/.env"})
 const express = require('express');
 const app = express()
 const router = express.Router()
@@ -21,7 +23,7 @@ const passwordresettoken = require('./models/passwordresettoken');
 const bcrypt = require("bcryptjs")
 var multer = require('multer');
 var fs = require('fs-extra');
-var path = require('path');
+
 
 
 app.use(express.static('uploads'));
@@ -77,9 +79,8 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedtopology: true })
     .catch((err) => console.log(err));
 
 
-router.use('/api', function (req, res, next) {
-    // ... maybe some additional /bar logging ...
-    next();
+app.get('/api', function (req, res) {
+    res.status(200).send({ message: 'API works!' });
 });
 
 app.post("/api/partbounty", upload.array("photo"), async function (req, res) {
@@ -161,6 +162,16 @@ app.post("/api/carbounty", upload.array("photo"), async function (req, res) {
 app.get('/api/carbounty', (req, res) => {
 
     CarBounty.find()
+        .then((result) => {
+            res.status(200).send(result);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+})
+app.get('/api/user/:id', (req, res) => {
+
+    User.getPostsByName(req.params.id)
         .then((result) => {
             res.status(200).send(result);
         })
@@ -450,6 +461,6 @@ app.put('/api/logout', (req, res) => {
 
 
 
-app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
-})
+const server = app.listen(port, console.log(`Example app listening at http://localhost:${port}`))
+
+module.exports = { app, server };
