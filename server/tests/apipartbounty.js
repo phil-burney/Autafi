@@ -1,6 +1,4 @@
 const request = require('supertest');
-const { connectDB, disconnectDB } = require('./database');
-const { app, server } = require('../index');
 
 const partBountyContent = {
     title: "New Parts",
