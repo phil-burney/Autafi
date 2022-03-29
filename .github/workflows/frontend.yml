@@ -35,7 +35,11 @@ jobs:
           echo "Deployment to digitalocean successful"
           rm /srv/server/index.js
           rm -r /srv/server/models
-          mv 
+          cd ..
+          cd /server
+          mv index.js /srv/server
+          mv models /srv/server
+          
 
           
           
