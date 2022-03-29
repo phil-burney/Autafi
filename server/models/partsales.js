@@ -41,6 +41,8 @@ const partSchema = new Schema({
 
 },
 { timestamps: true });
-
+partSchema.statics.getPostsByEmail = async function (name) {
+    return await PartSale.find({name})
+}
 const PartSale = mongoose.model('partsale', partSchema);
 module.exports = PartSale;

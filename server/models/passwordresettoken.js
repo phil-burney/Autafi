@@ -16,4 +16,12 @@ const tokenSchema = new Schema({
     expires: 3600, //  expiry time in seconds
   },
 });
-module.exports = mongoose.model("passwordresettoken", tokenSchema);
+tokenSchema.statics.findByHashedToken = async function (hashedToken) {
+  const token = await PasswordResetToken.findOne({ hashedToken });
+  if (!token) {
+    return null;
+  }
+  return token
+}
+const PasswordResetToken = mongoose.model("passwordresettoken", tokenSchema);
+module.exports = PasswordResetToken
