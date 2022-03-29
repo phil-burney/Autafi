@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const CarBounty = require('./carbounty')
+const PartBounty = require('./partbounty')
+const CarSale = require('./carsales')
+const PartSale = require('./partsales');
 const userSchema = mongoose.Schema({
   username: {
     type: String,
@@ -75,6 +79,13 @@ userSchema.statics.findByEmail = async function (email) {
     return null;
   }
   return user
+}
+userSchema.statics.getPostsByName = async function (name) {
+  const partBounty = await PartBounty.getPostsByEmail(name)
+  const partSale = await PartSale.getPostsByEmail(name)
+  const carSale = await CarSale.getPostsByEmail(name)
+  const carBounty = await CarBounty.getPostsByEmail(name)
+  return partBounty.concat(partSale, carSale, carBounty)
 }
 userSchema.statics.findByToken = async function (token) {
   return await User.findOne({ token })

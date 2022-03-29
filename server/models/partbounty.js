@@ -39,5 +39,8 @@ const partSchema = new Schema({
     }
 }, { timestamps: true });
 
+partSchema.statics.getPostsByEmail = async function (name) {
+    return await PartBounty.find({name})
+}
 const PartBounty = mongoose.model('partbounty', partSchema);
 module.exports = PartBounty;

@@ -40,14 +40,14 @@ export default class APIUserHelper {
     return data;
   }
 
-  static async fetchPasswordReset(token, user, sentPassword) {
+  static async fetchPasswordReset(token, id, sentPassword) {
     const options = {
       method: "PUT",
       mode: "cors",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
     };
-    options.body = JSON.stringify({token: token, user: user, password: sentPassword})
+    options.body = JSON.stringify({token: token, id: id, password: sentPassword})
 
     let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/user/resetpassword", options)
     return data;

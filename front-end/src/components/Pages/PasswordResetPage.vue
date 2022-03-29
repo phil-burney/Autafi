@@ -73,7 +73,7 @@ export default class LoginPage extends Vue {
       return;
     }
     let query = this.$route.query;
-    APIUserHelper.fetchPasswordReset(query.token, query.user, this.sentPassword)
+    APIUserHelper.fetchPasswordReset(query.token, query.id, this.sentPassword)
       .catch((err) => {
         this.error.signup = err.message;
       })
