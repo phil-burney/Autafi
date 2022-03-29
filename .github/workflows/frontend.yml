@@ -1,6 +1,9 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
 name: Frontend CI
 
 on:
@@ -30,6 +33,9 @@ jobs:
           cd Autafi/front-end
           mv dist /srv
           echo "Deployment to digitalocean successful"
+          rm /srv/server/index.js
+          rm -r /srv/server/models
+          mv 
 
           
           
