@@ -48,6 +48,7 @@ export default class APIUserHelper {
       headers: { "Content-Type": "application/json" },
     };
     options.body = JSON.stringify({token: token, id: id, password: sentPassword})
+    console.log(options.body)
 
     let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/user/resetpassword", options)
     return data;
