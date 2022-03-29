@@ -75,7 +75,7 @@ app.use(session({
 //connect to mongo db
 const dbURI = process.env.DATABASE_URI
 let connect = mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedtopology: true })
-    .then((result) => console.log(result.connection._connectionString))
+    .then((result) => console.log("Connected to database"))
     .catch((err) => console.log(err));
 
 
