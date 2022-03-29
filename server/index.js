@@ -1,11 +1,12 @@
 /* eslint-disable */
 var path = require('path');
 
-require('dotenv').config({path: __dirname + "/.env"})
+require('dotenv').config({ path: __dirname + "/.env" })
 const express = require('express');
 const app = express()
 const router = express.Router()
 const port = 3030;
+const bcrypt = require("bcryptjs")
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
@@ -16,11 +17,10 @@ const CarBounty = require('./models/carbounty')
 const PartBounty = require('./models/partbounty')
 const CarSale = require('./models/carsales')
 const PartSale = require('./models/partsales');
+const PasswordResetTokenHelper = require("./hashpasswordtoken")
 const PasswordResetToken = require('./models/passwordresettoken')
 const mailgun = require("mailgun-js")
 const crypto = require('crypto');
-const passwordresettoken = require('./models/passwordresettoken');
-const bcrypt = require("bcryptjs")
 var multer = require('multer');
 var fs = require('fs-extra');
 
@@ -74,8 +74,8 @@ app.use(session({
 
 //connect to mongo db
 const dbURI = process.env.DATABASE_URI
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedtopology: true })
-    .then((result) => console.log('connected to db'))
+let connect = mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedtopology: true })
+    .then((result) => console.log(result.connection._connectionString))
     .catch((err) => console.log(err));
 
 
@@ -148,15 +148,15 @@ app.post("/api/carbounty", upload.array("photo"), async function (req, res) {
             newcar.images.push(process.env.THIS_URL + '/car/bounty/' + newcar._id + '/' + img)
         })
         newcar.save()
-        .then(() => {
-            // send back response
-            res.status(200).send({ message: 'Part successfully entered' });
-        })
-        .catch((err) => {
-            console.log(err);
-        })
+            .then(() => {
+                // send back response
+                res.status(200).send({ message: 'Part successfully entered' });
+            })
+            .catch((err) => {
+                console.log(err);
+            })
     })
-    
+
 })
 
 app.get('/api/carbounty', (req, res) => {
@@ -310,81 +310,70 @@ app.put('/api/user/validatetoken', (req, res) => {
 })
 
 app.put('/api/user/resetpassword', async (req, res) => {
-
-    let user = await User.findByName(req.body.user);
-
-    let token = await PasswordResetToken.findOne({ user: user._id });
-    let isValid;
-    if (token) {
-        isValid = await bcrypt.compare(req.body.token, token.token);
+    let userID = req.body.id
+    let passwordResetToken = await PasswordResetToken.findOne({userId: userID});
+    if (!passwordResetToken) {
+        res.status(404).send({ message: "The link is invalid!" })
+        return
     }
-    if (isValid) {
-        user.password = req.body.password;
-        await user.save()
-        await token.delete();
+    const isValid = await bcrypt.compare(req.body.token, passwordResetToken.token);
+    if (!isValid) {
+        res.status(404).send({ message: "The link is invalid!" })
+        return 
+    }
 
-        const mg = mailgun({ apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN });
-        const data = {
-            from: 'passwordresetconfirmation@autaphi.com',
-            to: user.email,
-            subject: 'Password Reset Confirmation',
-            html: '<h3> Password Reset </h3> <div> Hello! The Autafi account associated with this email has just had its password reset.' +
-                '  If you believe that this was in error, please contact peburney@gmail.com. </div>'
+    let user = await User.findOne(passwordResetToken.userId)
+    user.password = req.body.password;
+    await user.save()
+    await passwordResetToken.delete();
+
+    const mg = mailgun({ apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN });
+    const data = {
+        from: 'passwordresetconfirmation@autafi.com',
+        to: user.email,
+        subject: 'Password Reset Confirmation',
+        html: '<h3> Password Reset </h3> <div> Hello! The Autafi account associated with this email has just had its password reset.' +
+            '  If you believe that this was in error, please contact peburney@gmail.com. </div>'
+    }
+    mg.messages().send(data, function (error, body) {
+        if (error) {
+            res.status(error.statusCode).send({ message: "Server error.  Please Try Again" });
+        } else {
+            res.status(200).send({ message: "Password changed successfully" })
         }
-        mg.messages().send(data, function (error, body) {
-            if (error) {
-                res.status(error.statusCode).send({ message: "Server error.  Please Try Again" });
-            } else {
-                res.status(200).send({ message: "Password changed successfully" })
-            }
-        });
-
-
-    } else {
-        res.status(404).send({ message: "The link has expired!" })
-    }
+    });
 
 
 })
 
-app.put('/api/user/email/resetpassword', async (req, res) => {
 
+app.put('/api/user/email/resetpassword', async (req, res) => {
 
     const mg = mailgun({ apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN });
     const data = {
-        from: 'passwordreset@autaphi.com',
+        from: 'passwordreset@autafi.com',
         to: req.body.email,
         subject: 'Password Reset Information',
     };
     let resetToken = crypto.randomBytes(32).toString("hex");
     let user = await User.findByEmail(req.body.email);
 
-    let link = `${process.env.BASE_URL}/resetpassword/form/?token=${resetToken}&user=${user.username}`
+    let link = `${process.env.BASE_URL}/resetpassword/form/?token=${resetToken}&id=${user._id}`
 
     if (user != null) {
         data.html = '<h3> Password Reset </h3> <div> Hello! A password reset has been requested for your account.  In order to do so, follow the' +
             ' link below.  The link expires in one hour ' + link + '</div>'
         // See if token exists and if so, delete it
-        let dbToken = await PasswordResetToken.findOne({ user: user._id });
-        if (dbToken) {
-            await dbToken.deleteOne();
+        let dbToken = await PasswordResetToken.findOne({userId: user._id})
+        if(dbToken) {
+            dbToken.delete()
         }
-        bcrypt.genSalt(10, async function (saltError, salt) {
-            if (saltError) {
-                return saltError
-            } else {
-                await bcrypt.hash(resetToken, salt, async function (hashError, hash) {
-                    if (hashError) {
-                        return
-                    }
-                    await new PasswordResetToken({
-                        userId: user._id,
-                        token: hash,
-                        createdAt: Date.now(),
-                    }).save();
-                })
-            }
-        })
+        let hash = await hashPassword(resetToken)
+        await new PasswordResetToken({
+            userId: user._id,
+            token: hash,
+            createdAt: Date.now(),
+        }).save();
 
     } else {
         data.html = '<h3> Password Reset </h3> <div> Hello! A password reset has been requested.  However, there is no Autafi account' +
@@ -392,6 +381,7 @@ app.put('/api/user/email/resetpassword', async (req, res) => {
     }
     mg.messages().send(data, function (error, body) {
         if (error) {
+            console.log(error)
             res.status(error.statusCode).send({ message: "Server error.  Please Try Again" });
         } else {
             res.status(200).send({ message: "Success!" });
@@ -439,14 +429,21 @@ app.post('/api/login', (req, res) => {
 app.put('/api/logout', (req, res) => {
     if (req.cookies['name']) {
         User.findByName(req.cookies['name']).then(user => {
-            user.token = null;
-            console.log(req.cookies['name'] + " has logged out.");
-            user.save().then(() => {
+            if (user) {
+                user.token = null;
+                console.log(req.cookies['name'] + " has logged out.");
+                user.save().then(() => {
+                    res.clearCookie("token")
+                        .clearCookie("name")
+                        .clearCookie("email")
+                        .send({ message: "Logout Successful!" })
+                });
+            } else {
                 res.clearCookie("token")
                     .clearCookie("name")
                     .clearCookie("email")
                     .send({ message: "Logout Successful!" })
-            });
+            }
         })
     } else {
         res.clearCookie("token")
@@ -462,5 +459,20 @@ app.put('/api/logout', (req, res) => {
 
 
 const server = app.listen(port, console.log(`Example app listening at http://localhost:${port}`))
+
+const hashPassword = async (password, saltRounds = 10) => {
+    try {
+        // Generate a salt
+        const salt = await bcrypt.genSalt(saltRounds);
+
+        // Hash password
+        return await bcrypt.hash(password, salt);
+    } catch (error) {
+        console.log(error);
+    }
+
+    // Return null if error
+    return null;
+};
 
 module.exports = { app, server };
