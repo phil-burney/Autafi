@@ -37,7 +37,7 @@ jobs:
           rm /srv/server/index.js
           rm -r /srv/server/models
           cd ..
-          cd /server
+          cd server
           mv index.js /srv/server
           mv models /srv/server
 
