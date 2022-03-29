@@ -17,7 +17,6 @@ const CarBounty = require('./models/carbounty')
 const PartBounty = require('./models/partbounty')
 const CarSale = require('./models/carsales')
 const PartSale = require('./models/partsales');
-const PasswordResetTokenHelper = require("./hashpasswordtoken")
 const PasswordResetToken = require('./models/passwordresettoken')
 const mailgun = require("mailgun-js")
 const crypto = require('crypto');
