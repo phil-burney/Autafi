@@ -8,7 +8,7 @@ export default class APIPostingHelper {
       credentials: "include",
       body: content
     }
-    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/carsale", options);
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/sale/car", options);
     let returnData = await data.json();
 
     return returnData;
@@ -21,7 +21,7 @@ export default class APIPostingHelper {
       credentials: "include",
       body: content
     }
-    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/carbounty", options);
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/bounty/car", options);
 
     let returnData = await data.json();
     return returnData;
@@ -35,7 +35,7 @@ export default class APIPostingHelper {
       body: content
     }
     
-    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/partsale", options);
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/sale/car", options);
     let returnData = await data.json();
 
     return returnData;
@@ -48,7 +48,7 @@ export default class APIPostingHelper {
       credentials: "include",
       body: content
     }
-    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/partbounty", options);
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/bounty/part", options);
     let returnData = await data.json();
 
     return returnData;

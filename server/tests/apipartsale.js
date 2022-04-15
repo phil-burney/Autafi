@@ -24,9 +24,9 @@ const partSaleContent2 = {
 let x = describe('API test', () => {
 
 
-    test('POST /api/partsale', async() => {
+    test('POST /api/sale/part', async() => {
 
-        const res = await request("http://localhost:3030").post('/api/partsale').send(
+        const res = await request("http://localhost:3030").post('/api/sale/part').send(
             JSON.stringify(partSaleContent)
 
         ).set('Content-Type', 'application/json')
@@ -35,19 +35,19 @@ let x = describe('API test', () => {
 
     });
 
-    test('GET /api/partsale', async() => {
+    test('GET /api/sale/part', async() => {
 
         const res = await request("http://localhost:3030")
-            .get('/api/partsale')
+            .get('/api/sale/part')
 
         expect(res.status).toBe(200)
         expect(databaseQueryParts([partSaleContent], res.body)).toBe(true)
 
     });
 
-    test('POST /api/partsale', async() => {
+    test('POST /api/sale/part', async() => {
 
-        const res = await request("http://localhost:3030").post('/api/partsale').send(
+        const res = await request("http://localhost:3030").post('/api/sale/part').send(
             JSON.stringify(partSaleContent2)
 
         ).set('Content-Type', 'application/json')
@@ -56,10 +56,10 @@ let x = describe('API test', () => {
         expect(res.status).toBe(200);
 
     });
-    test('GET /api/partsale', async() => {
+    test('GET /api/sale/part', async() => {
 
         const res = await request("http://localhost:3030")
-            .get('/api/partsale')
+            .get('/api/sale/part')
 
         expect(res.status).toBe(200)
         expect(databaseQueryParts([partSaleContent, partSaleContent2], res.body)).toBe(true)
