@@ -101,14 +101,14 @@ app.put('/api/user/validatetoken', userAccounts.validateToken)
 app.post('/api/user/login', userAccounts.userLogin)
 app.put('/api/user/logout', userAccounts.userLogout)
 // Handle bounties
-app.post("/api/bounty/car", carBounties.newCarBounty)
+app.post("/api/bounty/car", upload.array("photo"), carBounties.newCarBounty)
 app.get('/api/bounty/car', carBounties.getAllCarBounties)
-app.post("/api/bounty/part", partBounties.newPartBounty)
+app.post("/api/bounty/part", upload.array("photo"), partBounties.newPartBounty)
 app.get('/api/bounty/part', partBounties.getAllPartBounties)
 // Handle sales
-app.post("/api/sale/part", partSales.newPartSale)
+app.post("/api/sale/part", upload.array("photo"), partSales.newPartSale)
 app.get('/api/sale/part', partSales.getAllPartSales)
-app.post("/api/sale/car", carSales.newCarSale)
+app.post("/api/sale/car", upload.array("photo"), carSales.newCarSale)
 app.get('/api/sale/car', carSales.getAllCarSales)
 
 const server = app.listen(port, console.log(`Example app listening at http://localhost:${port}`))

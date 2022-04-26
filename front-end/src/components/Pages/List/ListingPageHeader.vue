@@ -66,7 +66,7 @@ import PartsSelectCluster from "../../UI/PartsSelectCluster.vue";
       title: String
   }
 })
-export default class PartsSaleListPage extends Vue {
+export default class ListPage extends Vue {
   constructor() {
     super();
   }

@@ -32,8 +32,9 @@ export default class APIListingHelper {
             },
             cache: "default",
         };
-        let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/bounty/part", options);
+        let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/bounty/car", options);
         let returnData = await data.json();
+        console.log(returnData)
         return returnData;
 
     }

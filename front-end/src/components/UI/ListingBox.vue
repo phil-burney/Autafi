@@ -31,10 +31,10 @@
             </div>
           </div>
         </div>
-        <div v-else-if="isPartListing" id="imgcontainer" >
+        <div v-if="isPartListing" id="imgcontainer" >
           <img class = "img-fluid" src="../../assets/part.svg" id="defaultimg">
         </div>
-        <div v-else-if="isCarListing" id="imgcontainer">
+        <div v-else id="imgcontainer">
           <img class = "img-fluid" src="../../assets/car.svg" id="defaultimg">
         </div>
 

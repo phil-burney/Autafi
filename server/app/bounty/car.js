@@ -40,7 +40,9 @@ exports.newCarBounty = async function (req, res) {
 exports.getAllCarBounties = async function (req, res) {
     CarBounty.find()
         .then((result) => {
+            
             res.status(200).send(result);
+            
         })
         .catch((err) => {
             console.log(err);
