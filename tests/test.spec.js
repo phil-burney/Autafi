@@ -6,21 +6,21 @@ const apipartsale = require("./apipartsale")
 const apicarsale = require("./apicarsale")
 const apicarbounty = require("./apicarbounty")
 
-beforeAll(async() => {  
-   // let x = await connectDB();
+beforeAll(async () => {
+  let x = await connectDB();
 });
 
-afterAll(async() => {
-    await server.close();
-   // await disconnectDB();
+afterAll(async () => {
+  await server.close();
+  await disconnectDB();
 
-    
+
 });
 
 describe('API test', () => {
 
-    apipartbounty;
-    apipartsale;
-    apicarsale
-    apicarbounty
+  apipartbounty;
+  apipartsale;
+  apicarsale
+  apicarbounty
 })

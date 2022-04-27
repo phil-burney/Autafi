@@ -3,7 +3,6 @@ const fs = require('fs-extra');
 const path = require('path');
 
 exports.newCarSale = async function (req, res) {
-    console.log(req.body)
     const newcar = new CarSale({
         title: req.body.title,
         year: req.body.year,

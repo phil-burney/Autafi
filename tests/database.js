@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+
 
 const { MongoMemoryServer } = require('mongodb-memory-server');
 let mongod = null;
@@ -19,8 +19,6 @@ const connectDB = async () => {
 
 const disconnectDB = async () => {
   try {
-    await mongoose.connection.dropDatabase()
-    await mongoose.connection.close();
     if (mongod) {
       await mongod.stop();
     }
