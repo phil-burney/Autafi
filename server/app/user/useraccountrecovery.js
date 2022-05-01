@@ -11,7 +11,7 @@ exports.resetPassword = async function(req, res) {
     }
     const isValid = await bcrypt.compare(req.body.token, passwordResetToken.token);
     if (!isValid) {
-        res.status(404).send({ message: "The link is no token exists!" })
+        res.status(404).send({ message: "The token is invalid!" })
         return 
     }
 

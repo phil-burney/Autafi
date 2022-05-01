@@ -4,7 +4,8 @@
   "description": "server for SwapMeet",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest",
+    "test:api": "NODE_ENV=test jest --detectOpenHandles --testPathPattern=tests/api",
+    "cypress": "npx cypress run",
     "start_local": "node index.js && set BASE_URL=\"http://localhost:8080\"",
     "start_server": "node index.js && BASE_URL=\"http://autafi.com\"",
     "start": "node ./bin/www"
@@ -30,6 +31,7 @@
     "vue-cookies": "^1.7.4"
   },
   "devDependencies": {
+    "cypress": "^9.6.0",
     "jest": "^27.5.1",
     "mongodb-memory-server": "^8.4.1",
     "supertest": "^6.2.2"
