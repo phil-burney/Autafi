@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test:api": "NODE_ENV=test jest --detectOpenHandles --testPathPattern=tests/api",
-    "cypress": "npx cypress run",
     "start_local": "node index.js && set BASE_URL=\"http://localhost:8080\"",
     "start_server": "node index.js && BASE_URL=\"http://autafi.com\"",
     "start": "node ./bin/www"

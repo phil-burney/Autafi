@@ -1,17 +1,18 @@
-const { connectDB, disconnectDB } = require("../helper")
+// const { connectDB, disconnectDB } = require("../helper")
 
 
-beforeAll(() => {
-  connectDB();
-})
-afterAll(() => {
-  disconnectDB();
-})
-describe('Walk through Creating a Part Bounty', () => {
+// beforeAll(() => {
+//   connectDB();
+// })
+// afterAll(() => {
+//   disconnectDB();
+// })
+/// <reference types="cypress" />
+context('Walk through Creating a Part Bounty', () => {
   
 
-  it('Create Account', () => {
-   
+  it('Navigate to website', () => {
+    cy.visit('http://localhost:8080')
   })
 
 

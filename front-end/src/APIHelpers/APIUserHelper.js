@@ -10,6 +10,7 @@ export default class APIUserHelper {
     };
     let data = await fetch(process.env.VUE_APP_SERVER_URL + "/api/user/validatetoken", options)
     let returnData = await data.json();
+    console.log(returnData)
     return returnData;
 
   }

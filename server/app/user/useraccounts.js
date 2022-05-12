@@ -31,12 +31,15 @@ exports.signUp = async function(req, res) {
 }
 exports.validateToken= async function(req, res) {
     let token = req.cookies['token']
+    
     if (token) {
         User.findByToken(token).then((data) => {
-            res.status(200);
+            console.log('boo')
+            res.send({message: "valid token!"}).status(200)
         })
     } else {
-        res.status(404);
+        console.log('boo2')
+        res.send({message: "invalid token!"}).status(404);
     }
 
 }
