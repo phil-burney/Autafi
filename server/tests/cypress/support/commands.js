@@ -25,7 +25,6 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import helper from "./helper"
 const User = require('../../../models/user')
-const MongoClient = require("`mongodb`").MongoClient;
 let user = {
   username: "GenericUser",
   email: "philburney@ymail.com",
@@ -37,6 +36,6 @@ let user = {
 Cypress.Commands.add('login', () => {
   const newUser = new User(
     user);
-  console.log(newUser)
+  console.log(newUser.findByEmail())
   return
 })
