@@ -23,3 +23,20 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import helper from "./helper"
+const User = require('../../../models/user')
+const MongoClient = require("`mongodb`").MongoClient;
+let user = {
+  username: "GenericUser",
+  email: "philburney@ymail.com",
+  password: "Password123*"
+}
+
+
+// Cypress.Commands.add('addUser', helper.addNewUser());
+Cypress.Commands.add('login', () => {
+  const newUser = new User(
+    user);
+  console.log(newUser)
+  return
+})

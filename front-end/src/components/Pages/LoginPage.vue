@@ -88,8 +88,6 @@ export default class LoginPage extends Vue {
         } else {
           return response.json()
         }
-      }).then((data) => {
-        this.error.login = data.message
       })
   }
 

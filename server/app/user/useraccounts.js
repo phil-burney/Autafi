@@ -38,7 +38,6 @@ exports.validateToken= async function(req, res) {
             res.send({message: "valid token!"}).status(200)
         })
     } else {
-        console.log('boo2')
         res.send({message: "invalid token!"}).status(404);
     }
 

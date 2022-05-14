@@ -66,7 +66,7 @@ export default class APIUserHelper {
         password: password,
       }),
     };
-  
+    
     let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/user/login", options)
     return data;
   }

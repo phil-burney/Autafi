@@ -6,7 +6,7 @@ let mongod = null;
 const connectDB = async () => {
   try {
     if (process.env.NODE_ENV === 'test') {
-      mongod = await MongoMemoryServer.create({instance:{port: 27017}});
+      mongod = await MongoMemoryServer.create({instance:{port: 27016}});
       console.log(`MongoDB connected at port: ${mongod._instanceInfo.port}`);
       return;
     }

@@ -4,7 +4,7 @@
   "description": "server for SwapMeet",
   "main": "index.js",
   "scripts": {
-    "test:api": "NODE_ENV=test jest --detectOpenHandles --testPathPattern=tests/api",
+    "test:api": "jest --detectOpenHandles --testPathPattern=tests/api",
     "start_local": "node index.js && set BASE_URL=\"http://localhost:8080\"",
     "start_server": "node index.js && BASE_URL=\"http://autafi.com\"",
     "start": "node ./bin/www"
@@ -23,6 +23,7 @@
     "fs-extra": "^10.0.0",
     "jsonwebtoken": "^8.5.1",
     "mailgun-js": "^0.22.0",
+    "mongodb-memory-server": "^8.5.2",
     "mongoose": "^6.1.1",
     "multer": "^1.4.3",
     "nodemailer": "^6.7.2",
@@ -32,7 +33,6 @@
   "devDependencies": {
     "cypress": "^9.6.0",
     "jest": "^27.5.1",
-    "mongodb-memory-server": "^8.4.1",
     "supertest": "^6.2.2"
   }
 }
