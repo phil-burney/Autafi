@@ -1,3 +1,4 @@
+
 /* eslint-disable */
 
 
@@ -12,8 +13,9 @@ const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const cors = require('cors');
-const mongoose = require('mongoose')
+const {connect} = require("./database")
 const User = require('../models/user')
+
 var multer = require('multer');
 var fs = require('fs-extra');
 const userAccountRecovery = require('./user/useraccountrecovery')
@@ -22,12 +24,13 @@ const partSales = require('./sale/part')
 const carSales = require('./sale/car')
 const carBounties = require('./bounty/car')
 const partBounties = require('./bounty/part')
+const databaseHelper = require('./database')
 global.__basedir = path.dirname(__dirname);
 // Serve static image content publicly
 app.use(express.static('uploads'));
 // Set up multer
 var storage = multer.diskStorage({
-    
+
     destination: (req, file, cb) => {
         let dir = (__dirname + '\\uploads\\temp\\' + req.body.email)
         req.body.dest = dir
@@ -71,11 +74,8 @@ app.use(session({
     resave: false
 }));
 
-// connect to mongo db
-const dbURI = process.env.DATABASE_URI
-let connect = mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedtopology: true })
-    .then((result) => console.log("Connected to database"))
-    .catch((err) => console.log(err));
+//Start database
+
 
 
 app.get('/api', function (req, res) {
@@ -111,7 +111,11 @@ app.get('/api/sale/part', partSales.getAllPartSales)
 app.post("/api/sale/car", upload.array("photo"), carSales.newCarSale)
 app.get('/api/sale/car', carSales.getAllCarSales)
 
-const server = app.listen(port, console.log(`Example app listening at http://localhost:${port}`))
+async function server() {
+    let db = await connect()
+    const server = app.listen(port, console.log(`Example app listening at http://localhost:${port}`))
 
+}
+server()
 
 module.exports = { app, server };
