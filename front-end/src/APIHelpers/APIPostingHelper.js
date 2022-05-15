@@ -37,7 +37,7 @@ export default class APIPostingHelper {
       body: content
     }
     
-    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/sale/car", options);
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/sale/part", options);
     let returnData = await data.json();
 
     return returnData;

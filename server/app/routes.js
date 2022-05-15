@@ -13,7 +13,7 @@ const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const cors = require('cors');
-const {connect} = require("./database")
+const { connect } = require("./database")
 const User = require('../models/user')
 
 var multer = require('multer');
@@ -74,7 +74,6 @@ app.use(session({
     resave: false
 }));
 
-//Start database
 
 
 
@@ -111,11 +110,12 @@ app.get('/api/sale/part', partSales.getAllPartSales)
 app.post("/api/sale/car", upload.array("photo"), carSales.newCarSale)
 app.get('/api/sale/car', carSales.getAllCarSales)
 
-async function server() {
-    let db = await connect()
-    const server = app.listen(port, console.log(`Example app listening at http://localhost:${port}`))
+// Handle test cases
+app.get("/test/seed/user", userAccounts.signUp)
 
-}
-server()
+// Connect to database
+let db = connect()
+let server = app.listen(port, console.log(`Example app listening at http://localhost:${port}`))
+
 
 module.exports = { app, server };

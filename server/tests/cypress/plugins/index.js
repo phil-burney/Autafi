@@ -16,7 +16,22 @@
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
+let { connect, seedUser, clearDatabase } = require("../../../app/database")
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
+  on('task', {
+    // deconstruct the individual properties
+    connect() {
+      connect()
+      return null
+    },
+    clearDatabase() {
+      clearDatabase()
+      return null
+    },
+    seedUser() {
+      seedUser()
+      return null
+    }
+  })
 }
+

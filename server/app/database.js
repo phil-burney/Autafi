@@ -1,27 +1,27 @@
-const {MongoClient} = require('mongodb')
-// exports.setupDatabase = function () {
-//     // connect to mongo db
-//     const dbURI = process.env.DATABASE_URI
-//     let connect = mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedtopology: true })
-//         .then((result) => console.log("Connected to database"))
-//         .catch((err) => console.log(err));
-// }
-
-// onst { MongoClient } = require('mongodb')
-// const uri = process.env.MONGO_URI
-// if (!uri) {
-//   throw new Error('Missing MONGO_URI')
-// }
-
-const client = new MongoClient(process.env.DATABASE_URI)
+const { MongoClient } = require('mongodb')
+const mongoose = require('mongoose')
+const User = require('../models/user')
+require('dotenv').config({ path: __dirname + "/.env" })
 async function connect() {
-  // Connect the client to the server
-  await client.connect()
+  // connect to mongo db
+  const dbURI = process.env.DATABASE_URI
+  let connect = await mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedtopology: true })
+    .then((result) => console.log("Connected to database"))
+    .catch((err) => console.log(err));
+}
+async function seedUser() {
+  let user = {
+    username: "GenericUser",
+    email: "philburney@ymail.com",
+    password: "Password123*"
+  }
+  const newUser = new User(user);
+  await newUser.save()
+  let x = await User.find({username: "GenericUser"})
+}
+async function clearDatabase() {
+  await mongoose.connection.dropDatabase();
 }
 
-async function disconnect() {
-  // Ensures that the client will close when you finish/error
-  await client.close()
-}
 
-module.exports = { connect, disconnect }
+module.exports = { connect, seedUser, clearDatabase }

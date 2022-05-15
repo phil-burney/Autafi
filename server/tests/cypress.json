@@ -1,3 +1,10 @@
 {
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "integrationFolder": "tests/cypress",
+    "pluginsFile": "tests/cypress/plugins/index.js",
+    "videosFolder": "tests/cypress/videos",
+    "fixturesFolder": "tests/cypress/fixtures",
+    "supportFile": "tests/cypress/support/index.js",
+    "testFiles": "**/*.spec.js"
+
 }
