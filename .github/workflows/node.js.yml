@@ -22,32 +22,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12'
+      - run: cd Partsaphi/server
       - run: npm install
       - run: npm run test:api
 
-  deploy:
 
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Deploy App
-      uses: appleboy/ssh-action@v0.1.2
-      with:
-        host: ${{secrets.SSH_HOST}}
-        key: ${{secrets.SSH_KEY}}
-        username: ${{secrets.SSH_USERNAME}}
-        script: |
-          rm -r build
-          rm -r /srv/dist
-          mkdir build
-          cd build
-          git clone -b production git@github.com:phil-burney/Autafi.git
-          cd Autafi/front-end
-          mv dist /srv
-          echo "Deployment to digitalocean successful"
-          rm /srv/server/index.js
-          rm -r /srv/server/models
-          cd ..
-          cd server
-          mv index.js /srv/server
-          mv models /srv/server
