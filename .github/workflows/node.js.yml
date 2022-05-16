@@ -18,6 +18,17 @@ defaults:
     working-directory: server
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        mongodb-version: [4.0]
+
+    steps:
+    - name: Start MongoDB v${{ matrix.mongodb-version }}
+      uses: supercharge/mongodb-github-action@1.2.0
+      with:
+        mongodb-version: ${{ matrix.mongodb-version }}
   test:
     runs-on: ubuntu-latest
     steps:
