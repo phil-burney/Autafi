@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12'
-      - run: cd Partsaphi/server
+      - run: cd server
       - run: npm install
       - run: npm run test:api
 
