@@ -27,6 +27,7 @@ jobs:
         with:
           node-version: '12'
       - run: npm install
+      - run: sudo docker run -d -p 27017:27017 mongo:latest
       - run: npm run test:api
 
 
