@@ -27,14 +27,13 @@ jobs:
         mongodb-version: ['4.2', '4.4', '5.0']
 
     steps:
-    - name: Git checkout
+    - name: Checkout
       uses: actions/checkout@v2
-      
+
     - name: Cypress run
       uses: cypress-io/github-action@v2
       with:
-        config-file: server/tests/cypress.json
-      
+        config-file: tests/cypress.json
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
