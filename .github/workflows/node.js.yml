@@ -13,6 +13,10 @@ on:
   pull_request:
     branches: [ master ]
 
+defaults:
+  run:
+    working-directory: server
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -22,7 +26,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12'
-      - run: cd server
       - run: npm install
       - run: npm run test:api
 
