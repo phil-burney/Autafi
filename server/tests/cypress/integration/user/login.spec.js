@@ -17,4 +17,12 @@ context('Walk through Creating a Part Sale', () => {
     cy.get('input').eq(1).type('Password123*')
     cy.contains('Log In!').click()
   })
+  it('Confirm Login', () => {
+    cy.get('div').should('contain', 'GenericUser')
+  })
+  it('Logout', () => {
+    cy.contains('Logout').click()
+    cy.get('div').should('not.have.value', 'GenericUser')
+  })
+
 })

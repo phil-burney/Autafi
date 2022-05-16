@@ -2,23 +2,22 @@
 
 context('Walk through Creating a Car Sale', () => {
   before(() => {
-  cy.task('connect')
-  cy.task('clearDatabase')
-  cy.task('seedUser')
-  
+    cy.task('connect')
+    cy.task('clearDatabase')
+    cy.task('seedUser')
+
   })
-  
-  it('Navigate to website', () => {    
-    
+  beforeEach(() => {
+    Cypress.Cookies.preserveOnce('token', 'name', 'email', 'connect.sid')
+  })
+  it('Navigate to website', () => {
+
     cy.visit('http://localhost:8080')
   })
   it('Login', () => {
+    cy.request('POST', "localhost:3030/api/user/login", { username: "GenericUser", password: "Password123*" })
+    cy.getCookie('token').should('exist')
     cy.visit('http://localhost:8080')
-    cy.contains('Login').click()
-    cy.get('input').eq(0).click()
-    cy.get('input').eq(0).type('GenericUser')
-    cy.get('input').eq(1).type('Password123*')
-    cy.contains('Log In!').click()
   })
   it('Navigate to Bounty Creation Page', () => {
     cy.contains('Create Listing').click()
@@ -31,10 +30,13 @@ context('Walk through Creating a Car Sale', () => {
     cy.get('select').eq(2).select('Bronco')
     cy.get('textarea').eq(0).type('Ford Bronco for sale.  Price is $600')
     cy.get('input').eq(2).type(600)
+    cy.intercept('POST', "/api/sale/car").as("call")
     cy.contains('Place Sale').click()
+    cy.wait("@call")
+    
   })
   it('Ensure that data exists', () => {
-    cy.request("localhost:3030/api/sale/car").as('car')
+    cy.request("/api/sale/car").as('car')
     cy.get('@car').should((response) => {
       expect(response.body[0]).to.have.property("title", "Want new Bronco")
     })

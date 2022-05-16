@@ -5,18 +5,18 @@ context('Walk through Creating a Part Bounty', () => {
   cy.task('seedUser')
   
   })
-  
-  it('Navigate to website', () => {    
+  beforeEach(() => {
     
+    Cypress.Cookies.preserveOnce('token', 'name', 'email', 'connect.sid')
+  })
+  it('Navigate to website', () => {
+
     cy.visit('http://localhost:8080')
   })
   it('Login', () => {
+    cy.request('POST', "/api/user/login", { username: "GenericUser", password: "Password123*" })
+    cy.getCookie('token').should('exist')
     cy.visit('http://localhost:8080')
-    cy.contains('Login').click()
-    cy.get('input').eq(0).click()
-    cy.get('input').eq(0).type('GenericUser')
-    cy.get('input').eq(1).type('Password123*')
-    cy.contains('Log In!').click()
   })
   it('Navigate to Bounty Creation Page', () => {
     cy.contains('Create Listing').click()
@@ -30,10 +30,12 @@ context('Walk through Creating a Part Bounty', () => {
     cy.get('select').eq(3).select('Engine')
     cy.get('textarea').eq(0).type('Ford Bronco engine for sale.  Will pay $600')
     cy.get('input').eq(2).type(600)
+    cy.intercept('POST', "/api/bounty/part").as("call")
     cy.contains('Place Bounty').click()
+    cy.wait("@call")
   })
   it('Ensure that data exists', () => {
-    cy.request("localhost:3030/api/bounty/part").as('part')
+    cy.request("/api/bounty/part").as('part')
     cy.get('@part').should((response) => {
       expect(response.body[0]).to.have.property("title", "Want new Bronco")
     })

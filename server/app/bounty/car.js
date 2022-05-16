@@ -27,9 +27,10 @@ exports.newCarBounty = async function (req, res) {
 
         })
     }
+    console.log("car")
     newcar.save()
         .then(() => {
-            // send back response
+            console.log("car bounty saved")
             res.status(200).send({ message: 'Part successfully entered' });
         })
         .catch((err) => {
@@ -40,7 +41,6 @@ exports.newCarBounty = async function (req, res) {
 exports.getAllCarBounties = async function (req, res) {
     CarBounty.find()
         .then((result) => {
-            
             res.status(200).send(result);
             
         })
