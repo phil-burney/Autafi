@@ -21,9 +21,6 @@ defaults:
 jobs:
   test-api:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: server
     strategy:
       matrix:
         node-version: [14.x, 16.x]
@@ -53,8 +50,6 @@ jobs:
 
     - name: Cypress run
       uses: cypress-io/github-action@v2
-      with:
-        start: npm run cypress:test
       
 
 
