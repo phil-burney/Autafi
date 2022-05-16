@@ -45,8 +45,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm run test:api
+#     - name: Run tests
+#       run: npm run test:api
 
     - name: Cypress run
       uses: cypress-io/github-action@v2
