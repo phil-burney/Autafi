@@ -1,68 +1,68 @@
 const request = require('supertest');
 
-const partBountyContent = {
+const partSaleContent = {
     title: "New Parts",
     year: "1979",
     make: "Ford",
     model: "Bronco",
+    description: "part for sale!",
     part: "Engine",
-    description: "I need a new engine.  Mine blew up",
-    bounty: 600,
+    salePrice: 60000,
     email: "peburney@gmail.com"
 }
-const partBountyContent2 = {
+const partSaleContent2 = {
     title: "New Parts",
     year: "1969",
     make: "Chevrolet",
     model: "Camaro",
-    part: "Engine",
-    description: "I need a new engine.  Mine blew up",
-    bounty: 600,
+    description: "part for sale!",
+    part: "Transmission",
+    salePrice: 600,
     email: "peburney@ymail.com"
 }
 
+let x = describe('API test', () => {
 
-let y = describe('API test', () => {
 
+    test('POST /api/sale/part', async() => {
 
-    test('POST /api/partbounty', async() => {
-        console.log('boo')
-        const res = await request("http://localhost:3030").post('/api/partbounty').send(
-            JSON.stringify(partBountyContent)
-
-        ).set('Content-Type', 'application/json')
-            .set('Accept', 'application/json')
-        expect(res.status).toBe(200);
-
-    });
-
-    test('GET /api/partbounty', async() => {
-
-        const res = await request("http://localhost:3030")
-            .get('/api/partbounty')
-
-        expect(res.status).toBe(200)
-        expect(databaseQueryParts([partBountyContent], res.body)).toBe(true)
-
-    });
-
-    test('POST /api/partbounty', async() => {
-        const res = await request("http://localhost:3030").post('/api/partbounty').send(
-            JSON.stringify(partBountyContent2)
+        const res = await request("http://localhost:3030").post('/api/sale/part').send(
+            JSON.stringify(partSaleContent)
 
         ).set('Content-Type', 'application/json')
             .set('Accept', 'application/json')
 
+
+    });
+
+    test('GET /api/sale/part', async() => {
+
+        const res = await request("http://localhost:3030")
+            .get('/api/sale/part')
+
+        expect(res.status).toBe(200)
+        expect(databaseQueryParts([partSaleContent], res.body)).toBe(true)
+
+    });
+
+    test('POST /api/sale/part', async() => {
+
+        const res = await request("http://localhost:3030").post('/api/sale/part').send(
+            JSON.stringify(partSaleContent2)
+
+        ).set('Content-Type', 'application/json')
+            .set('Accept', 'application/json')
+
         expect(res.status).toBe(200);
 
     });
-    test('GET /api/partbounty', async() => {
+    test('GET /api/sale/part', async() => {
 
         const res = await request("http://localhost:3030")
-            .get('/api/partbounty')
+            .get('/api/sale/part')
 
         expect(res.status).toBe(200)
-        expect(databaseQueryParts([partBountyContent, partBountyContent2], res.body)).toBe(true)
+        expect(databaseQueryParts([partSaleContent, partSaleContent2], res.body)).toBe(true)
 
     });
 
@@ -87,4 +87,4 @@ function partCompFunction(sentPart, recievedPart) {
         && sentPart.email == recievedPart.email
 
 }
-module.exports = {y}
+module.exports = {x}

@@ -1,24 +1,25 @@
 const request = require('supertest');
-const { app, server } = require('../index');
+const { app, server } = require('../../app/routes');
 const { connectDB, disconnectDB } = require('./database');
 const apipartbounty = require("./apipartbounty")
 const apipartsale = require("./apipartsale")
 const apicarsale = require("./apicarsale")
 const apicarbounty = require("./apicarbounty")
 
-beforeAll(() => {
-    connectDB();
-});
+// beforeAll(async() => {  
+//     let x = await connectDB();
+// });
 
-afterAll(() => {
+afterAll(async() => {
     disconnectDB();
-    server.close();
+    await server.close();
 });
 
 describe('API test', () => {
 
     apipartbounty;
     apipartsale;
-    apicarsale
-    apicarbounty
+    apicarsale;
+    apicarbounty;
+    
 })

@@ -9,7 +9,8 @@ export default class APIUserHelper {
       headers: { "Content-Type": "application/json" },
     };
     let data = await fetch(process.env.VUE_APP_SERVER_URL + "/api/user/validatetoken", options)
-    let returnData = await data.json();
+    let returnData = await data;
+    console.log(returnData)
     return returnData;
 
   }
@@ -22,7 +23,7 @@ export default class APIUserHelper {
       headers: { "Content-Type": "application/json" },
     };
 
-    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/logout", options)
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/user/logout", options)
     let returnData = await data.json();
     return returnData;
   }
@@ -65,8 +66,8 @@ export default class APIUserHelper {
         password: password,
       }),
     };
-  
-    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/login", options)
+    
+    let data = await fetch(process.env.VUE_APP_SERVER_URL +"/api/user/login", options)
     return data;
   }
 

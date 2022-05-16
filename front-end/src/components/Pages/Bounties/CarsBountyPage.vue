@@ -179,6 +179,7 @@ export default class CarsBountyPage extends Vue {
     this.packet.photos.forEach((photo) => {
       formPacket.append("photo", photo)
     })
+    console.log(formPacket)
     APIPostingHelper.makeCarBounty(formPacket).then((response) => {
     }).then(() => { this.$router.push("/listing/success")});
   }

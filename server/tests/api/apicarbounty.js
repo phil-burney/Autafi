@@ -23,9 +23,9 @@ const carBountyContent2 = {
 let exp = describe('API test', () => {
 
 
-    test('POST /api/carbounty', async () => {
+    test('POST /api/bounty/car', async () => {
 
-        const res = await request("http://localhost:3030").post('/api/carbounty').send(
+        const res = await request("http://localhost:3030").post('/api/bounty/car').send(
             JSON.stringify(carBountyContent)
 
         ).set('Content-Type', 'application/json')
@@ -35,19 +35,19 @@ let exp = describe('API test', () => {
     });
 
 
-    test('GET /api/carbounty', async () => {
+    test('GET /api/bounty/car', async () => {
 
         const res = await request("http://localhost:3030")
-            .get('/api/carbounty')
+            .get('/api/bounty/car')
 
         expect(res.status).toBe(200)
         expect(databaseQueryCars([carBountyContent], res.body)).toBe(true)
     })
 
 
-    test('POST /api/carbounty', async () => {
+    test('POST /api/bounty/car', async () => {
 
-        const res = await request("http://localhost:3030").post('/api/carbounty').send(
+        const res = await request("http://localhost:3030").post('/api/bounty/car').send(
             JSON.stringify(carBountyContent2)
 
         ).set('Content-Type', 'application/json')
@@ -56,10 +56,10 @@ let exp = describe('API test', () => {
         expect(res.status).toBe(200);
     });
 
-    test('GET /api/carbounty', async () => {
+    test('GET /api/bounty/car', async () => {
 
         const res = await request("http://localhost:3030")
-            .get('/api/carbounty')
+            .get('/api/bounty/car')
 
         expect(res.status).toBe(200)
         expect(databaseQueryCars([carBountyContent, carBountyContent2], res.body)).toBe(true)
