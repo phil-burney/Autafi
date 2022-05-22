@@ -27,15 +27,10 @@ jobs:
         mongodb-version: ['4.2']
     steps:
       - uses: actions/checkout@v2
-      - name: Cypress Tests
-        uses: cypress-io/github-action@v2
+      - uses: cypress-io/github-action@v2
         with:
-          working-directory: server
-
-      - name: Run headless test
-        uses: GabrielBB/xvfb-action@v1
-        with:
-          run: npm run cypress:test
+          start: npm run cypress:test
+          working-directory: tests
 #     steps:
 #     - name: Checkout
 #       uses: actions/checkout@v2
