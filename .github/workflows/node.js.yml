@@ -24,34 +24,44 @@ jobs:
     strategy:
       matrix:
         node-version: [14.x]
-        mongodb-version: ['4.2', '4.4']
-
+        mongodb-version: ['4.2']
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - name: Cypress Tests
+        uses: cypress-io/github-action@v2
+        with:
+          working-directory: server
 
-    - name: Cypress run
-      uses: cypress-io/github-action@v2
-      with:
-        config-file: tests/cypress.json
+      - name: Run headless test
+        uses: GabrielBB/xvfb-action@v1
+        with:
+          run: npm run cypress:test
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@v2
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
+#     - name: Cypress run
+#       uses: cypress-io/github-action@v2
+#       with:
+#         config-file: tests/cypress.json
 
-    - name: Start MongoDB
-      uses: supercharge/mongodb-github-action@1.7.0
-      with:
-        mongodb-version: ${{ matrix.mongodb-version }}
-        mongodb-replica-set: test-rs
-        mongodb-port: 27017
+#     - name: Use Node.js ${{ matrix.node-version }}
+#       uses: actions/setup-node@v2
+#       with:
+#         node-version: ${{ matrix.node-version }}
 
-    - name: Install dependencies
-      run: npm install
+#     - name: Start MongoDB
+#       uses: supercharge/mongodb-github-action@1.7.0
+#       with:
+#         mongodb-version: ${{ matrix.mongodb-version }}
+#         mongodb-replica-set: test-rs
+#         mongodb-port: 27017
 
-    - name: Run tests
-      run: npm run test:api
+#     - name: Install dependencies
+#       run: npm install
+
+#     - name: Run tests
+#       run: npm run test:api
 
 
       
