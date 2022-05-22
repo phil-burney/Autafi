@@ -30,6 +30,7 @@ jobs:
       - uses: cypress-io/github-action@v2
         with:
           start: npm run cypress:test
+          config-file: tests/cypress.json
           working-directory: server
 #     steps:
 #     - name: Checkout
