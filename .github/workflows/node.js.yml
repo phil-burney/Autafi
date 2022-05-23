@@ -16,7 +16,7 @@ env:
   DATABASE_URI: 'mongodb://localhost:27017'
 defaults:
   run:
-    working-directory: server
+    working-directory: front-end
 
 jobs:
   test-api:
