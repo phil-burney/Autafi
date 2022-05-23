@@ -1,0 +1,49 @@
+/// <reference types="cypress" />
+
+
+context('Walk through Creating a Part Sale', () => {
+  before(() => {
+    cy.task('connect')
+    cy.task('clearDatabase')
+    cy.task('seedUser')
+
+  })
+  beforeEach(() => {
+    Cypress.Cookies.preserveOnce('token', 'name', 'email', 'connect.sid')
+  })
+  it('Navigate to website', () => {
+
+    cy.visit('http://localhost:8080')
+  })
+  it('Login', () => {
+    cy.request('POST', "/api/user/login", { username: "GenericUser", password: "Password123*" })
+    cy.getCookie('token').should('exist')
+    cy.visit('http://localhost:8080')
+  })
+  it('Navigate to Bounty Creation Page', () => {
+    cy.contains('Create Listing').click()
+    cy.contains('Create Part Sale Post').click()
+  })
+  it('Input Data', () => {
+    cy.get('input').eq(0).type("Want new Bronco")
+    cy.get('select').eq(0).select('1979')
+    cy.get('select').eq(1).select('Ford')
+    cy.get('select').eq(2).select('Bronco')
+    cy.get('select').eq(3).select('Engine')
+    cy.get('textarea').eq(0).type('Ford Bronco for sale.  Price is $600')
+    cy.get('input').eq(2).type(600)
+    cy.intercept('POST', "/api/sale/part").as("call")
+    cy.contains('Place Sale').click()
+    cy.wait("@call")
+  })
+  it('Ensure that data exists', () => {
+    cy.request("/api/sale/part").as('part')
+    cy.get('@part').should((response) => {
+      expect(response.body[0]).to.have.property("title", "Want new Bronco")
+    })
+  })
+  it('Return to the home page', () => {
+    cy.contains('Return to the home page').click()
+  })
+
+})

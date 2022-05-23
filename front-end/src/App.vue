@@ -4,7 +4,7 @@
       <div class="col header text-left d-flex justify-content-left">
         <router-link to="/">
           <img
-            src="./assets/inspired_logo_2.svg"
+            src="./assets/inspired_logo_3.svg"
             class="img-fluid m-2 ps-3 pe-3"
             id="logo"
           />
@@ -65,6 +65,7 @@ export default class App extends Vue {
 
     APIUserHelper.fetchTokenConf().then((response) => {
       if (!response.ok) {
+        console.log(response)
         this.logout();
       }
     });
