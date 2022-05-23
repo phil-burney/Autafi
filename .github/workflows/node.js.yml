@@ -31,9 +31,8 @@ jobs:
         with:
             working-directory: front-end
       - run: npm i
-      - run: npm run serve
+      - run: npm run serve &
 
-      
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v2
         with:
