@@ -26,6 +26,12 @@ jobs:
         node-version: [14.x]
         mongodb-version: ['4.2']
     steps:
+      - name: web-server
+        with:
+          build: npm i
+          start: npm run serve
+          working-directory: front-end
+      
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v2
         with:
