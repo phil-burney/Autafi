@@ -48,9 +48,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
+        working-directory: front-end
+        
       - name: Run tests
         run: npm run test:api
+        working-directory: front-end
 
 
       
