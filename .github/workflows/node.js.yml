@@ -29,8 +29,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v2
         with:
-          build: npm run start
-          start: npm run cypress:test
+          start: npm run start
           config-file: tests/cypress.json
           working-directory: server
           
