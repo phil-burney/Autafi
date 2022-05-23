@@ -312,12 +312,12 @@ app.put('/api/user/resetpassword', async (req, res) => {
     let userID = req.body.id
     let passwordResetToken = await PasswordResetToken.findOne({userId: userID});
     if (!passwordResetToken) {
-        res.status(404).send({ message: "The link is invalid!" })
+        res.status(404).send({ message: "User does not have an existing link!" })
         return
     }
     const isValid = await bcrypt.compare(req.body.token, passwordResetToken.token);
     if (!isValid) {
-        res.status(404).send({ message: "The link is invalid!" })
+        res.status(404).send({ message: "The link is no token exists!" })
         return 
     }
 
