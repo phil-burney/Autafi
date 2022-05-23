@@ -28,9 +28,11 @@ jobs:
     steps:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
+        with:
+            working-directory: front-end
       - run: npm i
       - run: npm run serve
-        working-directory: front-end
+
       
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v2
