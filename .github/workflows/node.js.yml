@@ -34,23 +34,23 @@ jobs:
           config-file: tests/cypress.json
           working-directory: server
           
-#     - name: Use Node.js ${{ matrix.node-version }}
-#       uses: actions/setup-node@v2
-#       with:
-#         node-version: ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
 
-#     - name: Start MongoDB
-#       uses: supercharge/mongodb-github-action@1.7.0
-#       with:
-#         mongodb-version: ${{ matrix.mongodb-version }}
-#         mongodb-replica-set: test-rs
-#         mongodb-port: 27017
+      - name: Start MongoDB
+        uses: supercharge/mongodb-github-action@1.7.0
+        with:
+          mongodb-version: ${{ matrix.mongodb-version }}
+          mongodb-replica-set: test-rs
+          mongodb-port: 27017
 
-#     - name: Install dependencies
-#       run: npm install
+      - name: Install dependencies
+        run: npm install
 
-#     - name: Run tests
-#       run: npm run test:api
+      - name: Run tests
+        run: npm run test:api
 
 
       
