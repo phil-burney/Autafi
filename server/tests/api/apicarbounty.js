@@ -30,7 +30,7 @@ let exp = describe('API test', () => {
 
         ).set('Content-Type', 'application/json')
             .set('Accept', 'application/json')
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200);
     });
 
@@ -39,7 +39,7 @@ let exp = describe('API test', () => {
 
         const res = await request("http://localhost:3030")
             .get('/api/bounty/car')
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200)
         expect(databaseQueryCars([carBountyContent], res.body)).toBe(true)
     })
@@ -52,7 +52,7 @@ let exp = describe('API test', () => {
 
         ).set('Content-Type', 'application/json')
             .set('Accept', 'application/json')
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200);
     });
 
@@ -60,7 +60,7 @@ let exp = describe('API test', () => {
 
         const res = await request("http://localhost:3030")
             .get('/api/bounty/car')
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200)
         expect(databaseQueryCars([carBountyContent, carBountyContent2], res.body)).toBe(true)
     })

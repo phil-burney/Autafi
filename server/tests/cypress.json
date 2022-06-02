@@ -6,6 +6,7 @@
     "fixturesFolder": "tests/cypress/fixtures",
     "supportFile": "tests/cypress/support/index.js",
     "testFiles": "**/*.spec.js",
-    "baseUrl": "http://localhost:3030"
+    "baseUrl": "http://localhost:3030",
+    "videoUploadOnPasses": false
 
 }

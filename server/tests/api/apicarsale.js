@@ -42,6 +42,8 @@ let exp = describe('API test', () => {
             .field("description", "Car for sale!")
             .field("salePrice", 60000)
             .field("email", "peburney@gmail.com")
+            .set('Cookie', ['token=token', 'name=GenericUser'])
+            expect(res.status).toBe(200);
 
     });
 
@@ -49,7 +51,7 @@ let exp = describe('API test', () => {
 
         const res = await request("http://localhost:3030")
             .get('/api/sale/car')
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200)
         expect(databaseQueryCars([carSaleContent], res.body)).toBe(true)
 
@@ -63,7 +65,7 @@ let exp = describe('API test', () => {
         .field("description", "Car for sale!")
         .field("salePrice", 600)
         .field("email", "peburney@ymail.com")
-
+        .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200);
 
     });
@@ -79,7 +81,7 @@ let exp = describe('API test', () => {
             .field("salePrice", 700)
             .field("email", "peburney@ymail.com")
             .attach("photo", fs.createReadStream(__dirname + "/img/bronco.jpg"))
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200);
 
     });
@@ -87,7 +89,7 @@ let exp = describe('API test', () => {
 
         const res = await request("http://localhost:3030")
             .get('/api/sale/car')
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200)
         expect(databaseQueryCars([carSaleContent, carSaleContent2, carSaleContent3], res.body)).toBe(true)
 

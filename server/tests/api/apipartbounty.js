@@ -25,42 +25,42 @@ const partBountyContent2 = {
 let y = describe('API test', () => {
 
 
-    test('POST /api/bounty/part', async() => {
-        console.log('boo')
+    test('POST /api/bounty/part', async () => {
         const res = await request("http://localhost:3030").post('/api/bounty/part').send(
             JSON.stringify(partBountyContent)
 
         ).set('Content-Type', 'application/json')
             .set('Accept', 'application/json')
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200);
 
     });
 
-    test('GET /api/bounty/part', async() => {
+    test('GET /api/bounty/part', async () => {
 
         const res = await request("http://localhost:3030")
             .get('/api/bounty/part')
-
+          .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200)
         expect(databaseQueryParts([partBountyContent], res.body)).toBe(true)
 
     });
 
-    test('POST /api/bounty/part', async() => {
+    test('POST /api/bounty/part', async () => {
         const res = await request("http://localhost:3030").post('/api/bounty/part').send(
             JSON.stringify(partBountyContent2)
 
         ).set('Content-Type', 'application/json')
             .set('Accept', 'application/json')
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200);
 
     });
-    test('GET /api/bounty/part', async() => {
+    test('GET /api/bounty/part', async () => {
 
         const res = await request("http://localhost:3030")
             .get('/api/bounty/part')
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200)
         expect(databaseQueryParts([partBountyContent, partBountyContent2], res.body)).toBe(true)
 
@@ -87,4 +87,4 @@ function partCompFunction(sentPart, recievedPart) {
         && sentPart.email == recievedPart.email
 
 }
-module.exports = {y}
+module.exports = { y }

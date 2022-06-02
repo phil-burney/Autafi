@@ -2,6 +2,7 @@ context('Walk through Viewing a Car Bounty', () => {
   before(() => {
     cy.task('connect')
     cy.task('clearDatabase')
+    cy.task('seedUser')
   })
   it('Navigate to website', () => {
 
@@ -17,6 +18,8 @@ context('Walk through Viewing a Car Bounty', () => {
       bounty: 600,
       email: "peburney@gmail.com"
     }
+    cy.setCookie('token', 'token')
+    cy.setCookie('name', 'GenericUser')
     cy.request('POST', "/api/bounty/car", carBountyContent)
   })
   it('Navigate to the page', () => {

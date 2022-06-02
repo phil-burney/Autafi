@@ -31,7 +31,8 @@ let x = describe('API test', () => {
 
         ).set('Content-Type', 'application/json')
             .set('Accept', 'application/json')
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
+            expect(res.status).toBe(200);
 
     });
 
@@ -39,7 +40,7 @@ let x = describe('API test', () => {
 
         const res = await request("http://localhost:3030")
             .get('/api/sale/part')
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200)
         expect(databaseQueryParts([partSaleContent], res.body)).toBe(true)
 
@@ -52,7 +53,7 @@ let x = describe('API test', () => {
 
         ).set('Content-Type', 'application/json')
             .set('Accept', 'application/json')
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200);
 
     });
@@ -60,7 +61,7 @@ let x = describe('API test', () => {
 
         const res = await request("http://localhost:3030")
             .get('/api/sale/part')
-
+            .set('Cookie', ['token=token', 'name=GenericUser'])
         expect(res.status).toBe(200)
         expect(databaseQueryParts([partSaleContent, partSaleContent2], res.body)).toBe(true)
 

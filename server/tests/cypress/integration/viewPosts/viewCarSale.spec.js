@@ -2,6 +2,7 @@ context('Walk through Viewing a Car Sale', () => {
   before(() => {
     cy.task('connect')
     cy.task('clearDatabase')
+    cy.task('seedUser')
   })
   it('Navigate to website', () => {
 
@@ -17,6 +18,8 @@ context('Walk through Viewing a Car Sale', () => {
       salePrice: 600,
       email: "peburney@gmail.com"
     }
+    cy.setCookie('token', 'token')
+    cy.setCookie('name', 'GenericUser')
     cy.request('POST', "/api/sale/car", carSaleContent)
   })
   it('Navigate to the page', () => {
