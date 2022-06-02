@@ -2,21 +2,21 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    sodipodi:docname="inspired_logo_2.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    id="svg45957"
    version="1.1"
    viewBox="0 0 232.63572 142.60434"
    height="142.60434mm"
-   width="232.63573mm">
+   width="232.63573mm"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata4690">
     <rdf:RDF>
@@ -25,7 +25,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -40,11 +39,11 @@
      inkscape:document-units="cm"
      showgrid="true"
      inkscape:zoom="1.0482005"
-     inkscape:cx="595.07868"
-     inkscape:cy="225.2961"
-     inkscape:window-width="1920"
+     inkscape:cx="594.82895"
+     inkscape:cy="224.67076"
+     inkscape:window-width="2560"
      inkscape:window-height="1017"
-     inkscape:window-x="-8"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="g34068"
@@ -252,7 +251,7 @@
          inkscape:connector-curvature="0" />
       <text
          xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:10.17475224px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.10852908px;word-spacing:0.53320783px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.25436887"
+         style="font-style:normal;font-weight:normal;font-size:10.1748px;line-height:1.25;font-family:sans-serif;letter-spacing:-0.108529px;word-spacing:0.533208px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.254369"
          x="-217.07358"
          y="-103.20751"
          id="text5247"
@@ -261,23 +260,17 @@
            id="tspan5245"
            x="-217.07358"
            y="-103.20751"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48.8388176px;line-height:1.25;font-family:'Alfa Slab One';-inkscape-font-specification:'Alfa Slab One Bold';letter-spacing:4.18570852px;word-spacing:1.07113409px;stroke-width:0.25436887"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:48.8388px;line-height:1.25;font-family:'Agency FB';-inkscape-font-specification:'Agency FB Bold';letter-spacing:4.18571px;word-spacing:1.07113px;stroke-width:0.254369"
            dy="1.1503111"
            rotate="0 0 0 0 0 0">Autaf</tspan></text>
     </g>
     <text
        xml:space="preserve"
-       style="font-size:61.19229889px;line-height:2.95000005;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';letter-spacing:-0.316908px;word-spacing:0.316908px;fill:#666666;fill-opacity:1;stroke:url(#linearGradient34167);stroke-width:1.52980006;stroke-opacity:1"
+       style="font-size:61.1923px;line-height:2.95;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';letter-spacing:-0.316908px;word-spacing:0.316908px;fill:#666666;fill-opacity:1;stroke:url(#linearGradient34167);stroke-width:1.5298;stroke-opacity:1"
        x="27.93294"
        y="-69.630714"
        id="text128631"
-       transform="scale(0.81025629,1.2341774)"><tspan
-         sodipodi:role="line"
-         id="tspan128629"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Consolas;-inkscape-font-specification:'Consolas Bold';fill:#666666;fill-opacity:1;stroke:url(#linearGradient34167);stroke-width:1.52980006;stroke-opacity:1"
-         x="27.93294"
-         y="37.501976"
-         rotate="0" /></text>
+       transform="scale(0.81025629,1.2341774)" />
     <g
        id="g7640"
        transform="matrix(-1,0,0,1,256.93987,-22.650559)">

@@ -176,7 +176,7 @@ export default class SignUpPage extends Vue {
       let z = document.getElementById("n-password");
       z.classList.add("error");
       this.error.password =
-        "Password have at least 8 characters, one lowercase letter, one number and one special character (!,@,#,$,%,&,*)!";
+        "Password have at least 8 characters, one lowercase letter, one uppercase letter, one number and one special character (!,@,#,$,%,&,*)!";
       validform = false;
     }
     if (this.sentPassword2 == "") {

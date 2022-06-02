@@ -4,14 +4,20 @@
   "description": "server for SwapMeet",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest",
+    "test:api": "jest --detectOpenHandles --testPathPattern=tests/api",
+    "cypress:test": "npx cypress run --config-file tests/cypress.json",
+    "cypress:dev": "npx cypress open --browser chrome --config-file tests/cypress.json",
+    "test:server:seed:user" : "node -e \"require('./app/database').seedUser()\"",
+    "test:server:clear" : "node -e \"require('./app/database').clearDatabase()\"",
+    "test:server:connect" : "node -e \"require('./app/database').connect()\"",
     "start_local": "node index.js && set BASE_URL=\"http://localhost:8080\"",
-    "start_server": "node index.js && BASE_URL=\"http://autafi.com\"",
-    "start": "node ./bin/www"
+    "start_server": "node index.js && set BASE_URL=\"http://autafi.com\"",
+    "start": "node ./app/routes"
   },
   "author": "peburney",
   "license": "ISC",
   "dependencies": {
+    "@shelf/jest-mongodb": "^2.2.1",
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.5",
@@ -29,8 +35,8 @@
     "vue-cookies": "^1.7.4"
   },
   "devDependencies": {
+    "cypress": "^9.6.0",
     "jest": "^27.5.1",
-    "mongodb-memory-server": "^8.4.1",
     "supertest": "^6.2.2"
   }
 }
